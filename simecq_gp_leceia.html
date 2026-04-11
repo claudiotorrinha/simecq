@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIMECQ · GP Leceia 2026</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #ffffff;
+    --bg2:      #f4f3ef;
+    --bg3:      #eceae4;
+    --text:     #2c2c2a;
+    --text2:    #5f5e5a;
+    --text3:    #888780;
+    --border:   #d3d1c7;
+    --teal:     #1d9e75;
+    --teal-bg:  #e1f5ee;
+    --teal-txt: #085041;
+    --blue-bg:  #e6f1fb;
+    --blue-txt: #185fa5;
+    --warn-bg:  #faeeda;
+    --warn-txt: #854f0b;
+    --gold:     #fac775;
+    --gold-txt: #633806;
+    --silver:   #d3d1c7;
+    --silver-txt:#2c2c2a;
+    --bronze:   #f5c4b3;
+    --bronze-txt:#4a1b0c;
+    --radius:   10px;
+    --radius-sm:6px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:       #1c1c1a;
+      --bg2:      #252523;
+      --bg3:      #2e2e2b;
+      --text:     #f0ede6;
+      --text2:    #b4b2a9;
+      --text3:    #888780;
+      --border:   #3a3a37;
+      --teal:     #5dcaa5;
+      --teal-bg:  #04342c;
+      --teal-txt: #9fe1cb;
+      --blue-bg:  #042c53;
+      --blue-txt: #85b7eb;
+      --warn-bg:  #412402;
+      --warn-txt: #fac775;
+      --gold:     #633806;
+      --gold-txt: #fac775;
+    }
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg3);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0 0 48px;
+  }
+
+  .top-bar {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 24px 14px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .top-bar h1 { font-size: 18px; font-weight: 600; color: var(--text); }
+  .top-bar p  { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 0; }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .metric {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+  }
+  .metric-label { font-size: 11px; color: var(--text3); margin-bottom: 4px; }
+  .metric-value { font-size: 22px; font-weight: 600; color: var(--text); line-height: 1.1; }
+  .metric-sub   { font-size: 11px; color: var(--text3); margin-top: 2px; }
+
+  .tabs {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .tab-btn {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 7px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    color: var(--text2);
+    transition: background 0.15s, color 0.15s;
+  }
+  .tab-btn:hover { background: var(--bg2); }
+  .tab-btn.active {
+    background: var(--teal-bg);
+    color: var(--teal-txt);
+    border-color: transparent;
+    font-weight: 600;
+  }
+
+  .sub-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .sub-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 4px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--text3);
+    transition: background 0.15s;
+  }
+  .sub-btn:hover { background: var(--bg2); }
+  .sub-btn.active {
+    background: var(--bg2);
+    color: var(--text);
+    border-color: var(--text3);
+    font-weight: 600;
+  }
+
+  .prova-meta {
+    font-size: 12px;
+    color: var(--text3);
+    margin-bottom: 10px;
+  }
+
+  .pills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .pill {
+    font-size: 11px;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-weight: 500;
+  }
+  .pill-n { background: var(--bg2); color: var(--text3); }
+  .pill-w { background: var(--warn-bg); color: var(--warn-txt); }
+
+  .athlete-list {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .athlete-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.1s;
+  }
+  .athlete-row:last-child { border-bottom: none; }
+  .athlete-row:hover { background: var(--bg2); }
+  .athlete-row.gold   { background: rgba(250,199,117,0.18); }
+  .athlete-row.silver { background: rgba(211,209,199,0.25); }
+  .athlete-row.bronze { background: rgba(245,196,179,0.25); }
+
+  .pos-badge {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 700;
+    flex-shrink: 0;
+  }
+  .pos-1 { background: var(--gold);   color: var(--gold-txt); }
+  .pos-2 { background: var(--silver); color: var(--silver-txt); }
+  .pos-3 { background: var(--bronze); color: var(--bronze-txt); }
+  .pos-x { background: var(--bg2); border: 1px solid var(--border); color: var(--text3); }
+
+  .athlete-nome  { flex: 1; font-size: 14px; color: var(--text); min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .athlete-class { font-size: 11px; font-weight: 600; background: var(--blue-bg); color: var(--blue-txt); border-radius: 20px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0; }
+  .athlete-time  { font-size: 13px; color: var(--text3); font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 44px; text-align: right; flex-shrink: 0; }
+
+  .esc-group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--blue-txt);
+    background: var(--blue-bg);
+    border-bottom: 1px solid var(--border);
+    margin-top: 1px;
+  }
+  .esc-group-header span { font-weight: 400; font-size: 11px; color: var(--text3); }
+
+  .empty { padding: 24px 14px; font-size: 13px; color: var(--text3); }
+
+  .chart-wrap { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .chart-container { position: relative; width: 100%; }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  @media (max-width: 480px) {
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+    .metric-value { font-size: 18px; }
+    .top-bar { padding: 14px 16px 10px; }
+    .top-bar h1 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1>SIMECQ · GP Leceia</h1>
+  <p>11 de abril de 2026 · 43º Troféu CM Oeiras · Classificações provisórias</p>
+</div>
+
+<div class="container">
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label">Clubes</div>
+      <div class="metric-value">5º</div>
+      <div class="metric-sub">224 pts</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Pódios</div>
+      <div class="metric-value">5</div>
+      <div class="metric-sub">top 3 no escalão</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Atletas</div>
+      <div class="metric-value">44</div>
+      <div class="metric-sub">em 4 provas</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Provas</div>
+      <div class="metric-value">4/6</div>
+      <div class="metric-sub">com representação</div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('provas')">Por prova</button>
+    <button class="tab-btn" onclick="showTab('podios')">Pódios</button>
+    <button class="tab-btn" onclick="showTab('clubes')">Ranking clubes</button>
+    <button class="tab-btn" onclick="showTab('escaloes')">Por escalão</button>
+  </div>
+
+  <!-- TAB: PROVAS -->
+  <div id="tab-provas" class="tab-panel active">
+    <div class="tabs" style="margin-bottom:14px;">
+      <button class="tab-btn active" id="pb0" onclick="showProva(0)">Prova 1</button>
+      <button class="tab-btn" id="pb1" onclick="showProva(1)">Prova 2</button>
+      <button class="tab-btn" id="pb2" onclick="showProva(2)">Prova 3</button>
+      <button class="tab-btn" id="pb3" onclick="showProva(3)">Prova 4</button>
+      <button class="tab-btn" id="pb4" onclick="showProva(4)">Prova 5</button>
+      <button class="tab-btn" id="pb5" onclick="showProva(5)">Prova 6</button>
+    </div>
+    <div class="prova-meta" id="prova-desc"></div>
+    <div class="pills" id="prova-pills"></div>
+    <div class="sub-tabs" id="view-toggle">
+      <button class="sub-btn active" id="vb-geral" onclick="setView('geral')">Ranking geral</button>
+      <button class="sub-btn" id="vb-esc" onclick="setView('escalao')">Por escalão</button>
+    </div>
+    <div id="prova-body"></div>
+  </div>
+
+  <!-- TAB: PÓDIOS -->
+  <div id="tab-podios" class="tab-panel">
+    <div id="podios-body"></div>
+  </div>
+
+  <!-- TAB: CLUBES -->
+  <div id="tab-clubes" class="tab-panel">
+    <div class="chart-wrap">
+      <div class="section-title" style="margin-bottom:14px;">Pontos por clube · top 15</div>
+      <div class="chart-container" style="height:480px;">
+        <canvas id="clubesChart" role="img" aria-label="Ranking de pontos por clube no GP Leceia. SIMECQ em 5º com 224 pontos."></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: ESCALÕES -->
+  <div id="tab-escaloes" class="tab-panel">
+    <div class="chart-wrap">
+      <div class="section-title" style="margin-bottom:14px;">Pontos SIMECQ por escalão</div>
+      <div class="chart-container" style="height:300px;">
+        <canvas id="escaloesChart" role="img" aria-label="Pontos SIMECQ por escalão no GP Leceia."></canvas>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const provas = [
+  {
+    label: 'Masculinos adultos · Sub23, Seniores, M35–M55',
+    atletas: [
+      { nome: 'Nuno Graça',         classe: 'M 40',       pos: 3,  pts: 11, tempo: '29:24' },
+      { nome: 'João Narra',          classe: 'M 55',       pos: 4,  pts: 10, tempo: '32:25' },
+      { nome: 'Carlos Gomes',        classe: 'Seniores M', pos: 8,  pts: 6,  tempo: '33:42' },
+      { nome: 'Henrique Ferreira',   classe: 'M 55',       pos: 9,  pts: 5,  tempo: '35:01' },
+      { nome: 'João Moradias',       classe: 'Seniores M', pos: 17, pts: 3,  tempo: '35:40' },
+      { nome: 'Bernardo Batista',    classe: 'Seniores M', pos: 18, pts: 3,  tempo: '35:40' },
+      { nome: 'Luis Costa',          classe: 'M 50',       pos: 17, pts: 3,  tempo: '36:59' },
+      { nome: 'Cláudio Torrinha',    classe: 'M 40',       pos: 15, pts: 3,  tempo: '37:01' },
+      { nome: 'Yuri Natividade',     classe: 'M 45',       pos: 31, pts: 1,  tempo: '38:03' },
+      { nome: 'Paulo Serra',         classe: 'M 50',       pos: 20, pts: 3,  tempo: '38:14' },
+      { nome: 'Emanuel Oliveira',    classe: 'M 50',       pos: 28, pts: 2,  tempo: '39:53' },
+      { nome: 'Bruno Pinto',         classe: 'Sub 23 M',   pos: 9,  pts: 5,  tempo: '40:41' },
+      { nome: 'José Véstias',        classe: 'M 55',       pos: 21, pts: 2,  tempo: '41:18' },
+      { nome: 'Miguel Moradias',     classe: 'M 55',       pos: 26, pts: 2,  tempo: '44:45' },
+      { nome: 'Alexandre Galvão',    classe: 'M 35',       pos: 31, pts: 1,  tempo: '46:04' },
+      { nome: 'Orlando Silva',       classe: 'M 55',       pos: 31, pts: 1,  tempo: '48:23' },
+      { nome: 'Rodrigo Ferreira',    classe: 'M 55',       pos: 32, pts: 1,  tempo: '49:17' },
+    ]
+  },
+  {
+    label: 'Femininos adultos + veteranos · Sub18 F, Seniores F, F35–F70, M60–M80',
+    atletas: [
+      { nome: 'Rita Santos',              classe: 'Seniores F', pos: 1,  pts: 15, tempo: '16:37' },
+      { nome: 'Marta Neves',              classe: 'Sub 18 F',   pos: 3,  pts: 11, tempo: '19:43' },
+      { nome: 'Cláudia Jerónimo',         classe: 'Seniores F', pos: 4,  pts: 10, tempo: '19:13' },
+      { nome: 'Ana Coelho',               classe: 'F 50',       pos: 5,  pts: 9,  tempo: '19:13' },
+      { nome: 'Paulo Moradias',           classe: 'M 60',       pos: 19, pts: 3,  tempo: '19:55' },
+      { nome: 'Eugénia Ribeiro',          classe: 'F 55',       pos: 2,  pts: 13, tempo: '20:26' },
+      { nome: 'Sandra Silva',             classe: 'F 45',       pos: 10, pts: 4,  tempo: '21:27' },
+      { nome: 'Vitor Vital',              classe: 'M 60',       pos: 28, pts: 2,  tempo: '21:39' },
+      { nome: 'Lia Moreira',              classe: 'F 50',       pos: 15, pts: 3,  tempo: '23:20' },
+      { nome: 'Lara Correia',             classe: 'Sub 18 F',   pos: 4,  pts: 10, tempo: '23:32' },
+      { nome: 'Marcela da Silva',         classe: 'Seniores F', pos: 13, pts: 3,  tempo: '23:50' },
+      { nome: 'Paulo Jorge Duarte Silva', classe: 'M 65',       pos: 27, pts: 2,  tempo: '24:06' },
+      { nome: 'Madalena Magalhães',       classe: 'F 55',       pos: 12, pts: 3,  tempo: '24:50' },
+      { nome: 'Maria Cristina Oliveira',  classe: 'F 55',       pos: 13, pts: 3,  tempo: '24:50' },
+      { nome: 'Celeste Almeida',          classe: 'F 55',       pos: 17, pts: 3,  tempo: '25:51' },
+      { nome: 'Maria João Franco Silva',  classe: 'F 65',       pos: 2,  pts: 13, tempo: '26:04' },
+      { nome: 'Ana Cristina Viegas',      classe: 'F 55',       pos: 18, pts: 3,  tempo: '26:41' },
+      { nome: 'Olga Galvão',              classe: 'F 60',       pos: 9,  pts: 5,  tempo: '26:56' },
+      { nome: 'Ana Serra',                classe: 'F 50',       pos: 21, pts: 2,  tempo: '27:08' },
+      { nome: 'Jorge Valadares',          classe: 'M 60',       pos: 38, pts: 1,  tempo: '27:18' },
+      { nome: 'Maria João Silva',         classe: 'F 65',       pos: 4,  pts: 10, tempo: '28:31' },
+      { nome: 'Elsa Almeida',             classe: 'F 55',       pos: 22, pts: 2,  tempo: '28:48' },
+      { nome: 'Alda Sebastião',           classe: 'F 65',       pos: 7,  pts: 7,  tempo: '31:33' },
+      { nome: 'Elisa Rodrigues',          classe: 'F 70',       pos: 6,  pts: 8,  tempo: '37:08' },
+    ]
+  },
+  { label: 'Sub 16 · ~2 km', atletas: [] },
+  {
+    label: 'Sub 14 · ~1 km',
+    atletas: [
+      { nome: 'Edmara Semedo', classe: 'Sub 14 F', pos: 6, pts: 8, tempo: '05:09' },
+      { nome: 'Miriam Sousa',  classe: 'Sub 14 F', pos: 9, pts: 5, tempo: '05:53' },
+    ]
+  },
+  { label: 'Sub 12 · ~400 m', atletas: [] },
+  {
+    label: 'Sub 10 · ~200 m',
+    atletas: [
+      { nome: 'Valentina Natividade', classe: 'Sub 10 F', pos: 14, pts: 3, tempo: '01:41' },
+    ]
+  },
+];
+
+const clubesData = [
+  ['ADNO',645],['Linda-a-Pastora',513],['Run Tejo',348],['Leião',230],
+  ['SIMECQ',224],['Unidos Leceia',198],['Ribeira da Lage',195],['1º Dez. Queijas',180],
+  ['Os Fixes',163],['Valejas AC',92],['GMCJamor',84],['Sport P. Come',76],
+  ['G.D. Barcarena',74],['Mor. 18 Maio',69],['Maratona CP',65],
+];
+
+let currentProva = 0;
+let currentView  = 'geral';
+let clubesChart  = null;
+let escChart     = null;
+
+function toSec(t) {
+  const p = t.split(':').map(Number);
+  return p.length === 3 ? p[0]*3600+p[1]*60+p[2] : p[0]*60+p[1];
+}
+
+function posClass(pos) {
+  return pos===1?'pos-1':pos===2?'pos-2':pos===3?'pos-3':'pos-x';
+}
+function rowClass(pos) {
+  return pos===1?' gold':pos===2?' silver':pos===3?' bronze':'';
+}
+
+function athleteRow(a, showClasse = true) {
+  return `<div class="athlete-row${rowClass(a.pos)}">
+    <div class="pos-badge ${posClass(a.pos)}">${a.pos}º</div>
+    <span class="athlete-nome">${a.nome}</span>
+    ${showClasse ? `<span class="athlete-class">${a.classe}</span>` : ''}
+    <span class="athlete-time">${a.tempo}</span>
+  </div>`;
+}
+
+function renderProva(idx) {
+  currentProva = idx;
+  const p = provas[idx];
+  document.getElementById('prova-desc').textContent = p.label;
+
+  const valid = p.atletas.filter(a => a.tempo);
+  const toggle = document.getElementById('view-toggle');
+  toggle.style.display = valid.length ? 'flex' : 'none';
+
+  const pills = document.getElementById('prova-pills');
+  if (!valid.length) {
+    pills.innerHTML = '';
+    document.getElementById('prova-body').innerHTML = '<div class="athlete-list"><div class="empty">Sem atletas da SIMECQ nesta prova.</div></div>';
+    return;
+  }
+
+  const totalPts = valid.reduce((s,a) => s+a.pts, 0);
+  const podios   = valid.filter(a => a.pos<=3).length;
+  pills.innerHTML = `<span class="pill pill-n">${valid.length} atletas</span>
+    <span class="pill pill-n">${totalPts} pts</span>
+    ${podios ? `<span class="pill pill-w">${podios} pódio${podios>1?'s':''}</span>` : ''}`;
+
+  renderView();
+}
+
+function renderView() {
+  const p     = provas[currentProva];
+  const valid = p.atletas.filter(a => a.tempo);
+  const body  = document.getElementById('prova-body');
+
+  if (currentView === 'geral') {
+    const sorted = [...valid].sort((a,b) => toSec(a.tempo)-toSec(b.tempo));
+    body.innerHTML = `<div class="athlete-list">${sorted.map(a => athleteRow(a)).join('')}</div>`;
+  } else {
+    const map = {};
+    valid.forEach(a => { (map[a.classe] = map[a.classe]||[]).push(a); });
+    Object.values(map).forEach(arr => arr.sort((a,b) => toSec(a.tempo)-toSec(b.tempo)));
+    let html = '<div class="athlete-list">';
+    for (const [esc, arr] of Object.entries(map)) {
+      const pts = arr.reduce((s,a)=>s+a.pts,0);
+      html += `<div class="esc-group-header">${esc}<span>${arr.length} atleta${arr.length>1?'s':''} · ${pts} pts</span></div>`;
+      html += arr.map(a => athleteRow(a, false)).join('');
+    }
+    html += '</div>';
+    body.innerHTML = html;
+  }
+}
+
+function setView(v) {
+  currentView = v;
+  document.getElementById('vb-geral').classList.toggle('active', v==='geral');
+  document.getElementById('vb-esc').classList.toggle('active', v==='escalao');
+  renderView();
+}
+
+function showProva(idx) {
+  for (let i=0;i<6;i++) document.getElementById('pb'+i).classList.toggle('active', i===idx);
+  currentView = 'geral';
+  document.getElementById('vb-geral').classList.add('active');
+  document.getElementById('vb-esc').classList.remove('active');
+  renderProva(idx);
+}
+
+function renderPodios() {
+  const all = provas.flatMap(p=>p.atletas).filter(a=>a.tempo&&a.pos<=3);
+  all.sort((a,b)=>a.pos-b.pos||toSec(a.tempo)-toSec(b.tempo));
+  document.getElementById('podios-body').innerHTML =
+    `<div class="athlete-list">${all.map(a=>athleteRow(a)).join('')}</div>`;
+}
+
+function renderClubes() {
+  if (clubesChart) return;
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const gridColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.07)';
+  const tickColor = isDark ? '#888780' : '#888780';
+  clubesChart = new Chart(document.getElementById('clubesChart'), {
+    type: 'bar',
+    data: {
+      labels: clubesData.map(d=>d[0]),
+      datasets: [{
+        data: clubesData.map(d=>d[1]),
+        backgroundColor: clubesData.map(d => d[0]==='SIMECQ' ? '#1d9e75' : (isDark?'#444441':'#b4b2a9')),
+        borderRadius: 4,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: gridColor }, ticks: { color: tickColor, font: { size: 11 } } },
+        y: { grid: { display: false },   ticks: { color: (ctx) => clubesData[ctx.index]?.[0]==='SIMECQ' ? '#1d9e75' : tickColor, font: { size: 11 } } }
+      }
+    }
+  });
+}
+
+function renderEscaloes() {
+  if (escChart) return;
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const map = {};
+  provas.flatMap(p=>p.atletas).filter(a=>a.tempo).forEach(a => { map[a.classe]=(map[a.classe]||0)+a.pts; });
+  const sorted = Object.entries(map).sort((a,b)=>b[1]-a[1]);
+  escChart = new Chart(document.getElementById('escaloesChart'), {
+    type: 'bar',
+    data: {
+      labels: sorted.map(e=>e[0]),
+      datasets: [{ data: sorted.map(e=>e[1]), backgroundColor: '#5dcaa5', borderRadius: 4 }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#888780', font: { size: 11 }, maxRotation: 40, autoSkip: false } },
+        y: { grid: { color: isDark?'rgba(255,255,255,0.08)':'rgba(0,0,0,0.07)' }, ticks: { color: '#888780', font: { size: 11 } } }
+      }
+    }
+  });
+}
+
+function showTab(name) {
+  document.querySelectorAll('.tab-panel').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  document.querySelectorAll('.tabs > .tab-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('onclick').includes("'"+name+"'"));
+  });
+  if (name==='clubes')   renderClubes();
+  if (name==='escaloes') renderEscaloes();
+  if (name==='podios')   renderPodios();
+}
+
+// Init
+showProva(0);
+</script>
+</body>
+</html>
