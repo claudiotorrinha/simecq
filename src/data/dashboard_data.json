@@ -1,0 +1,4783 @@
+{
+  "races": [
+    {
+      "id": "gp-milha-de-queijas",
+      "event_date": "01/12/2025",
+      "simecq_results": [
+        {
+          "escalao": "Sub 10 - Femininos",
+          "posicao": 20,
+          "dorsal": "3230",
+          "nome": "Valentina Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:02:49:610s",
+          "prova": "Prova 14"
+        },
+        {
+          "escalao": "Sub 14 - Masculinos",
+          "posicao": 13,
+          "dorsal": "3108",
+          "nome": "BRUNO  PIROLA",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:03:39:180s",
+          "prova": "Prova 12"
+        },
+        {
+          "escalao": "Sub 14 - Femininos",
+          "posicao": 17,
+          "dorsal": "3113",
+          "nome": "Miriam Sousa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:04:18:80s",
+          "prova": "Prova 12"
+        },
+        {
+          "escalao": "Sub 14 - Femininos",
+          "posicao": 18,
+          "dorsal": "3114",
+          "nome": "Sienna Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:04:23:160s",
+          "prova": "Prova 12"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 9,
+          "dorsal": "904",
+          "nome": "Marta Neves",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:07:17:320s",
+          "prova": "Prova 8"
+        },
+        {
+          "escalao": "Sub 20 - Femininos",
+          "posicao": 2,
+          "dorsal": "857",
+          "nome": "Clara Guedes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:07:31:260s",
+          "prova": "Prova 8"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 16,
+          "dorsal": "852",
+          "nome": "Bruno  Pinto",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:06:32:640s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 18,
+          "dorsal": "922",
+          "nome": "Pedro Rijo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:06:43:70s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 9,
+          "dorsal": "931",
+          "nome": "Susana Jorge",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:06:18:470s",
+          "prova": "Prova 9"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 12,
+          "dorsal": "858",
+          "nome": "Claúdia  Jerónimo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:06:39:80s",
+          "prova": "Prova 9"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 10,
+          "dorsal": "912",
+          "nome": "Nuno Graça",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:05:07:650s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 26,
+          "dorsal": "1232",
+          "nome": "Claudio Torrinha",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:05:45:730s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 34,
+          "dorsal": "924",
+          "nome": "Ricardo Nobre",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:06:18:550s",
+          "prova": "Prova 3"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 40,
+          "dorsal": "938",
+          "nome": "Yuri Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:06:26:260s",
+          "prova": "Prova 3"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 73,
+          "dorsal": "886",
+          "nome": "Jorge Ramos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:07:24:920s",
+          "prova": "Prova 3"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 21,
+          "dorsal": "930",
+          "nome": "Sandra Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:07:50:600s",
+          "prova": "Prova 11"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 36,
+          "dorsal": "859",
+          "nome": "Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:08:26:500s",
+          "prova": "Prova 11"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 16,
+          "dorsal": "864",
+          "nome": "Emanuel Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:05:43:590s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 33,
+          "dorsal": "509",
+          "nome": "Luis Costa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:06:14:420s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 37,
+          "dorsal": "920",
+          "nome": "Paulo Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:06:22:500s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 60,
+          "dorsal": "487",
+          "nome": "Bernardo Salavessa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:06:53:200s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 6,
+          "dorsal": "844",
+          "nome": "Ana Coelho",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:06:43:330s",
+          "prova": "Prova 10"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 9,
+          "dorsal": "874",
+          "nome": "Henrique Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:05:53:450s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 18,
+          "dorsal": "908",
+          "nome": "Miguel Lourenço",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:06:31:590s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 32,
+          "dorsal": "916",
+          "nome": "Orlando  Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:07:19:440s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 43,
+          "dorsal": "927",
+          "nome": "Rodrigo Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:08:15:100s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 44,
+          "dorsal": "893",
+          "nome": "Luís Correia",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:08:17:40s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 5,
+          "dorsal": "865",
+          "nome": "Eugénia Ribeiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 9.0,
+          "tempo": "00:07:12:680s",
+          "prova": "Prova 10"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 7,
+          "dorsal": "968",
+          "nome": "Isabel  Rodrigues",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:07:27:40s",
+          "prova": "Prova 10"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 16,
+          "dorsal": "845",
+          "nome": "Ana Nunes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:07:50:730s",
+          "prova": "Prova 10"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 23,
+          "dorsal": "899",
+          "nome": "Maria Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:08:24:10s",
+          "prova": "Prova 10"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 33,
+          "dorsal": "846",
+          "nome": "Ana Cristina Viegas",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:09:25:900s",
+          "prova": "Prova 10"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 34,
+          "dorsal": "895",
+          "nome": "Madalena Magalhães",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:09:27:610s",
+          "prova": "Prova 10"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 19,
+          "dorsal": "936",
+          "nome": "Vitor Vital",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:06:39:420s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 23,
+          "dorsal": "911",
+          "nome": "Nuno Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:07:13:270s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "F 60",
+          "posicao": 11,
+          "dorsal": "915",
+          "nome": "Olga Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:09:23:720s",
+          "prova": "Prova 11"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 10,
+          "dorsal": "867",
+          "nome": "Fernando Rosa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:06:25:520s",
+          "prova": "Prova 6"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 2,
+          "dorsal": "902",
+          "nome": "Maria João  Ferreira Franco Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:08:38:700s",
+          "prova": "Prova 11"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 3,
+          "dorsal": "900",
+          "nome": "Maria João Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:09:44:720s",
+          "prova": "Prova 11"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 9,
+          "dorsal": "842",
+          "nome": "Alda  Sebastião",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:12:12:00s",
+          "prova": "Prova 11"
+        }
+      ],
+      "club_rankings": [
+        {
+          "posicao": 1,
+          "clube": "Associação Desportiva NucleOeiras - ADNO",
+          "pontos": 731.0
+        },
+        {
+          "posicao": 2,
+          "clube": "Associação Run Tejo",
+          "pontos": 470.0
+        },
+        {
+          "posicao": 3,
+          "clube": "Linda-a-Pastora Sporting Clube",
+          "pontos": 469.0
+        },
+        {
+          "posicao": 4,
+          "clube": "Grupo Musical 1º Dezembro Queijas",
+          "pontos": 356.0
+        },
+        {
+          "posicao": 5,
+          "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
+          "pontos": 235.0
+        },
+        {
+          "posicao": 6,
+          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+          "pontos": 212.0
+        },
+        {
+          "posicao": 7,
+          "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
+          "pontos": 167.0
+        },
+        {
+          "posicao": 8,
+          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+          "pontos": 160.0
+        },
+        {
+          "posicao": 9,
+          "clube": "CLUBE DE ATLETISMO DE VALE DE FIGUEIRA",
+          "pontos": 148.0
+        },
+        {
+          "posicao": 10,
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 145.0
+        },
+        {
+          "posicao": 11,
+          "clube": "Miles & Vibes",
+          "pontos": 121.0
+        },
+        {
+          "posicao": 12,
+          "clube": "Maratona Clube de Portugal",
+          "pontos": 104.0
+        },
+        {
+          "posicao": 13,
+          "clube": "CF OS BELENENSES",
+          "pontos": 97.0
+        },
+        {
+          "posicao": 14,
+          "clube": "Valejas Atlético Clube",
+          "pontos": 90.0
+        },
+        {
+          "posicao": 15,
+          "clube": "Sport Ponto Come",
+          "pontos": 82.0
+        },
+        {
+          "posicao": 16,
+          "clube": "GMCJamor",
+          "pontos": 76.0
+        },
+        {
+          "posicao": 17,
+          "clube": "Associação de Moradores 18 de Maio",
+          "pontos": 71.0
+        },
+        {
+          "posicao": 18,
+          "clube": "Grupo Desportivo de Barcarena",
+          "pontos": 59.0
+        },
+        {
+          "posicao": 19,
+          "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
+          "pontos": 54.0
+        },
+        {
+          "posicao": 20,
+          "clube": "Núcleo do Sporting Clube de Portugal de Minde",
+          "pontos": 30.0
+        },
+        {
+          "posicao": 21,
+          "clube": "Academia Recreativa de Linda-a-Velha",
+          "pontos": 28.0
+        },
+        {
+          "posicao": 22,
+          "clube": "Federação da Família para a Paz Mundial e Unificação",
+          "pontos": 26.0
+        },
+        {
+          "posicao": 23,
+          "clube": "ACR Mealhada",
+          "pontos": 25.0
+        },
+        {
+          "posicao": 24,
+          "clube": "CASA DO BENFICA EM ALGUEIRÃO MEM MARTINS - SINTRA",
+          "pontos": 25.0
+        },
+        {
+          "posicao": 25,
+          "clube": "Agualva Runners",
+          "pontos": 24.0
+        },
+        {
+          "posicao": 26,
+          "clube": "Taebak Triângulo Taekwondo",
+          "pontos": 22.0
+        },
+        {
+          "posicao": 27,
+          "clube": "AAM - ASSOCIAÇÃO DOS AMIGOS DO ATLETISMO DE MAFRA",
+          "pontos": 21.0
+        },
+        {
+          "posicao": 28,
+          "clube": "Associação de Pára-quedistas Tejo-Norte",
+          "pontos": 21.0
+        },
+        {
+          "posicao": 29,
+          "clube": "New Me",
+          "pontos": 19.0
+        },
+        {
+          "posicao": 30,
+          "clube": "Os Galgos",
+          "pontos": 11.0
+        },
+        {
+          "posicao": 31,
+          "clube": "Team el Comandante",
+          "pontos": 11.0
+        },
+        {
+          "posicao": 32,
+          "clube": "ADR O RELÂMPAGO",
+          "pontos": 7.0
+        },
+        {
+          "posicao": 33,
+          "clube": "FreeRunners",
+          "pontos": 6.0
+        },
+        {
+          "posicao": 34,
+          "clube": "JOMA",
+          "pontos": 3.0
+        },
+        {
+          "posicao": 35,
+          "clube": "TAEBAEK TRIANGULO TAEKWONDO",
+          "pontos": 3.0
+        },
+        {
+          "posicao": 36,
+          "clube": "Desporto Oeiras",
+          "pontos": 2.0
+        },
+        {
+          "posicao": 37,
+          "clube": "Santa casa da Misericórdia de Fornos de Algodres",
+          "pontos": 1.0
+        },
+        {
+          "posicao": 37,
+          "clube": "Prime Running",
+          "pontos": 1.0
+        }
+      ]
+    },
+    {
+      "id": "gp-cruz-quebrada",
+      "event_date": "14/12/2025",
+      "simecq_results": [
+        {
+          "escalao": "Sub 12 - Masculinos",
+          "posicao": 20,
+          "dorsal": "3112",
+          "nome": "Duarte Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:02:16:720s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "Sub 14 - Masculinos",
+          "posicao": 15,
+          "dorsal": "3108",
+          "nome": "BRUNO  PIROLA",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:03:54:00s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "Sub 14 - Femininos",
+          "posicao": 12,
+          "dorsal": "3114",
+          "nome": "Sienna Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:04:46:190s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 7,
+          "dorsal": "904",
+          "nome": "Marta Neves",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:19:57:540s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 8,
+          "dorsal": "869",
+          "nome": "Lara Correia",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:23:13:960s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 20 - Masculinos",
+          "posicao": 6,
+          "dorsal": "868",
+          "nome": "Filipe Gama",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:15:15:110s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 20 - Masculinos",
+          "posicao": 8,
+          "dorsal": "892",
+          "nome": "Lourenço Marta",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:16:57:990s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 20 - Masculinos",
+          "posicao": 10,
+          "dorsal": "1927",
+          "nome": "Afonso Matos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:17:27:550s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 20 - Femininos",
+          "posicao": 1,
+          "dorsal": "857",
+          "nome": "Clara Guedes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 15.0,
+          "tempo": "00:18:16:780s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 11,
+          "dorsal": "905",
+          "nome": "Martim  Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:32:47:610s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 14,
+          "dorsal": "922",
+          "nome": "Pedro Rijo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:39:21:560s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 19,
+          "dorsal": "849",
+          "nome": "Bernardo  Batista",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:31:47:810s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 20,
+          "dorsal": "873",
+          "nome": "Gonçalo Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:31:48:890s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 27,
+          "dorsal": "883",
+          "nome": "João Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:33:01:620s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 45,
+          "dorsal": "848",
+          "nome": "André  Viseu",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:38:34:110s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 46,
+          "dorsal": "850",
+          "nome": "Brar Momme  Rickmers",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:39:20:840s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 2,
+          "dorsal": "926",
+          "nome": "Rita Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:15:57:770s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 7,
+          "dorsal": "931",
+          "nome": "Susana Jorge",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:16:56:290s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 11,
+          "dorsal": "925",
+          "nome": "Rita García-Mon",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:18:26:80s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 12,
+          "dorsal": "858",
+          "nome": "Claúdia  Jerónimo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:18:40:930s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 24,
+          "dorsal": "897",
+          "nome": "Marcela da Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:21:01:680s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 26,
+          "dorsal": "1924",
+          "nome": "Ema Hinckley",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:21:51:80s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 32,
+          "dorsal": "879",
+          "nome": "Joana  Loureiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:24:04:20s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 33,
+          "dorsal": "1234",
+          "nome": "Ana Tetino",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:24:28:490s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 36,
+          "dorsal": "861",
+          "nome": "Elisa Reis",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:27:06:750s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 7,
+          "dorsal": "843",
+          "nome": "Alexandre  Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:28:47:280s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 8,
+          "dorsal": "1519",
+          "nome": "Pedro Simões",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:28:51:270s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 41,
+          "dorsal": "1520",
+          "nome": "João Calafate",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:38:35:990s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 4,
+          "dorsal": "912",
+          "nome": "Nuno Graça",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:27:03:350s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 17,
+          "dorsal": "888",
+          "nome": "José Carmo da Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:30:41:280s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 41,
+          "dorsal": "1232",
+          "nome": "Claudio Torrinha",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:35:05:590s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 55,
+          "dorsal": "933",
+          "nome": "Tiago Andrade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:39:19:870s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 63,
+          "dorsal": "881",
+          "nome": "João Gonçalves",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:45:34:100s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 40",
+          "posicao": 7,
+          "dorsal": "856",
+          "nome": "Célia Lopes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:19:08:400s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 52,
+          "dorsal": "938",
+          "nome": "Yuri Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:35:51:670s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 69,
+          "dorsal": "914",
+          "nome": "Nuno Sobral",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:38:48:510s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 77,
+          "dorsal": "924",
+          "nome": "Ricardo Nobre",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:40:27:410s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 10,
+          "dorsal": "930",
+          "nome": "Sandra Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:19:32:680s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 32,
+          "dorsal": "859",
+          "nome": "Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:22:54:590s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 41,
+          "dorsal": "876",
+          "nome": "Isabel Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:26:57:510s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 25,
+          "dorsal": "864",
+          "nome": "Emanuel Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:33:34:640s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 26,
+          "dorsal": "509",
+          "nome": "Luis Costa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:33:43:130s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 31,
+          "dorsal": "920",
+          "nome": "Paulo Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:34:43:160s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 43,
+          "dorsal": "870",
+          "nome": "Filipe Ribeiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:36:46:800s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 7,
+          "dorsal": "844",
+          "nome": "Ana Coelho",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:17:54:550s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 21,
+          "dorsal": "891",
+          "nome": "Lia Moreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:21:05:660s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 23,
+          "dorsal": "917",
+          "nome": "Paula Leitão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:21:32:580s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 35,
+          "dorsal": "847",
+          "nome": "Ana  Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:25:27:200s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 25,
+          "dorsal": "908",
+          "nome": "Miguel Lourenço",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:36:41:610s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 30,
+          "dorsal": "927",
+          "nome": "Rodrigo Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:38:51:260s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 33,
+          "dorsal": "909",
+          "nome": "Miguel Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:39:12:230s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 4,
+          "dorsal": "968",
+          "nome": "Isabel  Rodrigues",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:19:48:670s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 6,
+          "dorsal": "865",
+          "nome": "Eugénia Ribeiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:20:09:110s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 12,
+          "dorsal": "845",
+          "nome": "Ana Nunes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:21:02:280s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 22,
+          "dorsal": "899",
+          "nome": "Maria Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:23:03:480s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 25,
+          "dorsal": "895",
+          "nome": "Madalena Magalhães",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:24:03:950s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 27,
+          "dorsal": "855",
+          "nome": "Celeste Almeida",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:24:49:370s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 29,
+          "dorsal": "846",
+          "nome": "Ana Cristina Viegas",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:25:19:520s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 19,
+          "dorsal": "936",
+          "nome": "Vitor Vital",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:18:18:350s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 31,
+          "dorsal": "911",
+          "nome": "Nuno Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:19:56:210s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 43,
+          "dorsal": "887",
+          "nome": "Jorge Valadares",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:23:45:400s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 60",
+          "posicao": 13,
+          "dorsal": "915",
+          "nome": "Olga Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:25:08:710s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 10,
+          "dorsal": "867",
+          "nome": "Fernando Rosa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:17:05:340s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 26,
+          "dorsal": "854",
+          "nome": "Carlos Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:20:35:580s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 29,
+          "dorsal": "921",
+          "nome": "Paulo Jorge Duarte Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:20:50:900s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 38,
+          "dorsal": "885",
+          "nome": "João Teixeira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:25:45:60s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 2,
+          "dorsal": "902",
+          "nome": "Maria João  Ferreira Franco Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:23:02:10s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 3,
+          "dorsal": "900",
+          "nome": "Maria João Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:26:25:40s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 8,
+          "dorsal": "842",
+          "nome": "Alda  Sebastião",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:28:54:350s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 75",
+          "posicao": 16,
+          "dorsal": "937",
+          "nome": "Wilson Gonçalves",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:28:19:710s",
+          "prova": "Prova 2"
+        }
+      ],
+      "club_rankings": [
+        {
+          "posicao": 1,
+          "clube": "Associação Desportiva NucleOeiras - ADNO",
+          "pontos": 743.0
+        },
+        {
+          "posicao": 2,
+          "clube": "Linda-a-Pastora Sporting Clube",
+          "pontos": 508.0
+        },
+        {
+          "posicao": 3,
+          "clube": "Associação Run Tejo",
+          "pontos": 403.0
+        },
+        {
+          "posicao": 4,
+          "clube": "Grupo Musical 1º Dezembro Queijas",
+          "pontos": 283.0
+        },
+        {
+          "posicao": 5,
+          "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
+          "pontos": 263.0
+        },
+        {
+          "posicao": 6,
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 252.0
+        },
+        {
+          "posicao": 7,
+          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+          "pontos": 245.0
+        },
+        {
+          "posicao": 8,
+          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+          "pontos": 214.0
+        },
+        {
+          "posicao": 9,
+          "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
+          "pontos": 149.0
+        },
+        {
+          "posicao": 10,
+          "clube": "Miles & Vibes",
+          "pontos": 112.0
+        },
+        {
+          "posicao": 11,
+          "clube": "Maratona Clube de Portugal",
+          "pontos": 94.0
+        },
+        {
+          "posicao": 12,
+          "clube": "Valejas Atlético Clube",
+          "pontos": 88.0
+        },
+        {
+          "posicao": 13,
+          "clube": "Sport Ponto Come",
+          "pontos": 86.0
+        },
+        {
+          "posicao": 14,
+          "clube": "Grupo Desportivo de Barcarena",
+          "pontos": 79.0
+        },
+        {
+          "posicao": 15,
+          "clube": "GMCJamor",
+          "pontos": 75.0
+        },
+        {
+          "posicao": 16,
+          "clube": "CF OS BELENENSES",
+          "pontos": 71.0
+        },
+        {
+          "posicao": 17,
+          "clube": "Associação de Moradores 18 de Maio",
+          "pontos": 70.0
+        },
+        {
+          "posicao": 18,
+          "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
+          "pontos": 61.0
+        },
+        {
+          "posicao": 19,
+          "clube": "CLUBE DE ATLETISMO DE VALE DE FIGUEIRA",
+          "pontos": 40.0
+        },
+        {
+          "posicao": 20,
+          "clube": "CASA DO BENFICA EM ALGUEIRÃO MEM MARTINS - SINTRA",
+          "pontos": 39.0
+        },
+        {
+          "posicao": 21,
+          "clube": "Agualva Runners",
+          "pontos": 34.0
+        },
+        {
+          "posicao": 22,
+          "clube": "New Me",
+          "pontos": 31.0
+        },
+        {
+          "posicao": 23,
+          "clube": "Taebak Triângulo Taekwondo",
+          "pontos": 28.0
+        },
+        {
+          "posicao": 24,
+          "clube": "Atlético Clube de Porto Salvo",
+          "pontos": 26.0
+        },
+        {
+          "posicao": 25,
+          "clube": "Academia Recreativa de Linda-a-Velha",
+          "pontos": 22.0
+        },
+        {
+          "posicao": 26,
+          "clube": "Associação de Pára-quedistas Tejo-Norte",
+          "pontos": 18.0
+        },
+        {
+          "posicao": 27,
+          "clube": "Federação da Família para a Paz Mundial e Unificação",
+          "pontos": 13.0
+        },
+        {
+          "posicao": 28,
+          "clube": "TAEBAEK TRIANGULO TAEKWONDO",
+          "pontos": 12.0
+        },
+        {
+          "posicao": 29,
+          "clube": "Núcleo do Sporting Clube de Portugal de Minde",
+          "pontos": 8.0
+        },
+        {
+          "posicao": 30,
+          "clube": "ADR O RELÂMPAGO",
+          "pontos": 8.0
+        },
+        {
+          "posicao": 31,
+          "clube": "JOMA",
+          "pontos": 6.0
+        },
+        {
+          "posicao": 32,
+          "clube": "FreeRunners",
+          "pontos": 5.0
+        },
+        {
+          "posicao": 33,
+          "clube": "AAM - ASSOCIAÇÃO DOS AMIGOS DO ATLETISMO DE MAFRA",
+          "pontos": 3.0
+        },
+        {
+          "posicao": 34,
+          "clube": "Prime Running",
+          "pontos": 2.0
+        },
+        {
+          "posicao": 35,
+          "clube": "Santa casa da Misericórdia de Fornos de Algodres",
+          "pontos": 1.0
+        },
+        {
+          "posicao": 35,
+          "clube": "ACDCOTOVIA",
+          "pontos": 1.0
+        }
+      ]
+    },
+    {
+      "id": "gp-ribeira-da-lage",
+      "event_date": "22/02/2026",
+      "simecq_results": [
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 4,
+          "dorsal": "904",
+          "nome": "Marta Neves",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:18:52:220s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 14,
+          "dorsal": "852",
+          "nome": "Bruno  Pinto",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:35:19:630s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 16,
+          "dorsal": "853",
+          "nome": "Carlos Gomes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:29:19:140s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 19,
+          "dorsal": "883",
+          "nome": "João Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:29:31:50s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 57,
+          "dorsal": "848",
+          "nome": "André  Viseu",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:43:08:00s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 3,
+          "dorsal": "926",
+          "nome": "Rita Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:16:09:950s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 9,
+          "dorsal": "858",
+          "nome": "Claúdia  Jerónimo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:18:18:460s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 21,
+          "dorsal": "897",
+          "nome": "Marcela da Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:23:45:00s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 11,
+          "dorsal": "1519",
+          "nome": "Pedro Simões",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:26:51:340s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 23,
+          "dorsal": "929",
+          "nome": "Tomás  Nogueira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:30:50:830s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 13,
+          "dorsal": "888",
+          "nome": "José Carmo da Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:28:57:560s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 30,
+          "dorsal": "1232",
+          "nome": "Claudio Torrinha",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:32:58:890s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 40",
+          "posicao": 6,
+          "dorsal": "856",
+          "nome": "Célia Lopes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:18:54:610s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 35,
+          "dorsal": "938",
+          "nome": "Yuri Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:33:33:290s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 42,
+          "dorsal": "924",
+          "nome": "Ricardo Nobre",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:35:24:830s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 9,
+          "dorsal": "930",
+          "nome": "Sandra Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:20:27:630s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 23,
+          "dorsal": "859",
+          "nome": "Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:24:14:110s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 21,
+          "dorsal": "864",
+          "nome": "Emanuel Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:31:19:890s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 29,
+          "dorsal": "920",
+          "nome": "Paulo Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:33:05:510s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 61,
+          "dorsal": "487",
+          "nome": "Bernardo Salavessa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:37:48:660s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 15,
+          "dorsal": "891",
+          "nome": "Lia Moreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:22:17:140s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 24,
+          "dorsal": "847",
+          "nome": "Ana  Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:27:01:310s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 6,
+          "dorsal": "884",
+          "nome": "João Narra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:27:36:810s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 11,
+          "dorsal": "874",
+          "nome": "Henrique Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:29:53:610s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 16,
+          "dorsal": "908",
+          "nome": "Miguel Lourenço",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:33:45:410s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 20,
+          "dorsal": "889",
+          "nome": "José  Véstias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:34:41:100s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 24,
+          "dorsal": "927",
+          "nome": "Rodrigo Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:35:54:190s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 29,
+          "dorsal": "909",
+          "nome": "Miguel Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:36:51:920s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 40,
+          "dorsal": "916",
+          "nome": "Orlando  Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:43:10:370s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 2,
+          "dorsal": "865",
+          "nome": "Eugénia Ribeiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:19:25:290s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 15,
+          "dorsal": "845",
+          "nome": "Ana Nunes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:23:14:560s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 17,
+          "dorsal": "899",
+          "nome": "Maria Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:23:26:810s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 18,
+          "dorsal": "895",
+          "nome": "Madalena Magalhães",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:24:24:790s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 22,
+          "dorsal": "846",
+          "nome": "Ana Cristina Viegas",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:25:50:130s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 24,
+          "dorsal": "855",
+          "nome": "Celeste Almeida",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:26:16:90s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 15,
+          "dorsal": "919",
+          "nome": "Paulo Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:19:01:740s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 23,
+          "dorsal": "871",
+          "nome": "Flamino Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:20:30:00s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 27,
+          "dorsal": "911",
+          "nome": "Nuno Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:21:53:560s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 37,
+          "dorsal": "887",
+          "nome": "Jorge Valadares",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:26:01:890s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 38,
+          "dorsal": "936",
+          "nome": "Vitor Vital",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:27:13:360s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 60",
+          "posicao": 10,
+          "dorsal": "915",
+          "nome": "Olga Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:25:11:00s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 5,
+          "dorsal": "867",
+          "nome": "Fernando Rosa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 9.0,
+          "tempo": "00:17:22:780s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 21,
+          "dorsal": "854",
+          "nome": "Carlos Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:22:02:230s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 2,
+          "dorsal": "900",
+          "nome": "Maria João Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:27:15:850s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 6,
+          "dorsal": "842",
+          "nome": "Alda  Sebastião",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:29:55:590s",
+          "prova": "Prova 2"
+        }
+      ],
+      "club_rankings": [
+        {
+          "posicao": 1,
+          "clube": "Associação Desportiva NucleOeiras - ADNO",
+          "pontos": 580.0
+        },
+        {
+          "posicao": 2,
+          "clube": "Associação Run Tejo",
+          "pontos": 519.0
+        },
+        {
+          "posicao": 3,
+          "clube": "Linda-a-Pastora Sporting Clube",
+          "pontos": 505.0
+        },
+        {
+          "posicao": 4,
+          "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
+          "pontos": 250.0
+        },
+        {
+          "posicao": 5,
+          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+          "pontos": 227.0
+        },
+        {
+          "posicao": 6,
+          "clube": "Grupo Musical 1º Dezembro Queijas",
+          "pontos": 227.0
+        },
+        {
+          "posicao": 7,
+          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+          "pontos": 203.0
+        },
+        {
+          "posicao": 8,
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 168.0
+        },
+        {
+          "posicao": 9,
+          "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
+          "pontos": 150.0
+        },
+        {
+          "posicao": 10,
+          "clube": "GMCJamor",
+          "pontos": 112.0
+        },
+        {
+          "posicao": 11,
+          "clube": "Valejas Atlético Clube",
+          "pontos": 109.0
+        },
+        {
+          "posicao": 12,
+          "clube": "Miles & Vibes",
+          "pontos": 109.0
+        },
+        {
+          "posicao": 13,
+          "clube": "Maratona Clube de Portugal",
+          "pontos": 99.0
+        },
+        {
+          "posicao": 14,
+          "clube": "Grupo Desportivo de Barcarena",
+          "pontos": 87.0
+        },
+        {
+          "posicao": 15,
+          "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
+          "pontos": 76.0
+        },
+        {
+          "posicao": 16,
+          "clube": "Sport Ponto Come",
+          "pontos": 73.0
+        },
+        {
+          "posicao": 17,
+          "clube": "Associação de Moradores 18 de Maio",
+          "pontos": 37.0
+        },
+        {
+          "posicao": 18,
+          "clube": "Academia Recreativa de Linda-a-Velha",
+          "pontos": 35.0
+        },
+        {
+          "posicao": 19,
+          "clube": "Agualva Runners",
+          "pontos": 34.0
+        },
+        {
+          "posicao": 20,
+          "clube": "Atlético Clube de Porto Salvo",
+          "pontos": 31.0
+        },
+        {
+          "posicao": 21,
+          "clube": "New Me",
+          "pontos": 25.0
+        },
+        {
+          "posicao": 22,
+          "clube": "Associação de Pára-quedistas Tejo-Norte",
+          "pontos": 23.0
+        },
+        {
+          "posicao": 23,
+          "clube": "CF OS BELENENSES",
+          "pontos": 13.0
+        },
+        {
+          "posicao": 24,
+          "clube": "ADR O RELÂMPAGO",
+          "pontos": 7.0
+        },
+        {
+          "posicao": 25,
+          "clube": "FreeRunners",
+          "pontos": 3.0
+        }
+      ]
+    },
+    {
+      "id": "gp-leiao",
+      "event_date": "22/03/2026",
+      "simecq_results": [
+        {
+          "escalao": "Sub 10 - Femininos",
+          "posicao": 14,
+          "dorsal": "3230",
+          "nome": "Valentina Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:02:26:910s",
+          "prova": "Prova 6"
+        },
+        {
+          "escalao": "Sub 14 - Femininos",
+          "posicao": 11,
+          "dorsal": "3113",
+          "nome": "Miriam Sousa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:06:40:00s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 4,
+          "dorsal": "904",
+          "nome": "Marta Neves",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:19:56:220s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 6,
+          "dorsal": "869",
+          "nome": "Lara Correia",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:23:20:550s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 12,
+          "dorsal": "852",
+          "nome": "Bruno  Pinto",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:35:58:770s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 13,
+          "dorsal": "853",
+          "nome": "Carlos Gomes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:31:05:00s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 16,
+          "dorsal": "883",
+          "nome": "João Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:31:44:810s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 36,
+          "dorsal": "890",
+          "nome": "João Jorge",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:37:49:940s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 45,
+          "dorsal": "848",
+          "nome": "André  Viseu",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:39:56:660s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 2,
+          "dorsal": "926",
+          "nome": "Rita Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:16:16:310s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 5,
+          "dorsal": "931",
+          "nome": "Susana Jorge",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 9.0,
+          "tempo": "00:18:38:710s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 6,
+          "dorsal": "858",
+          "nome": "Claúdia  Jerónimo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:18:50:820s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 19,
+          "dorsal": "879",
+          "nome": "Joana  Loureiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:23:53:330s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 28,
+          "dorsal": "1519",
+          "nome": "Pedro Simões",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:37:47:230s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 38,
+          "dorsal": "843",
+          "nome": "Alexandre  Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:45:33:30s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 2,
+          "dorsal": "912",
+          "nome": "Nuno Graça",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:26:00:00s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 10,
+          "dorsal": "888",
+          "nome": "José Carmo da Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:29:37:710s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 22,
+          "dorsal": "1232",
+          "nome": "Claudio Torrinha",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:32:30:550s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 43,
+          "dorsal": "933",
+          "nome": "Tiago Andrade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:38:35:280s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 40",
+          "posicao": 6,
+          "dorsal": "856",
+          "nome": "Célia Lopes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:19:48:770s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 32,
+          "dorsal": "924",
+          "nome": "Ricardo Nobre",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:34:14:760s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 50,
+          "dorsal": "938",
+          "nome": "Yuri Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:36:01:90s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 60,
+          "dorsal": "914",
+          "nome": "Nuno Sobral",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:37:46:00s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 78,
+          "dorsal": "1443",
+          "nome": "Moisés Rodrigues",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:43:22:720s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 10,
+          "dorsal": "930",
+          "nome": "Sandra Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:20:29:90s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 42,
+          "dorsal": "859",
+          "nome": "Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:28:50:640s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 14,
+          "dorsal": "864",
+          "nome": "Emanuel Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:31:39:300s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 31,
+          "dorsal": "920",
+          "nome": "Paulo Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:34:37:610s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 10,
+          "dorsal": "844",
+          "nome": "Ana Coelho",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:19:49:30s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 19,
+          "dorsal": "891",
+          "nome": "Lia Moreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:22:51:450s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 3,
+          "dorsal": "884",
+          "nome": "João Narra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:28:42:900s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 7,
+          "dorsal": "874",
+          "nome": "Henrique Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:30:29:360s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 22,
+          "dorsal": "908",
+          "nome": "Miguel Lourenço",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:37:32:300s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 23,
+          "dorsal": "889",
+          "nome": "José  Véstias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:37:34:00s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 28,
+          "dorsal": "927",
+          "nome": "Rodrigo Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:39:16:360s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 29,
+          "dorsal": "909",
+          "nome": "Miguel Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:39:33:50s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 38,
+          "dorsal": "916",
+          "nome": "Orlando  Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:42:21:650s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 1,
+          "dorsal": "865",
+          "nome": "Eugénia Ribeiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 15.0,
+          "tempo": "00:19:39:220s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 15,
+          "dorsal": "899",
+          "nome": "Maria Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:24:33:10s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 16,
+          "dorsal": "895",
+          "nome": "Madalena Magalhães",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:24:33:790s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 19,
+          "dorsal": "855",
+          "nome": "Celeste Almeida",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:25:40:840s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 20,
+          "dorsal": "846",
+          "nome": "Ana Cristina Viegas",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:26:03:620s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 23,
+          "dorsal": "919",
+          "nome": "Paulo Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:19:14:120s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 30,
+          "dorsal": "911",
+          "nome": "Nuno Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:20:40:270s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 36,
+          "dorsal": "936",
+          "nome": "Vitor Vital",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:21:29:120s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 48,
+          "dorsal": "887",
+          "nome": "Jorge Valadares",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:26:10:250s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 60",
+          "posicao": 10,
+          "dorsal": "915",
+          "nome": "Olga Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:25:59:920s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 6,
+          "dorsal": "867",
+          "nome": "Fernando Rosa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:17:29:170s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 20,
+          "dorsal": "854",
+          "nome": "Carlos Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:21:27:480s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 32,
+          "dorsal": "921",
+          "nome": "Paulo Jorge Duarte Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:23:46:950s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 2,
+          "dorsal": "902",
+          "nome": "Maria João  Ferreira Franco Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:25:29:470s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 3,
+          "dorsal": "900",
+          "nome": "Maria João Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:27:57:470s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 8,
+          "dorsal": "842",
+          "nome": "Alda  Sebastião",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:31:21:700s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 70",
+          "posicao": 7,
+          "dorsal": "862",
+          "nome": "Elisa  Rodrigues",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:36:54:590s",
+          "prova": "Prova 2"
+        }
+      ],
+      "club_rankings": [
+        {
+          "posicao": 1,
+          "clube": "Associação Desportiva NucleOeiras - ADNO",
+          "pontos": 670.0
+        },
+        {
+          "posicao": 2,
+          "clube": "Linda-a-Pastora Sporting Clube",
+          "pontos": 508.0
+        },
+        {
+          "posicao": 3,
+          "clube": "Associação Run Tejo",
+          "pontos": 478.0
+        },
+        {
+          "posicao": 4,
+          "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
+          "pontos": 240.0
+        },
+        {
+          "posicao": 5,
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 231.0
+        },
+        {
+          "posicao": 6,
+          "clube": "Grupo Musical 1º Dezembro Queijas",
+          "pontos": 229.0
+        },
+        {
+          "posicao": 7,
+          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+          "pontos": 219.0
+        },
+        {
+          "posicao": 8,
+          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+          "pontos": 203.0
+        },
+        {
+          "posicao": 9,
+          "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
+          "pontos": 162.0
+        },
+        {
+          "posicao": 10,
+          "clube": "GMCJamor",
+          "pontos": 109.0
+        },
+        {
+          "posicao": 11,
+          "clube": "Sport Ponto Come",
+          "pontos": 105.0
+        },
+        {
+          "posicao": 12,
+          "clube": "Valejas Atlético Clube",
+          "pontos": 76.0
+        },
+        {
+          "posicao": 13,
+          "clube": "Maratona Clube de Portugal",
+          "pontos": 74.0
+        },
+        {
+          "posicao": 14,
+          "clube": "Grupo Desportivo de Barcarena",
+          "pontos": 73.0
+        },
+        {
+          "posicao": 15,
+          "clube": "CF OS BELENENSES",
+          "pontos": 53.0
+        },
+        {
+          "posicao": 16,
+          "clube": "Miles & Vibes",
+          "pontos": 53.0
+        },
+        {
+          "posicao": 17,
+          "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
+          "pontos": 44.0
+        },
+        {
+          "posicao": 18,
+          "clube": "Atlético Clube de Porto Salvo",
+          "pontos": 39.0
+        },
+        {
+          "posicao": 19,
+          "clube": "Associação de Moradores 18 de Maio",
+          "pontos": 37.0
+        },
+        {
+          "posicao": 20,
+          "clube": "Academia Recreativa de Linda-a-Velha",
+          "pontos": 34.0
+        },
+        {
+          "posicao": 21,
+          "clube": "Núcleo do Sporting Clube de Portugal de Minde",
+          "pontos": 30.0
+        },
+        {
+          "posicao": 22,
+          "clube": "New Me",
+          "pontos": 28.0
+        },
+        {
+          "posicao": 23,
+          "clube": "Taebak Triângulo Taekwondo",
+          "pontos": 25.0
+        },
+        {
+          "posicao": 24,
+          "clube": "Associação de Pára-quedistas Tejo-Norte",
+          "pontos": 18.0
+        },
+        {
+          "posicao": 25,
+          "clube": "ADR O RELÂMPAGO",
+          "pontos": 17.0
+        },
+        {
+          "posicao": 26,
+          "clube": "TAEBAEK TRIANGULO TAEKWONDO",
+          "pontos": 15.0
+        },
+        {
+          "posicao": 27,
+          "clube": "CASA DO BENFICA EM ALGUEIRÃO MEM MARTINS - SINTRA",
+          "pontos": 14.0
+        },
+        {
+          "posicao": 28,
+          "clube": "Team el Comandante",
+          "pontos": 8.0
+        },
+        {
+          "posicao": 29,
+          "clube": "FreeRunners",
+          "pontos": 6.0
+        },
+        {
+          "posicao": 30,
+          "clube": "Santa casa da Misericórdia de Fornos de Algodres",
+          "pontos": 1.0
+        },
+        {
+          "posicao": 30,
+          "clube": "ACDCOTOVIA",
+          "pontos": 1.0
+        }
+      ]
+    },
+    {
+      "id": "gp-valejas",
+      "event_date": "29/03/2026",
+      "simecq_results": [
+        {
+          "escalao": "Sub 10 - Femininos",
+          "posicao": 10,
+          "dorsal": "3230",
+          "nome": "Valentina Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:02:51:570s",
+          "prova": "Prova 6"
+        },
+        {
+          "escalao": "Sub 14 - Femininos",
+          "posicao": 8,
+          "dorsal": "3115",
+          "nome": "Edmara Semedo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:05:05:380s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "Sub 14 - Femininos",
+          "posicao": 11,
+          "dorsal": "3113",
+          "nome": "Miriam Sousa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:05:51:00s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 3,
+          "dorsal": "869",
+          "nome": "Lara Correia",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:20:19:840s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 20 - Masculinos",
+          "posicao": 5,
+          "dorsal": "1927",
+          "nome": "Afonso Matos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 9.0,
+          "tempo": "00:18:23:80s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 8,
+          "dorsal": "853",
+          "nome": "Carlos Gomes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:31:52:30s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 3,
+          "dorsal": "926",
+          "nome": "Rita Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:14:45:760s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 12,
+          "dorsal": "879",
+          "nome": "Joana  Loureiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:20:39:830s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 4,
+          "dorsal": "1519",
+          "nome": "Pedro Simões",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:28:54:730s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 14,
+          "dorsal": "1232",
+          "nome": "Claudio Torrinha",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:34:31:760s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 28,
+          "dorsal": "933",
+          "nome": "Tiago Andrade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:38:37:270s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 25,
+          "dorsal": "938",
+          "nome": "Yuri Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:36:17:180s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 39,
+          "dorsal": "914",
+          "nome": "Nuno Sobral",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:39:34:520s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 7,
+          "dorsal": "930",
+          "nome": "Sandra Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:18:24:950s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 13,
+          "dorsal": "864",
+          "nome": "Emanuel Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:33:18:650s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 26,
+          "dorsal": "920",
+          "nome": "Paulo Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:36:23:140s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 6,
+          "dorsal": "844",
+          "nome": "Ana Coelho",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:17:46:460s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 22,
+          "dorsal": "891",
+          "nome": "Lia Moreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:22:45:470s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 26,
+          "dorsal": "847",
+          "nome": "Ana  Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:26:32:130s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 7,
+          "dorsal": "874",
+          "nome": "Henrique Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:31:57:840s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 18,
+          "dorsal": "889",
+          "nome": "José  Véstias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:39:12:990s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 19,
+          "dorsal": "927",
+          "nome": "Rodrigo Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:40:26:820s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 23,
+          "dorsal": "909",
+          "nome": "Miguel Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:41:16:00s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 13,
+          "dorsal": "895",
+          "nome": "Madalena Magalhães",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:22:03:40s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 15,
+          "dorsal": "899",
+          "nome": "Maria Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:22:22:250s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 16,
+          "dorsal": "855",
+          "nome": "Celeste Almeida",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:23:23:360s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 17,
+          "dorsal": "846",
+          "nome": "Ana Cristina Viegas",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:23:35:540s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 18,
+          "dorsal": "911",
+          "nome": "Nuno Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:18:35:910s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 21,
+          "dorsal": "936",
+          "nome": "Vitor Vital",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:19:00:160s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 60",
+          "posicao": 7,
+          "dorsal": "915",
+          "nome": "Olga Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:23:55:580s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 18,
+          "dorsal": "854",
+          "nome": "Carlos Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:19:32:900s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 1,
+          "dorsal": "900",
+          "nome": "Maria João Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 15.0,
+          "tempo": "00:25:10:490s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 4,
+          "dorsal": "842",
+          "nome": "Alda  Sebastião",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:27:36:410s",
+          "prova": "Prova 2"
+        }
+      ],
+      "club_rankings": [
+        {
+          "posicao": 1,
+          "clube": "Associação Desportiva NucleOeiras - ADNO",
+          "pontos": 564.0
+        },
+        {
+          "posicao": 2,
+          "clube": "Associação Run Tejo",
+          "pontos": 464.0
+        },
+        {
+          "posicao": 3,
+          "clube": "Linda-a-Pastora Sporting Clube",
+          "pontos": 442.0
+        },
+        {
+          "posicao": 4,
+          "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
+          "pontos": 251.0
+        },
+        {
+          "posicao": 5,
+          "clube": "Grupo Musical 1º Dezembro Queijas",
+          "pontos": 198.0
+        },
+        {
+          "posicao": 6,
+          "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
+          "pontos": 195.0
+        },
+        {
+          "posicao": 7,
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 162.0
+        },
+        {
+          "posicao": 8,
+          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+          "pontos": 145.0
+        },
+        {
+          "posicao": 9,
+          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+          "pontos": 143.0
+        },
+        {
+          "posicao": 10,
+          "clube": "Valejas Atlético Clube",
+          "pontos": 114.0
+        },
+        {
+          "posicao": 11,
+          "clube": "GMCJamor",
+          "pontos": 96.0
+        },
+        {
+          "posicao": 12,
+          "clube": "Grupo Desportivo de Barcarena",
+          "pontos": 89.0
+        },
+        {
+          "posicao": 13,
+          "clube": "Maratona Clube de Portugal",
+          "pontos": 75.0
+        },
+        {
+          "posicao": 14,
+          "clube": "Sport Ponto Come",
+          "pontos": 58.0
+        },
+        {
+          "posicao": 15,
+          "clube": "Associação de Moradores 18 de Maio",
+          "pontos": 54.0
+        },
+        {
+          "posicao": 16,
+          "clube": "Núcleo do Sporting Clube de Portugal de Minde",
+          "pontos": 35.0
+        },
+        {
+          "posicao": 17,
+          "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
+          "pontos": 33.0
+        },
+        {
+          "posicao": 18,
+          "clube": "Associação de Pára-quedistas Tejo-Norte",
+          "pontos": 29.0
+        },
+        {
+          "posicao": 19,
+          "clube": "CF OS BELENENSES",
+          "pontos": 28.0
+        },
+        {
+          "posicao": 20,
+          "clube": "Miles & Vibes",
+          "pontos": 24.0
+        },
+        {
+          "posicao": 21,
+          "clube": "Academia Recreativa de Linda-a-Velha",
+          "pontos": 21.0
+        },
+        {
+          "posicao": 22,
+          "clube": "New Me",
+          "pontos": 9.0
+        },
+        {
+          "posicao": 23,
+          "clube": "Associação Vitor Baptista",
+          "pontos": 5.0
+        },
+        {
+          "posicao": 24,
+          "clube": "Atlético Clube de Porto Salvo",
+          "pontos": 5.0
+        },
+        {
+          "posicao": 25,
+          "clube": "ADR O RELÂMPAGO",
+          "pontos": 2.0
+        },
+        {
+          "posicao": 25,
+          "clube": "Prime Running",
+          "pontos": 2.0
+        }
+      ]
+    },
+    {
+      "id": "gp-leceia",
+      "event_date": "11/04/2026",
+      "simecq_results": [
+        {
+          "escalao": "Sub 10 - Femininos",
+          "posicao": 14,
+          "dorsal": "3230",
+          "nome": "Valentina Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:01:41:50s",
+          "prova": "Prova 6"
+        },
+        {
+          "escalao": "Sub 14 - Femininos",
+          "posicao": 6,
+          "dorsal": "3115",
+          "nome": "Edmara Semedo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:05:09:780s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "Sub 14 - Femininos",
+          "posicao": 9,
+          "dorsal": "3113",
+          "nome": "Miriam Sousa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:05:53:630s",
+          "prova": "Prova 4"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 3,
+          "dorsal": "904",
+          "nome": "Marta Neves",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:19:43:260s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 4,
+          "dorsal": "869",
+          "nome": "Lara Correia",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:23:32:420s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 9,
+          "dorsal": "852",
+          "nome": "Bruno  Pinto",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:40:41:910s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 8,
+          "dorsal": "853",
+          "nome": "Carlos Gomes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:33:42:670s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 17,
+          "dorsal": "883",
+          "nome": "João Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:35:40:590s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 18,
+          "dorsal": "849",
+          "nome": "Bernardo  Batista",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:35:40:770s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 1,
+          "dorsal": "926",
+          "nome": "Rita Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 15.0,
+          "tempo": "00:16:37:10s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 4,
+          "dorsal": "858",
+          "nome": "Claúdia  Jerónimo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:19:13:220s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 13,
+          "dorsal": "897",
+          "nome": "Marcela da Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:23:50:00s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 31,
+          "dorsal": "843",
+          "nome": "Alexandre  Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:46:04:310s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 3,
+          "dorsal": "912",
+          "nome": "Nuno Graça",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:29:24:560s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 15,
+          "dorsal": "1232",
+          "nome": "Claudio Torrinha",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:37:01:500s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 31,
+          "dorsal": "938",
+          "nome": "Yuri Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:38:03:400s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 61,
+          "dorsal": "1443",
+          "nome": "Moisés Rodrigues",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:49:26:270s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 10,
+          "dorsal": "930",
+          "nome": "Sandra Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:21:27:180s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 17,
+          "dorsal": "509",
+          "nome": "Luis Costa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:36:59:180s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 20,
+          "dorsal": "920",
+          "nome": "Paulo Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:38:14:250s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 28,
+          "dorsal": "864",
+          "nome": "Emanuel Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:39:53:450s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 5,
+          "dorsal": "844",
+          "nome": "Ana Coelho",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 9.0,
+          "tempo": "00:19:13:550s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 15,
+          "dorsal": "891",
+          "nome": "Lia Moreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:23:20:480s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 21,
+          "dorsal": "847",
+          "nome": "Ana  Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:27:08:50s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 4,
+          "dorsal": "884",
+          "nome": "João Narra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:32:25:400s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 9,
+          "dorsal": "874",
+          "nome": "Henrique Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:35:01:580s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 21,
+          "dorsal": "889",
+          "nome": "José  Véstias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:41:18:630s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 26,
+          "dorsal": "909",
+          "nome": "Miguel Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:44:45:920s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 31,
+          "dorsal": "916",
+          "nome": "Orlando  Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:48:23:420s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 32,
+          "dorsal": "927",
+          "nome": "Rodrigo Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:49:17:410s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 2,
+          "dorsal": "865",
+          "nome": "Eugénia Ribeiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:20:26:830s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 12,
+          "dorsal": "895",
+          "nome": "Madalena Magalhães",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:24:50:380s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 13,
+          "dorsal": "899",
+          "nome": "Maria Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:24:50:740s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 17,
+          "dorsal": "855",
+          "nome": "Celeste Almeida",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:25:51:750s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 18,
+          "dorsal": "846",
+          "nome": "Ana Cristina Viegas",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:26:41:950s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 22,
+          "dorsal": "863",
+          "nome": "Elsa Almeida",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:28:48:80s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 19,
+          "dorsal": "919",
+          "nome": "Paulo Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:19:55:110s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 28,
+          "dorsal": "936",
+          "nome": "Vitor Vital",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:21:39:290s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 38,
+          "dorsal": "887",
+          "nome": "Jorge Valadares",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:27:18:640s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 60",
+          "posicao": 9,
+          "dorsal": "915",
+          "nome": "Olga Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:26:56:500s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 27,
+          "dorsal": "921",
+          "nome": "Paulo Jorge Duarte Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:24:06:990s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 2,
+          "dorsal": "902",
+          "nome": "Maria João  Ferreira Franco Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:26:04:330s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 4,
+          "dorsal": "900",
+          "nome": "Maria João Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:28:31:560s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 7,
+          "dorsal": "842",
+          "nome": "Alda  Sebastião",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:31:33:920s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 70",
+          "posicao": 6,
+          "dorsal": "862",
+          "nome": "Elisa  Rodrigues",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:37:08:370s",
+          "prova": "Prova 2"
+        }
+      ],
+      "club_rankings": [
+        {
+          "posicao": 1,
+          "clube": "Associação Desportiva NucleOeiras - ADNO",
+          "pontos": 645.0
+        },
+        {
+          "posicao": 2,
+          "clube": "Linda-a-Pastora Sporting Clube",
+          "pontos": 513.0
+        },
+        {
+          "posicao": 3,
+          "clube": "Associação Run Tejo",
+          "pontos": 348.0
+        },
+        {
+          "posicao": 4,
+          "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
+          "pontos": 230.0
+        },
+        {
+          "posicao": 5,
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 224.0
+        },
+        {
+          "posicao": 6,
+          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+          "pontos": 198.0
+        },
+        {
+          "posicao": 7,
+          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+          "pontos": 195.0
+        },
+        {
+          "posicao": 8,
+          "clube": "Grupo Musical 1º Dezembro Queijas",
+          "pontos": 180.0
+        },
+        {
+          "posicao": 9,
+          "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
+          "pontos": 163.0
+        },
+        {
+          "posicao": 10,
+          "clube": "Valejas Atlético Clube",
+          "pontos": 92.0
+        },
+        {
+          "posicao": 11,
+          "clube": "GMCJamor",
+          "pontos": 84.0
+        },
+        {
+          "posicao": 12,
+          "clube": "Sport Ponto Come",
+          "pontos": 76.0
+        },
+        {
+          "posicao": 13,
+          "clube": "Grupo Desportivo de Barcarena",
+          "pontos": 74.0
+        },
+        {
+          "posicao": 14,
+          "clube": "Associação de Moradores 18 de Maio",
+          "pontos": 69.0
+        },
+        {
+          "posicao": 15,
+          "clube": "Maratona Clube de Portugal",
+          "pontos": 65.0
+        },
+        {
+          "posicao": 16,
+          "clube": "Associação de Pára-quedistas Tejo-Norte",
+          "pontos": 56.0
+        },
+        {
+          "posicao": 17,
+          "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
+          "pontos": 52.0
+        },
+        {
+          "posicao": 18,
+          "clube": "Miles & Vibes",
+          "pontos": 50.0
+        },
+        {
+          "posicao": 19,
+          "clube": "CF OS BELENENSES",
+          "pontos": 42.0
+        },
+        {
+          "posicao": 20,
+          "clube": "New Me",
+          "pontos": 31.0
+        },
+        {
+          "posicao": 21,
+          "clube": "Núcleo do Sporting Clube de Portugal de Minde",
+          "pontos": 29.0
+        },
+        {
+          "posicao": 22,
+          "clube": "Atlético Clube de Porto Salvo",
+          "pontos": 17.0
+        },
+        {
+          "posicao": 23,
+          "clube": "Academia Recreativa de Linda-a-Velha",
+          "pontos": 16.0
+        },
+        {
+          "posicao": 24,
+          "clube": "ADR O RELÂMPAGO",
+          "pontos": 10.0
+        },
+        {
+          "posicao": 25,
+          "clube": "Agualva Runners",
+          "pontos": 4.0
+        },
+        {
+          "posicao": 26,
+          "clube": "FreeRunners",
+          "pontos": 3.0
+        },
+        {
+          "posicao": 27,
+          "clube": "TAEBAEK TRIANGULO TAEKWONDO",
+          "pontos": 2.0
+        },
+        {
+          "posicao": 28,
+          "clube": "CASA DO BENFICA EM ALGUEIRÃO MEM MARTINS - SINTRA",
+          "pontos": 1.0
+        },
+        {
+          "posicao": 28,
+          "clube": "Amigos Vale Silêncio",
+          "pontos": 1.0
+        },
+        {
+          "posicao": 28,
+          "clube": "ACDCOTOVIA",
+          "pontos": 1.0
+        },
+        {
+          "posicao": 28,
+          "clube": "Team el Comandante",
+          "pontos": 1.0
+        }
+      ]
+    }
+  ],
+  "overall_club_rankings": [
+    {
+      "posicao": 1,
+      "clube": "Associação Desportiva NucleOeiras - ADNO",
+      "pontos": 3933.0
+    },
+    {
+      "posicao": 2,
+      "clube": "Linda-a-Pastora Sporting Clube",
+      "pontos": 2945.0
+    },
+    {
+      "posicao": 3,
+      "clube": "Associação Run Tejo",
+      "pontos": 2682.0
+    },
+    {
+      "posicao": 4,
+      "clube": "Grupo Musical 1º Dezembro Queijas",
+      "pontos": 1473.0
+    },
+    {
+      "posicao": 5,
+      "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
+      "pontos": 1469.0
+    },
+    {
+      "posicao": 6,
+      "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+      "pontos": 1228.0
+    },
+    {
+      "posicao": 7,
+      "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+      "pontos": 1182.0
+    },
+    {
+      "posicao": 8,
+      "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+      "pontos": 1136.0
+    },
+    {
+      "posicao": 9,
+      "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
+      "pontos": 986.0
+    },
+    {
+      "posicao": 10,
+      "clube": "Valejas Atlético Clube",
+      "pontos": 569.0
+    },
+    {
+      "posicao": 11,
+      "clube": "GMCJamor",
+      "pontos": 552.0
+    },
+    {
+      "posicao": 12,
+      "clube": "Maratona Clube de Portugal",
+      "pontos": 511.0
+    },
+    {
+      "posicao": 13,
+      "clube": "Sport Ponto Come",
+      "pontos": 480.0
+    },
+    {
+      "posicao": 14,
+      "clube": "Miles & Vibes",
+      "pontos": 469.0
+    },
+    {
+      "posicao": 15,
+      "clube": "Grupo Desportivo de Barcarena",
+      "pontos": 461.0
+    },
+    {
+      "posicao": 16,
+      "clube": "Associação de Moradores 18 de Maio",
+      "pontos": 338.0
+    },
+    {
+      "posicao": 17,
+      "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
+      "pontos": 320.0
+    },
+    {
+      "posicao": 18,
+      "clube": "CF OS BELENENSES",
+      "pontos": 304.0
+    },
+    {
+      "posicao": 19,
+      "clube": "CLUBE DE ATLETISMO DE VALE DE FIGUEIRA",
+      "pontos": 188.0
+    },
+    {
+      "posicao": 20,
+      "clube": "Associação de Pára-quedistas Tejo-Norte",
+      "pontos": 165.0
+    },
+    {
+      "posicao": 21,
+      "clube": "Academia Recreativa de Linda-a-Velha",
+      "pontos": 156.0
+    },
+    {
+      "posicao": 22,
+      "clube": "New Me",
+      "pontos": 143.0
+    },
+    {
+      "posicao": 23,
+      "clube": "Núcleo do Sporting Clube de Portugal de Minde",
+      "pontos": 132.0
+    },
+    {
+      "posicao": 24,
+      "clube": "Atlético Clube de Porto Salvo",
+      "pontos": 118.0
+    },
+    {
+      "posicao": 25,
+      "clube": "Agualva Runners",
+      "pontos": 96.0
+    },
+    {
+      "posicao": 26,
+      "clube": "CASA DO BENFICA EM ALGUEIRÃO MEM MARTINS - SINTRA",
+      "pontos": 79.0
+    },
+    {
+      "posicao": 27,
+      "clube": "Taebak Triângulo Taekwondo",
+      "pontos": 75.0
+    },
+    {
+      "posicao": 28,
+      "clube": "ADR O RELÂMPAGO",
+      "pontos": 51.0
+    },
+    {
+      "posicao": 29,
+      "clube": "Federação da Família para a Paz Mundial e Unificação",
+      "pontos": 39.0
+    },
+    {
+      "posicao": 30,
+      "clube": "TAEBAEK TRIANGULO TAEKWONDO",
+      "pontos": 32.0
+    },
+    {
+      "posicao": 31,
+      "clube": "ACR Mealhada",
+      "pontos": 25.0
+    },
+    {
+      "posicao": 32,
+      "clube": "AAM - ASSOCIAÇÃO DOS AMIGOS DO ATLETISMO DE MAFRA",
+      "pontos": 24.0
+    },
+    {
+      "posicao": 33,
+      "clube": "FreeRunners",
+      "pontos": 23.0
+    },
+    {
+      "posicao": 34,
+      "clube": "Team el Comandante",
+      "pontos": 20.0
+    },
+    {
+      "posicao": 35,
+      "clube": "Os Galgos",
+      "pontos": 11.0
+    },
+    {
+      "posicao": 36,
+      "clube": "JOMA",
+      "pontos": 9.0
+    },
+    {
+      "posicao": 37,
+      "clube": "Associação Vitor Baptista",
+      "pontos": 5.0
+    },
+    {
+      "posicao": 38,
+      "clube": "Prime Running",
+      "pontos": 5.0
+    },
+    {
+      "posicao": 39,
+      "clube": "ACDCOTOVIA",
+      "pontos": 3.0
+    },
+    {
+      "posicao": 39,
+      "clube": "Santa casa da Misericórdia de Fornos de Algodres",
+      "pontos": 3.0
+    },
+    {
+      "posicao": 40,
+      "clube": "Desporto Oeiras",
+      "pontos": 2.0
+    },
+    {
+      "posicao": 41,
+      "clube": "Amigos Vale Silêncio",
+      "pontos": 1.0
+    }
+  ],
+  "best_athletes": [
+    {
+      "dorsal": "926",
+      "nome": "Rita Santos",
+      "pontos": 63.0,
+      "participacoes": 5,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 2
+    },
+    {
+      "dorsal": "865",
+      "nome": "Eugénia Ribeiro",
+      "pontos": 58.0,
+      "participacoes": 5,
+      "escalao": "F 55",
+      "posicao_escalao": 2
+    },
+    {
+      "dorsal": "900",
+      "nome": "Maria João Silva",
+      "pontos": 71.0,
+      "participacoes": 6,
+      "escalao": "F 65",
+      "posicao_escalao": 2
+    },
+    {
+      "dorsal": "904",
+      "nome": "Marta Neves",
+      "pontos": 43.0,
+      "participacoes": 5,
+      "escalao": "Sub 18 - Femininos",
+      "posicao_escalao": 3
+    },
+    {
+      "dorsal": "857",
+      "nome": "Clara Guedes",
+      "pontos": 28.0,
+      "participacoes": 2,
+      "escalao": "Sub 20 - Femininos",
+      "posicao_escalao": 3
+    },
+    {
+      "dorsal": "902",
+      "nome": "Maria João  Ferreira Franco Silva",
+      "pontos": 52.0,
+      "participacoes": 4,
+      "escalao": "F 65",
+      "posicao_escalao": 4
+    },
+    {
+      "dorsal": "869",
+      "nome": "Lara Correia",
+      "pontos": 35.0,
+      "participacoes": 4,
+      "escalao": "Sub 18 - Femininos",
+      "posicao_escalao": 5
+    },
+    {
+      "dorsal": "858",
+      "nome": "Claúdia  Jerónimo",
+      "pontos": 29.0,
+      "participacoes": 5,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 5
+    },
+    {
+      "dorsal": "912",
+      "nome": "Nuno Graça",
+      "pontos": 38.0,
+      "participacoes": 4,
+      "escalao": "M 40",
+      "posicao_escalao": 5
+    },
+    {
+      "dorsal": "844",
+      "nome": "Ana Coelho",
+      "pontos": 36.0,
+      "participacoes": 5,
+      "escalao": "F 50",
+      "posicao_escalao": 5
+    },
+    {
+      "dorsal": "884",
+      "nome": "João Narra",
+      "pontos": 29.0,
+      "participacoes": 3,
+      "escalao": "M 55",
+      "posicao_escalao": 6
+    },
+    {
+      "dorsal": "842",
+      "nome": "Alda  Sebastião",
+      "pontos": 42.0,
+      "participacoes": 6,
+      "escalao": "F 65",
+      "posicao_escalao": 6
+    },
+    {
+      "dorsal": "856",
+      "nome": "Célia Lopes",
+      "pontos": 23.0,
+      "participacoes": 3,
+      "escalao": "F 40",
+      "posicao_escalao": 8
+    },
+    {
+      "dorsal": "874",
+      "nome": "Henrique Ferreira",
+      "pontos": 27.0,
+      "participacoes": 5,
+      "escalao": "M 55",
+      "posicao_escalao": 8
+    },
+    {
+      "dorsal": "862",
+      "nome": "Elisa  Rodrigues",
+      "pontos": 15.0,
+      "participacoes": 2,
+      "escalao": "F 70",
+      "posicao_escalao": 8
+    },
+    {
+      "dorsal": "931",
+      "nome": "Susana Jorge",
+      "pontos": 21.0,
+      "participacoes": 3,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 9
+    },
+    {
+      "dorsal": "930",
+      "nome": "Sandra Silva",
+      "pontos": 26.0,
+      "participacoes": 6,
+      "escalao": "F 45",
+      "posicao_escalao": 9
+    },
+    {
+      "dorsal": "1927",
+      "nome": "Afonso Matos",
+      "pontos": 13.0,
+      "participacoes": 2,
+      "escalao": "Sub 20 - Masculinos",
+      "posicao_escalao": 10
+    },
+    {
+      "dorsal": "867",
+      "nome": "Fernando Rosa",
+      "pontos": 25.0,
+      "participacoes": 4,
+      "escalao": "M 65",
+      "posicao_escalao": 10
+    },
+    {
+      "dorsal": "915",
+      "nome": "Olga Galvão",
+      "pontos": 26.0,
+      "participacoes": 6,
+      "escalao": "F 60",
+      "posicao_escalao": 11
+    },
+    {
+      "dorsal": "868",
+      "nome": "Filipe Gama",
+      "pontos": 8.0,
+      "participacoes": 1,
+      "escalao": "Sub 20 - Masculinos",
+      "posicao_escalao": 12
+    },
+    {
+      "dorsal": "1519",
+      "nome": "Pedro Simões",
+      "pontos": 21.0,
+      "participacoes": 4,
+      "escalao": "M 35",
+      "posicao_escalao": 13
+    },
+    {
+      "dorsal": "864",
+      "nome": "Emanuel Oliveira",
+      "pontos": 15.0,
+      "participacoes": 6,
+      "escalao": "M 50",
+      "posicao_escalao": 13
+    },
+    {
+      "dorsal": "968",
+      "nome": "Isabel  Rodrigues",
+      "pontos": 17.0,
+      "participacoes": 2,
+      "escalao": "F 55",
+      "posicao_escalao": 13
+    },
+    {
+      "dorsal": "3113",
+      "nome": "Miriam Sousa",
+      "pontos": 14.0,
+      "participacoes": 4,
+      "escalao": "Sub 14 - Femininos",
+      "posicao_escalao": 14
+    },
+    {
+      "dorsal": "892",
+      "nome": "Lourenço Marta",
+      "pontos": 6.0,
+      "participacoes": 1,
+      "escalao": "Sub 20 - Masculinos",
+      "posicao_escalao": 14
+    },
+    {
+      "dorsal": "899",
+      "nome": "Maria Cristina Oliveira",
+      "pontos": 16.0,
+      "participacoes": 6,
+      "escalao": "F 55",
+      "posicao_escalao": 14
+    },
+    {
+      "dorsal": "3115",
+      "nome": "Edmara Semedo",
+      "pontos": 14.0,
+      "participacoes": 2,
+      "escalao": "Sub 14 - Femininos",
+      "posicao_escalao": 15
+    },
+    {
+      "dorsal": "853",
+      "nome": "Carlos Gomes",
+      "pontos": 18.0,
+      "participacoes": 4,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 15
+    },
+    {
+      "dorsal": "895",
+      "nome": "Madalena Magalhães",
+      "pontos": 15.0,
+      "participacoes": 6,
+      "escalao": "F 55",
+      "posicao_escalao": 15
+    },
+    {
+      "dorsal": "3230",
+      "nome": "Valentina Natividade",
+      "pontos": 13.0,
+      "participacoes": 4,
+      "escalao": "Sub 10 - Femininos",
+      "posicao_escalao": 16
+    },
+    {
+      "dorsal": "852",
+      "nome": "Bruno  Pinto",
+      "pontos": 14.0,
+      "participacoes": 4,
+      "escalao": "Sub 23 - Masculinos",
+      "posicao_escalao": 17
+    },
+    {
+      "dorsal": "1232",
+      "nome": "Claudio Torrinha",
+      "pontos": 13.0,
+      "participacoes": 6,
+      "escalao": "M 40",
+      "posicao_escalao": 17
+    },
+    {
+      "dorsal": "891",
+      "nome": "Lia Moreira",
+      "pontos": 13.0,
+      "participacoes": 5,
+      "escalao": "F 50",
+      "posicao_escalao": 17
+    },
+    {
+      "dorsal": "846",
+      "nome": "Ana Cristina Viegas",
+      "pontos": 13.0,
+      "participacoes": 6,
+      "escalao": "F 55",
+      "posicao_escalao": 18
+    },
+    {
+      "dorsal": "936",
+      "nome": "Vitor Vital",
+      "pontos": 12.0,
+      "participacoes": 6,
+      "escalao": "M 60",
+      "posicao_escalao": 18
+    },
+    {
+      "dorsal": "855",
+      "nome": "Celeste Almeida",
+      "pontos": 13.0,
+      "participacoes": 5,
+      "escalao": "F 55",
+      "posicao_escalao": 19
+    },
+    {
+      "dorsal": "3108",
+      "nome": "BRUNO  PIROLA",
+      "pontos": 6.0,
+      "participacoes": 2,
+      "escalao": "Sub 14 - Masculinos",
+      "posicao_escalao": 20
+    },
+    {
+      "dorsal": "3114",
+      "nome": "Sienna Silva",
+      "pontos": 6.0,
+      "participacoes": 2,
+      "escalao": "Sub 14 - Femininos",
+      "posicao_escalao": 20
+    },
+    {
+      "dorsal": "927",
+      "nome": "Rodrigo Ferreira",
+      "pontos": 11.0,
+      "participacoes": 6,
+      "escalao": "M 55",
+      "posicao_escalao": 20
+    },
+    {
+      "dorsal": "888",
+      "nome": "José Carmo da Silva",
+      "pontos": 10.0,
+      "participacoes": 3,
+      "escalao": "M 40",
+      "posicao_escalao": 21
+    },
+    {
+      "dorsal": "911",
+      "nome": "Nuno Galvão",
+      "pontos": 10.0,
+      "participacoes": 5,
+      "escalao": "M 60",
+      "posicao_escalao": 22
+    },
+    {
+      "dorsal": "3112",
+      "nome": "Duarte Oliveira",
+      "pontos": 3.0,
+      "participacoes": 1,
+      "escalao": "Sub 12 - Masculinos",
+      "posicao_escalao": 23
+    },
+    {
+      "dorsal": "922",
+      "nome": "Pedro Rijo",
+      "pontos": 6.0,
+      "participacoes": 2,
+      "escalao": "Sub 23 - Masculinos",
+      "posicao_escalao": 23
+    },
+    {
+      "dorsal": "883",
+      "nome": "João Moradias",
+      "pontos": 11.0,
+      "participacoes": 4,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 23
+    },
+    {
+      "dorsal": "920",
+      "nome": "Paulo Serra",
+      "pontos": 10.0,
+      "participacoes": 6,
+      "escalao": "M 50",
+      "posicao_escalao": 23
+    },
+    {
+      "dorsal": "908",
+      "nome": "Miguel Lourenço",
+      "pontos": 10.0,
+      "participacoes": 4,
+      "escalao": "M 55",
+      "posicao_escalao": 23
+    },
+    {
+      "dorsal": "889",
+      "nome": "José  Véstias",
+      "pontos": 10.0,
+      "participacoes": 4,
+      "escalao": "M 55",
+      "posicao_escalao": 23
+    },
+    {
+      "dorsal": "937",
+      "nome": "Wilson Gonçalves",
+      "pontos": 3.0,
+      "participacoes": 1,
+      "escalao": "M 75",
+      "posicao_escalao": 23
+    },
+    {
+      "dorsal": "909",
+      "nome": "Miguel Moradias",
+      "pontos": 9.0,
+      "participacoes": 5,
+      "escalao": "M 55",
+      "posicao_escalao": 24
+    },
+    {
+      "dorsal": "897",
+      "nome": "Marcela da Silva",
+      "pontos": 7.0,
+      "participacoes": 3,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 25
+    },
+    {
+      "dorsal": "879",
+      "nome": "Joana  Loureiro",
+      "pontos": 7.0,
+      "participacoes": 3,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 25
+    },
+    {
+      "dorsal": "854",
+      "nome": "Carlos Santos",
+      "pontos": 10.0,
+      "participacoes": 4,
+      "escalao": "M 65",
+      "posicao_escalao": 25
+    },
+    {
+      "dorsal": "905",
+      "nome": "Martim  Serra",
+      "pontos": 3.0,
+      "participacoes": 1,
+      "escalao": "Sub 23 - Masculinos",
+      "posicao_escalao": 26
+    },
+    {
+      "dorsal": "847",
+      "nome": "Ana  Serra",
+      "pontos": 7.0,
+      "participacoes": 4,
+      "escalao": "F 50",
+      "posicao_escalao": 26
+    },
+    {
+      "dorsal": "843",
+      "nome": "Alexandre  Galvão",
+      "pontos": 9.0,
+      "participacoes": 3,
+      "escalao": "M 35",
+      "posicao_escalao": 28
+    },
+    {
+      "dorsal": "845",
+      "nome": "Ana Nunes",
+      "pontos": 9.0,
+      "participacoes": 3,
+      "escalao": "F 55",
+      "posicao_escalao": 28
+    },
+    {
+      "dorsal": "919",
+      "nome": "Paulo Moradias",
+      "pontos": 8.0,
+      "participacoes": 3,
+      "escalao": "M 60",
+      "posicao_escalao": 28
+    },
+    {
+      "dorsal": "938",
+      "nome": "Yuri Natividade",
+      "pontos": 7.0,
+      "participacoes": 6,
+      "escalao": "M 45",
+      "posicao_escalao": 30
+    },
+    {
+      "dorsal": "925",
+      "nome": "Rita García-Mon",
+      "pontos": 3.0,
+      "participacoes": 1,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 35
+    },
+    {
+      "dorsal": "917",
+      "nome": "Paula Leitão",
+      "pontos": 2.0,
+      "participacoes": 1,
+      "escalao": "F 50",
+      "posicao_escalao": 35
+    },
+    {
+      "dorsal": "849",
+      "nome": "Bernardo  Batista",
+      "pontos": 6.0,
+      "participacoes": 2,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 36
+    },
+    {
+      "dorsal": "1924",
+      "nome": "Ema Hinckley",
+      "pontos": 2.0,
+      "participacoes": 1,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 36
+    },
+    {
+      "dorsal": "921",
+      "nome": "Paulo Jorge Duarte Silva",
+      "pontos": 5.0,
+      "participacoes": 3,
+      "escalao": "M 65",
+      "posicao_escalao": 36
+    },
+    {
+      "dorsal": "1234",
+      "nome": "Ana Tetino",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 37
+    },
+    {
+      "dorsal": "861",
+      "nome": "Elisa Reis",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 37
+    },
+    {
+      "dorsal": "859",
+      "nome": "Cristina Oliveira",
+      "pontos": 5.0,
+      "participacoes": 4,
+      "escalao": "F 45",
+      "posicao_escalao": 37
+    },
+    {
+      "dorsal": "509",
+      "nome": "Luis Costa",
+      "pontos": 6.0,
+      "participacoes": 3,
+      "escalao": "M 50",
+      "posicao_escalao": 39
+    },
+    {
+      "dorsal": "916",
+      "nome": "Orlando  Silva",
+      "pontos": 4.0,
+      "participacoes": 4,
+      "escalao": "M 55",
+      "posicao_escalao": 39
+    },
+    {
+      "dorsal": "863",
+      "nome": "Elsa Almeida",
+      "pontos": 2.0,
+      "participacoes": 1,
+      "escalao": "F 55",
+      "posicao_escalao": 40
+    },
+    {
+      "dorsal": "933",
+      "nome": "Tiago Andrade",
+      "pontos": 4.0,
+      "participacoes": 3,
+      "escalao": "M 40",
+      "posicao_escalao": 41
+    },
+    {
+      "dorsal": "887",
+      "nome": "Jorge Valadares",
+      "pontos": 4.0,
+      "participacoes": 4,
+      "escalao": "M 60",
+      "posicao_escalao": 41
+    },
+    {
+      "dorsal": "924",
+      "nome": "Ricardo Nobre",
+      "pontos": 4.0,
+      "participacoes": 4,
+      "escalao": "M 45",
+      "posicao_escalao": 42
+    },
+    {
+      "dorsal": "848",
+      "nome": "André  Viseu",
+      "pontos": 3.0,
+      "participacoes": 3,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 44
+    },
+    {
+      "dorsal": "885",
+      "nome": "João Teixeira",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 65",
+      "posicao_escalao": 44
+    },
+    {
+      "dorsal": "914",
+      "nome": "Nuno Sobral",
+      "pontos": 3.0,
+      "participacoes": 3,
+      "escalao": "M 45",
+      "posicao_escalao": 45
+    },
+    {
+      "dorsal": "873",
+      "nome": "Gonçalo Oliveira",
+      "pontos": 3.0,
+      "participacoes": 1,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 46
+    },
+    {
+      "dorsal": "929",
+      "nome": "Tomás  Nogueira",
+      "pontos": 2.0,
+      "participacoes": 1,
+      "escalao": "M 35",
+      "posicao_escalao": 46
+    },
+    {
+      "dorsal": "876",
+      "nome": "Isabel Ferreira",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "F 45",
+      "posicao_escalao": 46
+    },
+    {
+      "dorsal": "871",
+      "nome": "Flamino Santos",
+      "pontos": 2.0,
+      "participacoes": 1,
+      "escalao": "M 60",
+      "posicao_escalao": 46
+    },
+    {
+      "dorsal": "1520",
+      "nome": "João Calafate",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 35",
+      "posicao_escalao": 47
+    },
+    {
+      "dorsal": "1443",
+      "nome": "Moisés Rodrigues",
+      "pontos": 2.0,
+      "participacoes": 2,
+      "escalao": "M 45",
+      "posicao_escalao": 48
+    },
+    {
+      "dorsal": "893",
+      "nome": "Luís Correia",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 55",
+      "posicao_escalao": 48
+    },
+    {
+      "dorsal": "850",
+      "nome": "Brar Momme  Rickmers",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 49
+    },
+    {
+      "dorsal": "890",
+      "nome": "João Jorge",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 49
+    },
+    {
+      "dorsal": "881",
+      "nome": "João Gonçalves",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 40",
+      "posicao_escalao": 49
+    },
+    {
+      "dorsal": "886",
+      "nome": "Jorge Ramos",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 45",
+      "posicao_escalao": 50
+    },
+    {
+      "dorsal": "487",
+      "nome": "Bernardo Salavessa",
+      "pontos": 2.0,
+      "participacoes": 2,
+      "escalao": "M 50",
+      "posicao_escalao": 50
+    },
+    {
+      "dorsal": "870",
+      "nome": "Filipe Ribeiro",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 50",
+      "posicao_escalao": 52
+    }
+  ]
+}
