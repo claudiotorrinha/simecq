@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Activity, Trophy, TrendingUp, Users, Medal, Star, Hash } from 'lucide-react';
-import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Cell } from 'recharts';
+import { Activity, Trophy, TrendingUp, Users, Medal, Star, Hash, User, History, LineChart as LineIcon } from 'lucide-react';
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Cell, LineChart, Line, AreaChart, Area } from 'recharts';
 
 import fallbackData from './data/dashboard_data.json';
 import logoSimecq from './assets/logo_simecq.png';
@@ -118,9 +118,13 @@ const TableScroll = ({ children, className = '' }) => (
 
 function App() {
   const data = fallbackData;
-  const [activeTab, setActiveTab] = useState('race'); // 'race' | 'overall'
+  const [activeTab, setActiveTab] = useState('race'); // 'race' | 'overall' | 'athlete'
   const [selectedRaceId, setSelectedRaceId] = useState(() => getLatestRaceId(fallbackData));
-  const [theme, setTheme] = useState(() => localStorage.getItem('oeiras-dashboard-theme') || 'dark');
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem('oeiras-dashboard-theme');
+    if (saved) return saved;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -165,6 +169,7 @@ function App() {
       <div className="tabs animate-fade-up">
         <button className={`tab-btn ${activeTab === 'race' ? 'active' : ''}`} onClick={() => setActiveTab('race')}>Vista da Etapa</button>
         <button className={`tab-btn ${activeTab === 'overall' ? 'active' : ''}`} onClick={() => setActiveTab('overall')}>Vista Geral</button>
+        <button className={`tab-btn ${activeTab === 'athlete' ? 'active' : ''}`} onClick={() => setActiveTab('athlete')}>Vista por Atleta</button>
       </div>
 
       <div className="animate-fade-up" key={activeTab}>
@@ -177,10 +182,16 @@ function App() {
             setSelectedRaceId={setSelectedRaceId}
             renderMedal={renderMedal}
           />
-        ) : (
+        ) : activeTab === 'overall' ? (
           <OverallStatsView 
             data={data} 
             renderMedal={renderMedal}
+          />
+        ) : (
+          <AthleteStatsView 
+            data={data}
+            renderMedal={renderMedal}
+            theme={theme}
           />
         )}
       </div>
@@ -657,6 +668,220 @@ function OverallStatsView({ data, renderMedal }) {
             );
           })
         )}
+      </div>
+    </div>
+  );
+}
+
+
+function AthleteStatsView({ data, renderMedal, theme }) {
+  const [selectedAthlete, setSelectedAthlete] = useState(() => {
+    // Default to the first athlete in the overall ranking
+    return data.best_athletes?.[0]?.dorsal || '';
+  });
+  const [searchQuery, setSearchQuery] = useState('');
+  const isMobile = useIsMobile();
+
+  const pointsColor = theme === 'dark' ? 'white' : 'black';
+
+  const athletes = [...data.best_athletes].sort((a, b) => a.nome.localeCompare(b.nome));
+
+  const filteredAthletes = athletes.filter(a => 
+    a.nome.toLowerCase().includes(searchQuery.toLowerCase()) || 
+    a.escalao.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  useEffect(() => {
+    if (filteredAthletes.length > 0) {
+      const current = filteredAthletes.find(a => a.dorsal === selectedAthlete);
+      if (!current) {
+        setSelectedAthlete(filteredAthletes[0].dorsal);
+      }
+    }
+  }, [filteredAthletes]);
+
+  const groupedAthletes = filteredAthletes.reduce((acc, a) => {
+    if (!acc[a.escalao]) acc[a.escalao] = [];
+    acc[a.escalao].push(a);
+    return acc;
+  }, {});
+
+  const sortedCategories = Object.keys(groupedAthletes).sort(compareEscalao);
+
+  const currentAthlete = data.best_athletes.find(a => a.dorsal === selectedAthlete);
+
+  if (!currentAthlete) return <div className="flex-center" style={{ padding: '2rem' }}>Selecione um atleta.</div>;
+
+  // Extract history
+  const history = data.races.map(race => {
+    const result = race.simecq_results.find(a => a.dorsal === selectedAthlete);
+    return {
+      raceId: race.id,
+      raceName: formatRaceLabel(race.id),
+      posicao: result ? result.posicao : null,
+      pontos: result ? result.pontos : 0,
+      participou: !!result
+    };
+  });
+
+  // Filter only races where they participated for the charts
+  const participatedHistory = history.filter(h => h.participou);
+
+  // Cumulative points
+  let runningTotal = 0;
+  const evolutionData = participatedHistory.map(h => {
+    runningTotal += h.pontos;
+    return {
+      ...h,
+      acumulado: runningTotal
+    };
+  });
+
+  const bestPos = Math.min(...participatedHistory.map(h => h.posicao));
+  const maxPts = Math.max(...participatedHistory.map(h => h.pontos));
+  const participationRate = Math.round((participatedHistory.length / data.races.length) * 100);
+
+  return (
+    <div className="bento-grid">
+      <div className="bento-item" style={{ gridColumn: 'span 12' }}>
+        <div className="flex-center" style={{ marginBottom: '1rem', flexDirection: isMobile ? 'column' : 'row', gap: '1rem' }}>
+          <div className="search-container" style={{ width: '100%', maxWidth: '300px' }}>
+            <input 
+              type="text" 
+              className="modern-input" 
+              placeholder="Pesquisar atleta..." 
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              style={{ width: '100%' }}
+            />
+          </div>
+          <select 
+            className="modern-select" 
+            value={selectedAthlete} 
+            onChange={e => setSelectedAthlete(e.target.value)}
+            style={{ width: '100%', maxWidth: '400px', marginBottom: 0 }}
+          >
+            {sortedCategories.map(cat => (
+              <optgroup key={cat} label={cat}>
+                {groupedAthletes[cat].map(a => (
+                  <option key={a.dorsal} value={a.dorsal}>
+                    {a.nome}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <div className="bento-item" style={{ gridColumn: 'span 3' }}>
+        <div className="item-title"><Activity size={16} /> Pontos Totais</div>
+        <div className="kpi-value">{Math.round(currentAthlete.pontos)}</div>
+        <div className="kpi-subtext">Acumulado da época</div>
+      </div>
+      
+      <div className="bento-item" style={{ gridColumn: 'span 3' }}>
+        <div className="item-title"><Trophy size={16} /> Rank Escalão</div>
+        <div className="kpi-value">#{currentAthlete.posicao_escalao}</div>
+        <div className="kpi-subtext">Geral no {shortenEscalaoLabel(currentAthlete.escalao)}</div>
+      </div>
+
+      <div className="bento-item" style={{ gridColumn: 'span 3' }}>
+        <div className="item-title"><Star size={16} /> Melhor Posição</div>
+        <div className="kpi-value">{bestPos}º</div>
+        <div className="kpi-subtext">Recorde pessoal em prova</div>
+      </div>
+
+      <div className="bento-item" style={{ gridColumn: 'span 3' }}>
+        <div className="item-title"><Users size={16} /> Participação</div>
+        <div className="kpi-value">{participationRate}%</div>
+        <div className="kpi-subtext">{participatedHistory.length} de {data.races.length} provas</div>
+      </div>
+
+      <div className="bento-item" style={{ gridColumn: 'span 12' }}>
+        <div className="item-title"><LineIcon size={16} /> Evolução de Posicionamento e Pontos</div>
+        <div style={{ width: '100%', height: '300px', marginTop: '1rem' }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={evolutionData}>
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" vertical={false} />
+              <XAxis dataKey="raceName" stroke="var(--muted)" tick={{ fontSize: 10 }} />
+              <YAxis 
+                yAxisId="left"
+                orientation="left"
+                reversed 
+                domain={[1, 'auto']} 
+                stroke="var(--success)" 
+                tick={{ fontSize: 10 }}
+                allowDecimals={false}
+                label={{ value: 'Posição', angle: -90, position: 'insideLeft', style: { textAnchor: 'middle', fill: 'var(--success)' } }}
+              />
+              <YAxis 
+                yAxisId="right"
+                orientation="right"
+                stroke={pointsColor} 
+                tick={{ fontSize: 10 }}
+                allowDecimals={false}
+                label={{ value: 'Pontos', angle: 90, position: 'insideRight', style: { textAnchor: 'middle', fill: pointsColor } }}
+              />
+              <Tooltip
+                contentStyle={tooltipTheme}
+                itemStyle={tooltipItemStyle}
+                labelStyle={tooltipLabelStyle}
+                formatter={(value, name) => {
+                  if (name === 'posicao') return [`${value}º`, 'Posição'];
+                  if (name === 'pontos') return [value, 'Pontos'];
+                  return [value, name];
+                }}
+              />
+              <Line 
+                yAxisId="left"
+                type="monotone" 
+                dataKey="posicao" 
+                stroke="var(--success)" 
+                strokeWidth={3} 
+                dot={{ r: 6, fill: 'var(--success)', strokeWidth: 2, stroke: 'var(--background)' }}
+                activeDot={{ r: 8 }}
+                name="Posição"
+              />
+              <Line 
+                yAxisId="right"
+                type="monotone" 
+                dataKey="pontos" 
+                stroke={pointsColor} 
+                strokeWidth={3} 
+                dot={{ r: 6, fill: pointsColor, strokeWidth: 2, stroke: 'var(--background)' }}
+                activeDot={{ r: 8 }}
+                name="Pontos"
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+
+      <div className="bento-item" style={{ gridColumn: 'span 12' }}>
+        <div className="item-title"><History size={16} /> Histórico de Provas</div>
+        <TableScroll>
+          <table>
+            <thead>
+              <tr>
+                <th>Prova</th>
+                <th>Posição</th>
+                <th>Pontos</th>
+                <th>Acumulado</th>
+              </tr>
+            </thead>
+            <tbody>
+              {evolutionData.map((h, i) => (
+                <tr key={i}>
+                  <td>{h.raceName}</td>
+                  <td>{renderMedal(h.posicao)}</td>
+                  <td>{h.pontos}</td>
+                  <td>{h.acumulado}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </TableScroll>
       </div>
     </div>
   );

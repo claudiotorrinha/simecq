@@ -430,6 +430,43 @@ tr:hover td {
   background-size: 1.1em;
 }
 
+.modern-input {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  color: var(--foreground);
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.modern-input:focus {
+  border-color: var(--card-hover-border);
+  box-shadow: 0 0 0 4px var(--primary-glow);
+}
+
+.modern-input::placeholder {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+optgroup {
+  background: var(--card);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-style: normal;
+}
+
+option {
+  background: var(--card);
+  color: var(--foreground);
+  padding: 0.5rem;
+}
+
 .event-meta {
   display: flex;
   justify-content: center;
