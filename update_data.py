@@ -196,6 +196,7 @@ def main():
         
         global_athletes = {}
         current_escalao = "Desconhecido"
+        escalao_pontos_seen = set()
         for i, row in df_overall_ath.iterrows():
             val = str(row[0]).strip()
             
@@ -204,12 +205,20 @@ def main():
                 
             if not val.isdigit() and 'Posição' not in val and 'Troféu' not in val:
                  current_escalao = val
+                 escalao_pontos_seen = set()
             elif val.isdigit():
                  clube = str(row[3]).strip()
+                 pontos = float(row[4]) if not pd.isna(row[4]) else 0
+                 posicao = int(val)
+                 
+                 escalao_pontos_seen.add(pontos)
+                 
                  if "simecq" in clube.lower() or clube.lower() == CLUB_NAME_MATCH.lower():
                      dorsal = str(row[1]).strip()
-                     pontos = float(row[4]) if not pd.isna(row[4]) else 0
-                     posiscao = int(val)
+                     
+                     higher_points = [p for p in escalao_pontos_seen if p > pontos]
+                     pontos_proximo = min(higher_points) if higher_points else pontos
+                     pontos_falta = pontos_proximo - pontos if higher_points else 0
                      
                      if dorsal not in global_athletes:
                          global_athletes[dorsal] = {
@@ -218,7 +227,8 @@ def main():
                              "pontos": pontos,
                              "participacoes": 0,
                              "escalao": current_escalao,
-                             "posicao_escalao": posiscao
+                             "posicao_escalao": posicao,
+                             "pontos_falta_proximo": pontos_falta
                          }
         
         # Count participations accurately by verifying in our processed races
@@ -234,7 +244,8 @@ def main():
                          "pontos": ath["pontos"],
                          "participacoes": 1,
                          "escalao": ath["escalao"],
-                         "posicao_escalao": 9999 # Not in overall top
+                         "posicao_escalao": 9999, # Not in overall top
+                         "pontos_falta_proximo": 0
                      }
                      
         sorted_best = sorted(global_athletes.values(), key=lambda x: x["posicao_escalao"])

@@ -82,8 +82,8 @@ const parseRaceTime = (value) => {
 const getEscalaoAge = (esc) => {
   const e = esc.toLowerCase();
   if (e.includes('sub')) {
-     const m = e.match(/sub[ -]?(\d+)/);
-     return m ? parseInt(m[1]) : 0;
+    const m = e.match(/sub[ -]?(\d+)/);
+    return m ? parseInt(m[1]) : 0;
   }
   if (e.includes('sen') || e.includes('sén')) return 30;
   const m = e.match(/[mfv](et)?\s*-?\s*(\d+)/i);
@@ -92,10 +92,10 @@ const getEscalaoAge = (esc) => {
 };
 
 const compareEscalao = (a, b) => {
-    const ageA = getEscalaoAge(a);
-    const ageB = getEscalaoAge(b);
-    if (ageA !== ageB) return ageA - ageB;
-    return a.localeCompare(b);
+  const ageA = getEscalaoAge(a);
+  const ageB = getEscalaoAge(b);
+  if (ageA !== ageB) return ageA - ageB;
+  return a.localeCompare(b);
 };
 
 const useIsMobile = (breakpoint = 600) => {
@@ -146,8 +146,8 @@ function App() {
 
   const renderMedal = (pos) => {
     if (pos === 1) return <span className="flex-align text-success"><Medal size={16} /> 1º</span>;
-    if (pos === 2) return <span className="flex-align" style={{color:'#cbd5e1'}}><Medal size={16} /> 2º</span>;
-    if (pos === 3) return <span className="flex-align" style={{color:'#b45309'}}><Medal size={16} /> 3º</span>;
+    if (pos === 2) return <span className="flex-align" style={{ color: '#cbd5e1' }}><Medal size={16} /> 2º</span>;
+    if (pos === 3) return <span className="flex-align" style={{ color: '#b45309' }}><Medal size={16} /> 3º</span>;
     return <span style={{ opacity: 0.5 }}>{pos}º</span>;
   };
 
@@ -174,21 +174,21 @@ function App() {
 
       <div className="animate-fade-up" key={activeTab}>
         {activeTab === 'race' ? (
-          <RaceStatsView 
-            data={data} 
-            raceData={raceData} 
+          <RaceStatsView
+            data={data}
+            raceData={raceData}
             previousRaceData={previousRaceData}
             selectedRaceId={selectedRaceId}
             setSelectedRaceId={setSelectedRaceId}
             renderMedal={renderMedal}
           />
         ) : activeTab === 'overall' ? (
-          <OverallStatsView 
-            data={data} 
+          <OverallStatsView
+            data={data}
             renderMedal={renderMedal}
           />
         ) : (
-          <AthleteStatsView 
+          <AthleteStatsView
             data={data}
             renderMedal={renderMedal}
             theme={theme}
@@ -216,11 +216,11 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
   const colPts = { width: '12.5%' };
 
   const provasSet = new Set(raceData.simecq_results.map(a => a.prova || "Desconhecida"));
-  const provasArray = Array.from(provasSet).sort((a,b) => {
-      const matchA = a.match(/\d+/);
-      const matchB = b.match(/\d+/);
-      if (matchA && matchB) return parseInt(matchA[0]) - parseInt(matchB[0]);
-      return a.localeCompare(b);
+  const provasArray = Array.from(provasSet).sort((a, b) => {
+    const matchA = a.match(/\d+/);
+    const matchB = b.match(/\d+/);
+    if (matchA && matchB) return parseInt(matchA[0]) - parseInt(matchB[0]);
+    return a.localeCompare(b);
   });
 
   const totalPoints = raceData.simecq_results.reduce((acc, curr) => acc + curr.pontos, 0);
@@ -229,7 +229,7 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
   const simMatch = ["sociedade de instrução musical e escolar cruz quebradense (simecq)", "simecq", "sociedade de instrução musical e escolar cruz quebradense"];
   const sRankThisRaceObj = raceData.club_rankings.find(c => simMatch.some(sm => c.clube.toLowerCase().includes(sm)));
   const sRankThisRace = sRankThisRaceObj ? sRankThisRaceObj.posicao : 'N/A';
-  
+
   const overallClubObj = data.overall_club_rankings.find(c => simMatch.some(sm => c.clube.toLowerCase().includes(sm)));
   const sGlobalRank = overallClubObj ? overallClubObj.posicao : 'N/A';
 
@@ -239,8 +239,8 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
     raceData.simecq_results.forEach(a => {
       let lastResultPos = null;
       for (let i = data.races.findIndex(r => r.id === selectedRaceId) - 1; i >= 0; i--) {
-         const pastResult = data.races[i].simecq_results.find(pa => pa.dorsal === a.dorsal);
-         if (pastResult) { lastResultPos = pastResult.posicao; break; }
+        const pastResult = data.races[i].simecq_results.find(pa => pa.dorsal === a.dorsal);
+        if (pastResult) { lastResultPos = pastResult.posicao; break; }
       }
       if (!lastResultPos) newAthletes.push(a);
       else if (a.posicao < lastResultPos) improvers.push({ athlete: a, improvedBy: lastResultPos - a.posicao });
@@ -252,7 +252,7 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
     escalaoPoints[a.escalao] = (escalaoPoints[a.escalao] || 0) + a.pontos;
   });
   const barData = Object.keys(escalaoPoints)
-    .map(k => ({ name: k, value: Math.round(escalaoPoints[k]*10)/10 }))
+    .map(k => ({ name: k, value: Math.round(escalaoPoints[k] * 10) / 10 }))
     .sort((a, b) => b.value - a.value);
 
   const availableTabs = new Set(['global', ...provasArray]);
@@ -263,7 +263,7 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
 
   let displayAthletes = raceData.simecq_results;
   if (activeSubTab !== 'global' && activeSubTab !== 'improvers' && activeSubTab !== 'new') {
-      displayAthletes = raceData.simecq_results.filter(a => (a.prova || "Desconhecida") === activeSubTab);
+    displayAthletes = raceData.simecq_results.filter(a => (a.prova || "Desconhecida") === activeSubTab);
   }
 
   const groupedByEscalao = displayAthletes.reduce((groups, athlete) => {
@@ -322,9 +322,9 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
   return (
     <>
       <div className="flex-center">
-          <select className="modern-select" value={selectedRaceId} onChange={e => setSelectedRaceId(e.target.value)}>
-            {data.races.map(r => <option key={r.id} value={r.id}>{`${formatRaceLabel(r.id)} • ${formatEventDate(r.event_date)}`}</option>)}
-          </select>
+        <select className="modern-select" value={selectedRaceId} onChange={e => setSelectedRaceId(e.target.value)}>
+          {data.races.map(r => <option key={r.id} value={r.id}>{`${formatRaceLabel(r.id)} • ${formatEventDate(r.event_date)}`}</option>)}
+        </select>
       </div>
       <div className="event-meta">
         <span className="event-title">{formatRaceLabel(raceData.id)}</span>
@@ -349,149 +349,149 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
         </div>
 
         <div className="bento-item" style={{ gridColumn: 'span 12' }}>
-           <div className="item-title"><TrendingUp size={16} /> Distribuição de Pontos</div>
-           <div style={{ width: '100%', height: `${Math.max(340, barData.length * 32 + 60)}px`, marginTop: '1rem', minWidth: 0 }}>
-              <ResponsiveContainer width="100%" height="100%" minWidth={0}>
-                  <BarChart data={barData} layout="vertical" margin={{ top: 8, right: 18, bottom: 8, left: isMobile ? 4 : 8 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" horizontal={false} />
-                    <XAxis type="number" stroke="var(--muted)" tick={{ fontSize: 10 }} />
-                    <YAxis dataKey="name" type="category" width={yAxisWidth} stroke="var(--muted)" tick={{ fontSize: 10 }} tickFormatter={shortenEscalaoLabel} />
-                    <Tooltip
-                      contentStyle={tooltipTheme}
-                      itemStyle={tooltipItemStyle}
-                      labelStyle={tooltipLabelStyle}
-                      formatter={(value) => [value, 'Pontos']}
-                      labelFormatter={shortenEscalaoLabel}
-                    />
-                    <Bar dataKey="value" barSize={20} radius={[0, 6, 6, 0]}>
-                        {barData.map((e, index) => {
-                          const name = e.name.toUpperCase();
-                          const isFemale = /\bF\b/.test(name) || name.includes('FEMININO');
-                          return (
-                            <Cell 
-                              key={index} 
-                              fill={isFemale ? '#fb7185' : '#3b82f6'} 
-                              fillOpacity={0.8}
-                            />
-                          );
-                        })}
-                    </Bar>
-                  </BarChart>
-              </ResponsiveContainer>
-           </div>
+          <div className="item-title"><TrendingUp size={16} /> Distribuição de Pontos</div>
+          <div style={{ width: '100%', height: `${Math.max(340, barData.length * 32 + 60)}px`, marginTop: '1rem', minWidth: 0 }}>
+            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
+              <BarChart data={barData} layout="vertical" margin={{ top: 8, right: 18, bottom: 8, left: isMobile ? 4 : 8 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" horizontal={false} />
+                <XAxis type="number" stroke="var(--muted)" tick={{ fontSize: 10 }} />
+                <YAxis dataKey="name" type="category" width={yAxisWidth} stroke="var(--muted)" tick={{ fontSize: 10 }} tickFormatter={shortenEscalaoLabel} />
+                <Tooltip
+                  contentStyle={tooltipTheme}
+                  itemStyle={tooltipItemStyle}
+                  labelStyle={tooltipLabelStyle}
+                  formatter={(value) => [value, 'Pontos']}
+                  labelFormatter={shortenEscalaoLabel}
+                />
+                <Bar dataKey="value" barSize={20} radius={[0, 6, 6, 0]}>
+                  {barData.map((e, index) => {
+                    const name = e.name.toUpperCase();
+                    const isFemale = /\bF\b/.test(name) || name.includes('FEMININO');
+                    return (
+                      <Cell
+                        key={index}
+                        fill={isFemale ? '#fb7185' : '#3b82f6'}
+                        fillOpacity={0.8}
+                      />
+                    );
+                  })}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
         </div>
 
         <div className="bento-item" style={{ gridColumn: 'span 12' }}>
-            <div className="sub-tabs">
-                <button className={`sub-tab-btn ${activeSubTab === 'global' ? 'active' : ''}`} onClick={() => setSubTab('global')}>Resumo</button>
-                {provasArray.map(p => <button key={p} className={`sub-tab-btn ${activeSubTab === p ? 'active' : ''}`} onClick={() => setSubTab(p)}>{p}</button>)}
-                {improvers.length > 0 && <button className={`sub-tab-btn ${activeSubTab === 'improvers' ? 'active' : ''}`} onClick={() => setSubTab('improvers')}>Subidas</button>}
-                {newAthletes.length > 0 && <button className={`sub-tab-btn ${activeSubTab === 'new' ? 'active' : ''}`} onClick={() => setSubTab('new')}>Estreias</button>}
-            </div>
+          <div className="sub-tabs">
+            <button className={`sub-tab-btn ${activeSubTab === 'global' ? 'active' : ''}`} onClick={() => setSubTab('global')}>Resumo</button>
+            {provasArray.map(p => <button key={p} className={`sub-tab-btn ${activeSubTab === p ? 'active' : ''}`} onClick={() => setSubTab(p)}>{p}</button>)}
+            {improvers.length > 0 && <button className={`sub-tab-btn ${activeSubTab === 'improvers' ? 'active' : ''}`} onClick={() => setSubTab('improvers')}>Subidas</button>}
+            {newAthletes.length > 0 && <button className={`sub-tab-btn ${activeSubTab === 'new' ? 'active' : ''}`} onClick={() => setSubTab('new')}>Estreias</button>}
+          </div>
 
-            {activeSubTab !== 'global' && activeSubTab !== 'improvers' && activeSubTab !== 'new' && (
-              <div className="view-toggle-row">
-                <div className="view-toggle">
-                  <button
-                    className={`view-toggle-btn ${classificationView === 'general' ? 'active' : ''}`}
-                    onClick={() => setClassificationView('general')}
-                  >
-                    Geral
-                  </button>
-                  <button
-                    className={`view-toggle-btn ${classificationView === 'byEscalao' ? 'active' : ''}`}
-                    onClick={() => setClassificationView('byEscalao')}
-                  >
-                    Por Escalão
-                  </button>
-                </div>
+          {activeSubTab !== 'global' && activeSubTab !== 'improvers' && activeSubTab !== 'new' && (
+            <div className="view-toggle-row">
+              <div className="view-toggle">
+                <button
+                  className={`view-toggle-btn ${classificationView === 'general' ? 'active' : ''}`}
+                  onClick={() => setClassificationView('general')}
+                >
+                  Geral
+                </button>
+                <button
+                  className={`view-toggle-btn ${classificationView === 'byEscalao' ? 'active' : ''}`}
+                  onClick={() => setClassificationView('byEscalao')}
+                >
+                  Por Escalão
+                </button>
               </div>
-            )}
+            </div>
+          )}
 
-            <TableScroll className={activeSubTab !== 'global' && activeSubTab !== 'improvers' && activeSubTab !== 'new' ? 'table-wrapper-separated' : ''}>
-                {activeSubTab === 'improvers' ? (
-                  <table>
-                    <thead>
-                      <tr>
-                        <th style={colName}>Atleta</th>
-                        <th
-                          className="sortable-header"
-                          style={colEsc}
-                          onClick={() => handleImproverSort('escalao')}
-                        >
-                          Escalão{improverSortArrow('escalao')}
-                        </th>
-                        <th
-                          className="sortable-header"
-                          style={colPts}
-                          onClick={() => handleImproverSort('improvedBy')}
-                        >
-                          Evolução{improverSortArrow('improvedBy')}
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {sortedImprovers.map((imp, i) => (
-                        <tr key={i}>
-                          <td>{imp.athlete.nome}</td>
-                          <td>{shortenEscalaoLabel(imp.athlete.escalao)}</td>
-                          <td className="text-success">↑ {imp.improvedBy}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                ) : activeSubTab === 'new' ? (
-                  <table>
-                    <thead><tr><th style={colName}>Atleta</th><th style={colEsc}>Escalão</th><th style={colPts}>Status</th></tr></thead>
-                    <tbody>{newAthletes.map((na, i) => <tr key={i}><td>{na.nome}</td><td>{shortenEscalaoLabel(na.escalao)}</td><td className="text-secondary">Estreia</td></tr>)}</tbody>
-                  </table>
-                ) : activeSubTab !== 'global' && classificationView === 'byEscalao' ? (
-                  <div className="classification-stack">
-                    {Object.keys(groupedByEscalao).sort(compareEscalao).map((escalao) => (
-                      <div key={escalao} className="escalao-section">
-                        <div className="escalao-heading">{escalao}</div>
-                        <TableScroll className="table-wrapper-nested">
-                          <table>
-                            <thead>
-                              <tr>
-                                <th style={colPos}>Pos</th>
-                                <th style={colName}>Atleta</th>
-                                <th style={colTime}>Tempo</th>
-                                <th style={colPts}>Pts</th>
+          <TableScroll className={activeSubTab !== 'global' && activeSubTab !== 'improvers' && activeSubTab !== 'new' ? 'table-wrapper-separated' : ''}>
+            {activeSubTab === 'improvers' ? (
+              <table>
+                <thead>
+                  <tr>
+                    <th style={colName}>Atleta</th>
+                    <th
+                      className="sortable-header"
+                      style={colEsc}
+                      onClick={() => handleImproverSort('escalao')}
+                    >
+                      Escalão{improverSortArrow('escalao')}
+                    </th>
+                    <th
+                      className="sortable-header"
+                      style={colPts}
+                      onClick={() => handleImproverSort('improvedBy')}
+                    >
+                      Evolução{improverSortArrow('improvedBy')}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {sortedImprovers.map((imp, i) => (
+                    <tr key={i}>
+                      <td>{imp.athlete.nome}</td>
+                      <td>{shortenEscalaoLabel(imp.athlete.escalao)}</td>
+                      <td className="text-success">↑ {imp.improvedBy}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : activeSubTab === 'new' ? (
+              <table>
+                <thead><tr><th style={colName}>Atleta</th><th style={colEsc}>Escalão</th><th style={colPts}>Status</th></tr></thead>
+                <tbody>{newAthletes.map((na, i) => <tr key={i}><td>{na.nome}</td><td>{shortenEscalaoLabel(na.escalao)}</td><td className="text-secondary">Estreia</td></tr>)}</tbody>
+              </table>
+            ) : activeSubTab !== 'global' && classificationView === 'byEscalao' ? (
+              <div className="classification-stack">
+                {Object.keys(groupedByEscalao).sort(compareEscalao).map((escalao) => (
+                  <div key={escalao} className="escalao-section">
+                    <div className="escalao-heading">{escalao}</div>
+                    <TableScroll className="table-wrapper-nested">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th style={colPos}>Pos</th>
+                            <th style={colName}>Atleta</th>
+                            <th style={colTime}>Tempo</th>
+                            <th style={colPts}>Pts</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {[...groupedByEscalao[escalao]]
+                            .sort((a, b) => a.posicao - b.posicao)
+                            .map((athlete, index) => (
+                              <tr key={`${athlete.dorsal}-${index}`}>
+                                <td>{renderMedal(athlete.posicao)}</td>
+                                <td>{athlete.nome}</td>
+                                <td>{athlete.tempo || '-'}</td>
+                                <td>{athlete.pontos}</td>
                               </tr>
-                            </thead>
-                            <tbody>
-                              {[...groupedByEscalao[escalao]]
-                                .sort((a, b) => a.posicao - b.posicao)
-                                .map((athlete, index) => (
-                                  <tr key={`${athlete.dorsal}-${index}`}>
-                                    <td>{renderMedal(athlete.posicao)}</td>
-                                    <td>{athlete.nome}</td>
-                                    <td>{athlete.tempo || '-'}</td>
-                                    <td>{athlete.pontos}</td>
-                                  </tr>
-                                ))}
-                            </tbody>
-                          </table>
-                        </TableScroll>
-                      </div>
-                    ))}
+                            ))}
+                        </tbody>
+                      </table>
+                    </TableScroll>
                   </div>
-                ) : (
-                  <>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th style={colPos}>Pos</th><th style={colName}>Atleta</th><th style={colEsc}>Escalão</th>
-                           {activeSubTab !== 'global' && <th className="sortable-header" style={colTime} onClick={() => handleSort('tempo')}>Tempo{sortArrow('tempo')}</th>}
-                          <th className="sortable-header" style={colPts} onClick={() => handleSort('pontos')}>Pts{sortArrow('pontos')}</th>
-                        </tr>
-                      </thead>
-                      <tbody>{sortedAthletes.map((a, i) => <tr key={i}><td>{renderMedal(a.posicao)}</td><td>{a.nome}</td><td>{shortenEscalaoLabel(a.escalao)}</td>{activeSubTab !== 'global' && <td>{a.tempo || '-'}</td>}<td>{a.pontos}</td></tr>)}</tbody>
-                    </table>
-                  </>
-                )}
-            </TableScroll>
+                ))}
+              </div>
+            ) : (
+              <>
+                <table>
+                  <thead>
+                    <tr>
+                      <th style={colPos}>Pos</th><th style={colName}>Atleta</th><th style={colEsc}>Escalão</th>
+                      {activeSubTab !== 'global' && <th className="sortable-header" style={colTime} onClick={() => handleSort('tempo')}>Tempo{sortArrow('tempo')}</th>}
+                      <th className="sortable-header" style={colPts} onClick={() => handleSort('pontos')}>Pts{sortArrow('pontos')}</th>
+                    </tr>
+                  </thead>
+                  <tbody>{sortedAthletes.map((a, i) => <tr key={i}><td>{renderMedal(a.posicao)}</td><td>{a.nome}</td><td>{shortenEscalaoLabel(a.escalao)}</td>{activeSubTab !== 'global' && <td>{a.tempo || '-'}</td>}<td>{a.pontos}</td></tr>)}</tbody>
+                </table>
+              </>
+            )}
+          </TableScroll>
         </div>
       </div>
     </>
@@ -504,14 +504,14 @@ function OverallStatsView({ data, renderMedal }) {
   const [generalSortAsc, setGeneralSortAsc] = useState(true);
   const isMobile = useIsMobile();
   const clubYAxisWidth = isMobile ? 125 : 220;
-  const topClubs = [...data.overall_club_rankings].sort((a,b) => a.posicao - b.posicao).slice(0, 10);
+  const topClubs = [...data.overall_club_rankings].sort((a, b) => a.posicao - b.posicao).slice(0, 10);
   const simMatch = ["sociedade de instrução musical e escolar cruz quebradense (simecq)", "simecq"];
   const simecqClub = data.overall_club_rankings.find((club) => simMatch.some((sm) => club.clube.toLowerCase().includes(sm)));
   const clubBarData = topClubs.map(c => ({
-      name: simMatch.some(sm => c.clube.toLowerCase().includes(sm)) ? "SIMECQ" : c.clube,
-      fullName: c.clube,
-      value: c.pontos,
-      isSimecq: simMatch.some(sm => c.clube.toLowerCase().includes(sm))
+    name: simMatch.some(sm => c.clube.toLowerCase().includes(sm)) ? "SIMECQ" : c.clube,
+    fullName: c.clube,
+    value: c.pontos,
+    isSimecq: simMatch.some(sm => c.clube.toLowerCase().includes(sm))
   }));
 
   const byEsc = {};
@@ -524,7 +524,7 @@ function OverallStatsView({ data, renderMedal }) {
     if (a[generalSortField] > b[generalSortField]) return generalSortAsc ? 1 : -1;
     return a.posicao_escalao - b.posicao_escalao || b.pontos - a.pontos;
   });
-  
+
   const colPos = { width: '12%' };
   const colName = { width: '48%' };
   const colPts = { width: '20%' };
@@ -573,31 +573,31 @@ function OverallStatsView({ data, renderMedal }) {
           );
         })()}
         <div style={{ width: '100%', height: '340px', minWidth: 0 }}>
-            <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={340}>
-                <BarChart data={clubBarData} layout="vertical" margin={{ top: 8, right: 18, bottom: 8, left: isMobile ? 4 : 8 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" horizontal={false} />
-                    <XAxis type="number" stroke="var(--muted)" tick={{ fontSize: 10 }} />
-                    <YAxis dataKey="name" type="category" width={clubYAxisWidth} stroke="var(--muted)" tick={{ fontSize: isMobile ? 10 : 11 }} tickFormatter={isMobile ? (v) => shortenClubLabel(v).slice(0, 18) : shortenClubLabel} />
-                    <Tooltip
-                      contentStyle={tooltipTheme}
-                      itemStyle={tooltipItemStyle}
-                      labelStyle={tooltipLabelStyle}
-                      formatter={(value) => [value, 'Pontos']}
-                      labelFormatter={(_, payload) => payload?.[0]?.payload?.fullName || _}
-                    />
-                    <Bar dataKey="value" barSize={24} radius={[0, 6, 6, 0]}>
-                        {clubBarData.map((e, index) => (
-                          <Cell
-                            key={index}
-                            fill={e.isSimecq ? 'var(--chart-simecq)' : 'var(--primary)'}
-                            fillOpacity={e.isSimecq ? 1 : 0.7}
-                            stroke={e.isSimecq ? 'var(--chart-simecq-stroke)' : 'transparent'}
-                            strokeWidth={e.isSimecq ? 2 : 0}
-                          />
-                        ))}
-                    </Bar>
-                </BarChart>
-            </ResponsiveContainer>
+          <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={340}>
+            <BarChart data={clubBarData} layout="vertical" margin={{ top: 8, right: 18, bottom: 8, left: isMobile ? 4 : 8 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" horizontal={false} />
+              <XAxis type="number" stroke="var(--muted)" tick={{ fontSize: 10 }} />
+              <YAxis dataKey="name" type="category" width={clubYAxisWidth} stroke="var(--muted)" tick={{ fontSize: isMobile ? 10 : 11 }} tickFormatter={isMobile ? (v) => shortenClubLabel(v).slice(0, 18) : shortenClubLabel} />
+              <Tooltip
+                contentStyle={tooltipTheme}
+                itemStyle={tooltipItemStyle}
+                labelStyle={tooltipLabelStyle}
+                formatter={(value) => [value, 'Pontos']}
+                labelFormatter={(_, payload) => payload?.[0]?.payload?.fullName || _}
+              />
+              <Bar dataKey="value" barSize={24} radius={[0, 6, 6, 0]}>
+                {clubBarData.map((e, index) => (
+                  <Cell
+                    key={index}
+                    fill={e.isSimecq ? 'var(--chart-simecq)' : 'var(--primary)'}
+                    fillOpacity={e.isSimecq ? 1 : 0.7}
+                    stroke={e.isSimecq ? 'var(--chart-simecq-stroke)' : 'transparent'}
+                    strokeWidth={e.isSimecq ? 2 : 0}
+                  />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
         </div>
       </div>
 
@@ -647,23 +647,23 @@ function OverallStatsView({ data, renderMedal }) {
           </TableScroll>
         ) : (
           Object.keys(byEsc).sort(compareEscalao).map(esc => {
-            const ats = [...byEsc[esc]].sort((a,b) => a.posicao_escalao - b.posicao_escalao);
+            const ats = [...byEsc[esc]].sort((a, b) => a.posicao_escalao - b.posicao_escalao);
             return (
               <div key={esc} className="escalao-section">
-                  <div className="escalao-heading">{esc}</div>
-                  <TableScroll>
-                      <table>
-                          <thead><tr><th style={colPos}>Pos</th><th style={colName}>Atleta</th><th style={colPts}>Pontos</th><th style={colPart}>Participações</th></tr></thead>
-                          <tbody>
-                              {ats.map((a, i) => (
-                                  <tr key={i} className={a.posicao_escalao <= 15 ? 'highlight-row' : ''}>
-                                      <td>{a.posicao_escalao <= 15 && <Star size={10} fill="var(--success)" stroke="none" style={{marginRight:4}} />}{renderMedal(a.posicao_escalao)}</td>
-                                      <td>{a.nome}</td><td>{a.pontos}</td><td>{a.participacoes}</td>
-                                  </tr>
-                              ))}
-                          </tbody>
-                      </table>
-                  </TableScroll>
+                <div className="escalao-heading">{esc}</div>
+                <TableScroll>
+                  <table>
+                    <thead><tr><th style={colPos}>Pos</th><th style={colName}>Atleta</th><th style={colPts}>Pontos</th><th style={colPart}>Participações</th></tr></thead>
+                    <tbody>
+                      {ats.map((a, i) => (
+                        <tr key={i} className={a.posicao_escalao <= 15 ? 'highlight-row' : ''}>
+                          <td>{a.posicao_escalao <= 15 && <Star size={10} fill="var(--success)" stroke="none" style={{ marginRight: 4 }} />}{renderMedal(a.posicao_escalao)}</td>
+                          <td>{a.nome}</td><td>{a.pontos}</td><td>{a.participacoes}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </TableScroll>
               </div>
             );
           })
@@ -686,8 +686,8 @@ function AthleteStatsView({ data, renderMedal, theme }) {
 
   const athletes = [...data.best_athletes].sort((a, b) => a.nome.localeCompare(b.nome));
 
-  const filteredAthletes = athletes.filter(a => 
-    a.nome.toLowerCase().includes(searchQuery.toLowerCase()) || 
+  const filteredAthletes = athletes.filter(a =>
+    a.nome.toLowerCase().includes(searchQuery.toLowerCase()) ||
     a.escalao.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -746,18 +746,18 @@ function AthleteStatsView({ data, renderMedal, theme }) {
       <div className="bento-item" style={{ gridColumn: 'span 12' }}>
         <div className="flex-center" style={{ marginBottom: '1rem', flexDirection: isMobile ? 'column' : 'row', gap: '1rem' }}>
           <div className="search-container" style={{ width: '100%', maxWidth: '300px' }}>
-            <input 
-              type="text" 
-              className="modern-input" 
-              placeholder="Pesquisar atleta..." 
+            <input
+              type="text"
+              className="modern-input"
+              placeholder="Pesquisar atleta..."
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
               style={{ width: '100%' }}
             />
           </div>
-          <select 
-            className="modern-select" 
-            value={selectedAthlete} 
+          <select
+            className="modern-select"
+            value={selectedAthlete}
             onChange={e => setSelectedAthlete(e.target.value)}
             style={{ width: '100%', maxWidth: '400px', marginBottom: 0 }}
           >
@@ -779,11 +779,25 @@ function AthleteStatsView({ data, renderMedal, theme }) {
         <div className="kpi-value">{Math.round(currentAthlete.pontos)}</div>
         <div className="kpi-subtext">Acumulado da época</div>
       </div>
-      
+
       <div className="bento-item" style={{ gridColumn: 'span 3' }}>
         <div className="item-title"><Trophy size={16} /> Rank Escalão</div>
-        <div className="kpi-value">#{currentAthlete.posicao_escalao}</div>
-        <div className="kpi-subtext">Geral no {shortenEscalaoLabel(currentAthlete.escalao)}</div>
+        <div className="kpi-value">
+          {currentAthlete.posicao_escalao === 1 ? (
+            <span className="flex-align" style={{ gap: '8px', color: '#fbbf24' }}><Trophy size={28} fill="currentColor" stroke="none" /> 1º</span>
+          ) : currentAthlete.posicao_escalao === 9999 ? (
+            "N/A"
+          ) : (
+            `#${currentAthlete.posicao_escalao}`
+          )}
+        </div>
+        <div className="kpi-subtext">
+          {currentAthlete.posicao_escalao === 1
+            ? `Líder no ${shortenEscalaoLabel(currentAthlete.escalao)}`
+            : currentAthlete.posicao_escalao === 9999
+              ? "Sem classificação geral"
+              : `+${Math.round(currentAthlete.pontos_falta_proximo || 0)} pts p/ subir • Geral no ${shortenEscalaoLabel(currentAthlete.escalao)}`}
+        </div>
       </div>
 
       <div className="bento-item" style={{ gridColumn: 'span 3' }}>
@@ -805,20 +819,20 @@ function AthleteStatsView({ data, renderMedal, theme }) {
             <LineChart data={evolutionData}>
               <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" vertical={false} />
               <XAxis dataKey="raceName" stroke="var(--muted)" tick={{ fontSize: 10 }} />
-              <YAxis 
+              <YAxis
                 yAxisId="left"
                 orientation="left"
-                reversed 
-                domain={[1, 'auto']} 
-                stroke="var(--success)" 
+                reversed
+                domain={[1, 'auto']}
+                stroke="var(--success)"
                 tick={{ fontSize: 10 }}
                 allowDecimals={false}
                 label={{ value: 'Posição', angle: -90, position: 'insideLeft', style: { textAnchor: 'middle', fill: 'var(--success)' } }}
               />
-              <YAxis 
+              <YAxis
                 yAxisId="right"
                 orientation="right"
-                stroke={pointsColor} 
+                stroke={pointsColor}
                 tick={{ fontSize: 10 }}
                 allowDecimals={false}
                 label={{ value: 'Pontos', angle: 90, position: 'insideRight', style: { textAnchor: 'middle', fill: pointsColor } }}
@@ -833,22 +847,22 @@ function AthleteStatsView({ data, renderMedal, theme }) {
                   return [value, name];
                 }}
               />
-              <Line 
+              <Line
                 yAxisId="left"
-                type="monotone" 
-                dataKey="posicao" 
-                stroke="var(--success)" 
-                strokeWidth={3} 
+                type="monotone"
+                dataKey="posicao"
+                stroke="var(--success)"
+                strokeWidth={3}
                 dot={{ r: 6, fill: 'var(--success)', strokeWidth: 2, stroke: 'var(--background)' }}
                 activeDot={{ r: 8 }}
                 name="Posição"
               />
-              <Line 
+              <Line
                 yAxisId="right"
-                type="monotone" 
-                dataKey="pontos" 
-                stroke={pointsColor} 
-                strokeWidth={3} 
+                type="monotone"
+                dataKey="pontos"
+                stroke={pointsColor}
+                strokeWidth={3}
                 dot={{ r: 6, fill: pointsColor, strokeWidth: 2, stroke: 'var(--background)' }}
                 activeDot={{ r: 8 }}
                 name="Pontos"

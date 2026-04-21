@@ -3455,6 +3455,16 @@
           "prova": "Prova 1"
         },
         {
+          "escalao": "M 50",
+          "posicao": 44,
+          "dorsal": "1429",
+          "nome": "António  Manuel Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:42:52:290s",
+          "prova": "Prova 1"
+        },
+        {
           "escalao": "F 50",
           "posicao": 5,
           "dorsal": "844",
@@ -3699,7 +3709,7 @@
         {
           "posicao": 1,
           "clube": "Associação Desportiva NucleOeiras - ADNO",
-          "pontos": 645.0
+          "pontos": 632.0
         },
         {
           "posicao": 2,
@@ -3719,22 +3729,22 @@
         {
           "posicao": 5,
           "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
-          "pontos": 224.0
+          "pontos": 225.0
         },
         {
           "posicao": 6,
-          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
-          "pontos": 184.0
+          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+          "pontos": 192.0
         },
         {
           "posicao": 7,
-          "clube": "Grupo Musical 1º Dezembro Queijas",
-          "pontos": 184.0
+          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+          "pontos": 185.0
         },
         {
           "posicao": 8,
-          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
-          "pontos": 181.0
+          "clube": "Grupo Musical 1º Dezembro Queijas",
+          "pontos": 185.0
         },
         {
           "posicao": 9,
@@ -3744,21 +3754,21 @@
         {
           "posicao": 10,
           "clube": "Valejas Atlético Clube",
-          "pontos": 93.0
+          "pontos": 92.0
         },
         {
           "posicao": 11,
           "clube": "GMCJamor",
-          "pontos": 85.0
+          "pontos": 87.0
         },
         {
           "posicao": 12,
-          "clube": "Sport Ponto Come",
+          "clube": "Grupo Desportivo de Barcarena",
           "pontos": 76.0
         },
         {
           "posicao": 13,
-          "clube": "Grupo Desportivo de Barcarena",
+          "clube": "Sport Ponto Come",
           "pontos": 75.0
         },
         {
@@ -3794,7 +3804,7 @@
         {
           "posicao": 20,
           "clube": "New Me",
-          "pontos": 31.0
+          "pontos": 33.0
         },
         {
           "posicao": 21,
@@ -3804,7 +3814,7 @@
         {
           "posicao": 22,
           "clube": "Atlético Clube de Porto Salvo",
-          "pontos": 17.0
+          "pontos": 18.0
         },
         {
           "posicao": 23,
@@ -4302,7 +4312,7 @@
         {
           "posicao": 1,
           "clube": "Associação Desportiva NucleOeiras - ADNO",
-          "pontos": 624.0
+          "pontos": 625.0
         },
         {
           "posicao": 2,
@@ -4337,7 +4347,7 @@
         {
           "posicao": 8,
           "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
-          "pontos": 197.0
+          "pontos": 196.0
         },
         {
           "posicao": 9,
@@ -4446,7 +4456,7 @@
     {
       "posicao": 1,
       "clube": "Associação Desportiva NucleOeiras - ADNO",
-      "pontos": 4557.0
+      "pontos": 4545.0
     },
     {
       "posicao": 2,
@@ -4461,7 +4471,7 @@
     {
       "posicao": 4,
       "clube": "Grupo Musical 1º Dezembro Queijas",
-      "pontos": 1775.0
+      "pontos": 1776.0
     },
     {
       "posicao": 5,
@@ -4476,12 +4486,12 @@
     {
       "posicao": 7,
       "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
-      "pontos": 1405.0
+      "pontos": 1406.0
     },
     {
       "posicao": 8,
       "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
-      "pontos": 1280.0
+      "pontos": 1291.0
     },
     {
       "posicao": 9,
@@ -4491,12 +4501,12 @@
     {
       "posicao": 10,
       "clube": "Valejas Atlético Clube",
-      "pontos": 689.0
+      "pontos": 688.0
     },
     {
       "posicao": 11,
       "clube": "GMCJamor",
-      "pontos": 644.0
+      "pontos": 646.0
     },
     {
       "posicao": 12,
@@ -4506,12 +4516,12 @@
     {
       "posicao": 13,
       "clube": "Sport Ponto Come",
-      "pontos": 553.0
+      "pontos": 552.0
     },
     {
       "posicao": 14,
       "clube": "Grupo Desportivo de Barcarena",
-      "pontos": 542.0
+      "pontos": 543.0
     },
     {
       "posicao": 15,
@@ -4551,7 +4561,7 @@
     {
       "posicao": 22,
       "clube": "New Me",
-      "pontos": 177.0
+      "pontos": 179.0
     },
     {
       "posicao": 23,
@@ -4561,7 +4571,7 @@
     {
       "posicao": 24,
       "clube": "Atlético Clube de Porto Salvo",
-      "pontos": 152.0
+      "pontos": 153.0
     },
     {
       "posicao": 25,
@@ -4661,7 +4671,8 @@
       "pontos": 78.0,
       "participacoes": 6,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 2
+      "posicao_escalao": 2,
+      "pontos_falta_proximo": 15.0
     },
     {
       "dorsal": "865",
@@ -4669,7 +4680,8 @@
       "pontos": 58.0,
       "participacoes": 5,
       "escalao": "F 55",
-      "posicao_escalao": 2
+      "posicao_escalao": 2,
+      "pontos_falta_proximo": 23.0
     },
     {
       "dorsal": "900",
@@ -4677,7 +4689,8 @@
       "pontos": 81.0,
       "participacoes": 7,
       "escalao": "F 65",
-      "posicao_escalao": 2
+      "posicao_escalao": 2,
+      "pontos_falta_proximo": 9.0
     },
     {
       "dorsal": "904",
@@ -4685,7 +4698,8 @@
       "pontos": 54.0,
       "participacoes": 6,
       "escalao": "Sub 18 - Femininos",
-      "posicao_escalao": 3
+      "posicao_escalao": 3,
+      "pontos_falta_proximo": 16.0
     },
     {
       "dorsal": "857",
@@ -4693,7 +4707,8 @@
       "pontos": 28.0,
       "participacoes": 2,
       "escalao": "Sub 20 - Femininos",
-      "posicao_escalao": 3
+      "posicao_escalao": 3,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "902",
@@ -4701,7 +4716,8 @@
       "pontos": 65.0,
       "participacoes": 5,
       "escalao": "F 65",
-      "posicao_escalao": 3
+      "posicao_escalao": 3,
+      "pontos_falta_proximo": 16.0
     },
     {
       "dorsal": "869",
@@ -4709,7 +4725,8 @@
       "pontos": 45.0,
       "participacoes": 5,
       "escalao": "Sub 18 - Femininos",
-      "posicao_escalao": 4
+      "posicao_escalao": 4,
+      "pontos_falta_proximo": 9.0
     },
     {
       "dorsal": "844",
@@ -4717,7 +4734,8 @@
       "pontos": 46.0,
       "participacoes": 6,
       "escalao": "F 50",
-      "posicao_escalao": 4
+      "posicao_escalao": 4,
+      "pontos_falta_proximo": 12.0
     },
     {
       "dorsal": "858",
@@ -4725,7 +4743,8 @@
       "pontos": 40.0,
       "participacoes": 6,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 5
+      "posicao_escalao": 5,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "912",
@@ -4733,7 +4752,8 @@
       "pontos": 38.0,
       "participacoes": 4,
       "escalao": "M 40",
-      "posicao_escalao": 6
+      "posicao_escalao": 6,
+      "pontos_falta_proximo": 6.0
     },
     {
       "dorsal": "884",
@@ -4741,7 +4761,8 @@
       "pontos": 37.0,
       "participacoes": 4,
       "escalao": "M 55",
-      "posicao_escalao": 6
+      "posicao_escalao": 6,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "842",
@@ -4749,7 +4770,8 @@
       "pontos": 49.0,
       "participacoes": 7,
       "escalao": "F 65",
-      "posicao_escalao": 6
+      "posicao_escalao": 6,
+      "pontos_falta_proximo": 9.0
     },
     {
       "dorsal": "862",
@@ -4757,7 +4779,8 @@
       "pontos": 26.0,
       "participacoes": 3,
       "escalao": "F 70",
-      "posicao_escalao": 6
+      "posicao_escalao": 6,
+      "pontos_falta_proximo": 11.0
     },
     {
       "dorsal": "856",
@@ -4765,7 +4788,8 @@
       "pontos": 32.0,
       "participacoes": 4,
       "escalao": "F 40",
-      "posicao_escalao": 7
+      "posicao_escalao": 7,
+      "pontos_falta_proximo": 5.0
     },
     {
       "dorsal": "1927",
@@ -4773,7 +4797,8 @@
       "pontos": 20.0,
       "participacoes": 3,
       "escalao": "Sub 20 - Masculinos",
-      "posicao_escalao": 8
+      "posicao_escalao": 8,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "874",
@@ -4781,7 +4806,8 @@
       "pontos": 32.0,
       "participacoes": 6,
       "escalao": "M 55",
-      "posicao_escalao": 8
+      "posicao_escalao": 8,
+      "pontos_falta_proximo": 3.0
     },
     {
       "dorsal": "930",
@@ -4789,7 +4815,8 @@
       "pontos": 26.0,
       "participacoes": 6,
       "escalao": "F 45",
-      "posicao_escalao": 9
+      "posicao_escalao": 9,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "915",
@@ -4797,7 +4824,8 @@
       "pontos": 29.0,
       "participacoes": 7,
       "escalao": "F 60",
-      "posicao_escalao": 10
+      "posicao_escalao": 10,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "867",
@@ -4805,7 +4833,8 @@
       "pontos": 25.0,
       "participacoes": 4,
       "escalao": "M 65",
-      "posicao_escalao": 11
+      "posicao_escalao": 11,
+      "pontos_falta_proximo": 10.0
     },
     {
       "dorsal": "852",
@@ -4813,7 +4842,8 @@
       "pontos": 20.0,
       "participacoes": 5,
       "escalao": "Sub 23 - Masculinos",
-      "posicao_escalao": 12
+      "posicao_escalao": 12,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "853",
@@ -4821,7 +4851,8 @@
       "pontos": 23.0,
       "participacoes": 5,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 12
+      "posicao_escalao": 12,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "931",
@@ -4829,7 +4860,8 @@
       "pontos": 21.0,
       "participacoes": 3,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 12
+      "posicao_escalao": 12,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "3115",
@@ -4837,7 +4869,8 @@
       "pontos": 19.0,
       "participacoes": 3,
       "escalao": "Sub 14 - Femininos",
-      "posicao_escalao": 13
+      "posicao_escalao": 13,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "868",
@@ -4845,7 +4878,8 @@
       "pontos": 8.0,
       "participacoes": 1,
       "escalao": "Sub 20 - Masculinos",
-      "posicao_escalao": 13
+      "posicao_escalao": 13,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "899",
@@ -4853,7 +4887,8 @@
       "pontos": 19.0,
       "participacoes": 7,
       "escalao": "F 55",
-      "posicao_escalao": 13
+      "posicao_escalao": 13,
+      "pontos_falta_proximo": 4.0
     },
     {
       "dorsal": "3113",
@@ -4861,7 +4896,8 @@
       "pontos": 17.0,
       "participacoes": 5,
       "escalao": "Sub 14 - Femininos",
-      "posicao_escalao": 14
+      "posicao_escalao": 14,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "1519",
@@ -4869,7 +4905,8 @@
       "pontos": 21.0,
       "participacoes": 4,
       "escalao": "M 35",
-      "posicao_escalao": 14
+      "posicao_escalao": 14,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "3230",
@@ -4877,7 +4914,8 @@
       "pontos": 16.0,
       "participacoes": 5,
       "escalao": "Sub 10 - Femininos",
-      "posicao_escalao": 15
+      "posicao_escalao": 15,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "892",
@@ -4885,7 +4923,8 @@
       "pontos": 6.0,
       "participacoes": 1,
       "escalao": "Sub 20 - Masculinos",
-      "posicao_escalao": 15
+      "posicao_escalao": 15,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "864",
@@ -4893,7 +4932,8 @@
       "pontos": 17.0,
       "participacoes": 7,
       "escalao": "M 50",
-      "posicao_escalao": 15
+      "posicao_escalao": 15,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "895",
@@ -4901,7 +4941,8 @@
       "pontos": 18.0,
       "participacoes": 7,
       "escalao": "F 55",
-      "posicao_escalao": 17
+      "posicao_escalao": 17,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "888",
@@ -4909,7 +4950,8 @@
       "pontos": 16.0,
       "participacoes": 4,
       "escalao": "M 40",
-      "posicao_escalao": 18
+      "posicao_escalao": 18,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "968",
@@ -4917,7 +4959,8 @@
       "pontos": 17.0,
       "participacoes": 2,
       "escalao": "F 55",
-      "posicao_escalao": 18
+      "posicao_escalao": 18,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "1232",
@@ -4925,7 +4968,8 @@
       "pontos": 15.0,
       "participacoes": 7,
       "escalao": "M 40",
-      "posicao_escalao": 19
+      "posicao_escalao": 19,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "927",
@@ -4933,7 +4977,8 @@
       "pontos": 13.0,
       "participacoes": 7,
       "escalao": "M 55",
-      "posicao_escalao": 19
+      "posicao_escalao": 19,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "846",
@@ -4941,7 +4986,8 @@
       "pontos": 16.0,
       "participacoes": 7,
       "escalao": "F 55",
-      "posicao_escalao": 19
+      "posicao_escalao": 19,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "3114",
@@ -4949,7 +4995,8 @@
       "pontos": 6.0,
       "participacoes": 2,
       "escalao": "Sub 14 - Femininos",
-      "posicao_escalao": 20
+      "posicao_escalao": 20,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "855",
@@ -4957,7 +5004,8 @@
       "pontos": 16.0,
       "participacoes": 6,
       "escalao": "F 55",
-      "posicao_escalao": 20
+      "posicao_escalao": 20,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "873",
@@ -4965,7 +5013,8 @@
       "pontos": 16.0,
       "participacoes": 2,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 21
+      "posicao_escalao": 21,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "936",
@@ -4973,7 +5022,8 @@
       "pontos": 14.0,
       "participacoes": 7,
       "escalao": "M 60",
-      "posicao_escalao": 21
+      "posicao_escalao": 21,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "3108",
@@ -4981,7 +5031,8 @@
       "pontos": 6.0,
       "participacoes": 2,
       "escalao": "Sub 14 - Masculinos",
-      "posicao_escalao": 22
+      "posicao_escalao": 22,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "922",
@@ -4989,7 +5040,8 @@
       "pontos": 6.0,
       "participacoes": 2,
       "escalao": "Sub 23 - Masculinos",
-      "posicao_escalao": 22
+      "posicao_escalao": 22,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "920",
@@ -4997,7 +5049,8 @@
       "pontos": 12.0,
       "participacoes": 7,
       "escalao": "M 50",
-      "posicao_escalao": 22
+      "posicao_escalao": 22,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "897",
@@ -5005,7 +5058,8 @@
       "pontos": 11.0,
       "participacoes": 4,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 23
+      "posicao_escalao": 23,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "891",
@@ -5013,7 +5067,8 @@
       "pontos": 13.0,
       "participacoes": 5,
       "escalao": "F 50",
-      "posicao_escalao": 23
+      "posicao_escalao": 23,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "3112",
@@ -5021,7 +5076,8 @@
       "pontos": 3.0,
       "participacoes": 1,
       "escalao": "Sub 12 - Masculinos",
-      "posicao_escalao": 24
+      "posicao_escalao": 24,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "883",
@@ -5029,7 +5085,8 @@
       "pontos": 14.0,
       "participacoes": 5,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 24
+      "posicao_escalao": 24,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "911",
@@ -5037,7 +5094,8 @@
       "pontos": 12.0,
       "participacoes": 6,
       "escalao": "M 60",
-      "posicao_escalao": 24
+      "posicao_escalao": 24,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "937",
@@ -5045,7 +5103,8 @@
       "pontos": 3.0,
       "participacoes": 1,
       "escalao": "M 75",
-      "posicao_escalao": 24
+      "posicao_escalao": 24,
+      "pontos_falta_proximo": 3.0
     },
     {
       "dorsal": "905",
@@ -5053,7 +5112,8 @@
       "pontos": 3.0,
       "participacoes": 1,
       "escalao": "Sub 23 - Masculinos",
-      "posicao_escalao": 25
+      "posicao_escalao": 25,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "879",
@@ -5061,7 +5121,8 @@
       "pontos": 10.0,
       "participacoes": 4,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 25
+      "posicao_escalao": 25,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "843",
@@ -5069,7 +5130,8 @@
       "pontos": 9.0,
       "participacoes": 3,
       "escalao": "M 35",
-      "posicao_escalao": 26
+      "posicao_escalao": 26,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "909",
@@ -5077,7 +5139,8 @@
       "pontos": 10.0,
       "participacoes": 6,
       "escalao": "M 55",
-      "posicao_escalao": 27
+      "posicao_escalao": 27,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "847",
@@ -5085,7 +5148,8 @@
       "pontos": 9.0,
       "participacoes": 5,
       "escalao": "F 50",
-      "posicao_escalao": 28
+      "posicao_escalao": 28,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "908",
@@ -5093,7 +5157,8 @@
       "pontos": 10.0,
       "participacoes": 4,
       "escalao": "M 55",
-      "posicao_escalao": 28
+      "posicao_escalao": 28,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "889",
@@ -5101,7 +5166,8 @@
       "pontos": 10.0,
       "participacoes": 4,
       "escalao": "M 55",
-      "posicao_escalao": 28
+      "posicao_escalao": 28,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "854",
@@ -5109,7 +5175,8 @@
       "pontos": 10.0,
       "participacoes": 4,
       "escalao": "M 65",
-      "posicao_escalao": 29
+      "posicao_escalao": 29,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "849",
@@ -5117,7 +5184,8 @@
       "pontos": 9.0,
       "participacoes": 3,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 34
+      "posicao_escalao": 34,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "859",
@@ -5125,7 +5193,8 @@
       "pontos": 6.0,
       "participacoes": 5,
       "escalao": "F 45",
-      "posicao_escalao": 34
+      "posicao_escalao": 34,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "845",
@@ -5133,7 +5202,8 @@
       "pontos": 9.0,
       "participacoes": 3,
       "escalao": "F 55",
-      "posicao_escalao": 34
+      "posicao_escalao": 34,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "921",
@@ -5141,7 +5211,8 @@
       "pontos": 7.0,
       "participacoes": 4,
       "escalao": "M 65",
-      "posicao_escalao": 35
+      "posicao_escalao": 35,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "1234",
@@ -5149,7 +5220,8 @@
       "pontos": 4.0,
       "participacoes": 2,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 36
+      "posicao_escalao": 36,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "938",
@@ -5157,7 +5229,8 @@
       "pontos": 7.0,
       "participacoes": 6,
       "escalao": "M 45",
-      "posicao_escalao": 36
+      "posicao_escalao": 36,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "919",
@@ -5165,7 +5238,8 @@
       "pontos": 8.0,
       "participacoes": 3,
       "escalao": "M 60",
-      "posicao_escalao": 37
+      "posicao_escalao": 37,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "925",
@@ -5173,7 +5247,8 @@
       "pontos": 3.0,
       "participacoes": 1,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 39
+      "posicao_escalao": 39,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "860",
@@ -5181,7 +5256,8 @@
       "pontos": 3.0,
       "participacoes": 1,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 39
+      "posicao_escalao": 39,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "1924",
@@ -5189,7 +5265,8 @@
       "pontos": 2.0,
       "participacoes": 1,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 40
+      "posicao_escalao": 40,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "917",
@@ -5197,7 +5274,8 @@
       "pontos": 2.0,
       "participacoes": 1,
       "escalao": "F 50",
-      "posicao_escalao": 40
+      "posicao_escalao": 40,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "861",
@@ -5205,7 +5283,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 41
+      "posicao_escalao": 41,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "509",
@@ -5213,7 +5292,8 @@
       "pontos": 6.0,
       "participacoes": 3,
       "escalao": "M 50",
-      "posicao_escalao": 41
+      "posicao_escalao": 41,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "863",
@@ -5221,7 +5301,8 @@
       "pontos": 2.0,
       "participacoes": 1,
       "escalao": "F 55",
-      "posicao_escalao": 43
+      "posicao_escalao": 43,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "887",
@@ -5229,7 +5310,8 @@
       "pontos": 5.0,
       "participacoes": 5,
       "escalao": "M 60",
-      "posicao_escalao": 43
+      "posicao_escalao": 43,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "916",
@@ -5237,7 +5319,8 @@
       "pontos": 4.0,
       "participacoes": 4,
       "escalao": "M 55",
-      "posicao_escalao": 45
+      "posicao_escalao": 45,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "929",
@@ -5245,7 +5328,8 @@
       "pontos": 2.0,
       "participacoes": 1,
       "escalao": "M 35",
-      "posicao_escalao": 46
+      "posicao_escalao": 46,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "1520",
@@ -5253,7 +5337,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "M 35",
-      "posicao_escalao": 47
+      "posicao_escalao": 47,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "880",
@@ -5261,7 +5346,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "M 35",
-      "posicao_escalao": 47
+      "posicao_escalao": 47,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "924",
@@ -5269,7 +5355,8 @@
       "pontos": 4.0,
       "participacoes": 4,
       "escalao": "M 45",
-      "posicao_escalao": 47
+      "posicao_escalao": 47,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "885",
@@ -5277,7 +5364,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "M 65",
-      "posicao_escalao": 47
+      "posicao_escalao": 47,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "914",
@@ -5285,7 +5373,8 @@
       "pontos": 3.0,
       "participacoes": 3,
       "escalao": "M 45",
-      "posicao_escalao": 48
+      "posicao_escalao": 48,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "876",
@@ -5293,7 +5382,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "F 45",
-      "posicao_escalao": 48
+      "posicao_escalao": 48,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "848",
@@ -5301,7 +5391,8 @@
       "pontos": 4.0,
       "participacoes": 4,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 49
+      "posicao_escalao": 49,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "933",
@@ -5309,7 +5400,8 @@
       "pontos": 4.0,
       "participacoes": 3,
       "escalao": "M 40",
-      "posicao_escalao": 51
+      "posicao_escalao": 51,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "1443",
@@ -5317,7 +5409,8 @@
       "pontos": 2.0,
       "participacoes": 2,
       "escalao": "M 45",
-      "posicao_escalao": 51
+      "posicao_escalao": 51,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "871",
@@ -5325,7 +5418,8 @@
       "pontos": 2.0,
       "participacoes": 1,
       "escalao": "M 60",
-      "posicao_escalao": 51
+      "posicao_escalao": 51,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "886",
@@ -5333,7 +5427,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "M 45",
-      "posicao_escalao": 53
+      "posicao_escalao": 53,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "487",
@@ -5341,7 +5436,8 @@
       "pontos": 2.0,
       "participacoes": 2,
       "escalao": "M 50",
-      "posicao_escalao": 53
+      "posicao_escalao": 53,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "893",
@@ -5349,7 +5445,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "M 55",
-      "posicao_escalao": 54
+      "posicao_escalao": 54,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "870",
@@ -5357,7 +5454,17 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "M 50",
-      "posicao_escalao": 55
+      "posicao_escalao": 55,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "1429",
+      "nome": "António  Manuel Silva",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 50",
+      "posicao_escalao": 55,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "850",
@@ -5365,7 +5472,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 57
+      "posicao_escalao": 57,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "890",
@@ -5373,7 +5481,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 57
+      "posicao_escalao": 57,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "881",
@@ -5381,7 +5490,8 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "M 40",
-      "posicao_escalao": 59
+      "posicao_escalao": 59,
+      "pontos_falta_proximo": 1.0
     }
   ]
 }
