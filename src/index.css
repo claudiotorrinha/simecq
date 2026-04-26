@@ -721,3 +721,85 @@ option {
     top: 0;
   }
 }
+
+/* Club evolution charts */
+.club-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
+}
+
+.club-chart-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+/* Club filter pill bar */
+.club-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  background: var(--surface-strong);
+  border: 1px solid var(--card-border);
+}
+
+.club-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid var(--card-border);
+  background: transparent;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+.club-filter-pill.active {
+  background: var(--pill-color-dim, rgba(255,255,255,0.08));
+  border-color: var(--pill-color, var(--card-border));
+  color: var(--foreground);
+  opacity: 1;
+}
+
+.club-filter-pill.simecq {
+  cursor: default;
+  border-color: #22c55e66;
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  opacity: 1;
+}
+
+.club-filter-pill:not(.simecq):not(.active):hover {
+  opacity: 0.75;
+  border-color: rgba(255,255,255,0.2);
+  color: var(--foreground);
+}
+
+.club-filter-pill.hovered {
+  box-shadow: 0 0 0 2px var(--pill-color, rgba(255,255,255,0.3));
+}
+
+.pill-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--muted);
+  transition: background 0.2s;
+}
