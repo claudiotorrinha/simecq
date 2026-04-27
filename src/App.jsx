@@ -556,20 +556,48 @@ function OverallStatsView({ data, renderMedal }) {
   });
 
   // Renders a permanent value label at the last (rightmost) data point of a line
-  const makeEndLabel = (dataLength, color, formatter, dimmed) => ({ x, y, value, index }) => {
+  const makeEndLabel = (dataLength, color, formatter, dimmed, emphasize = false) => ({ x, y, value, index }) => {
     if (index !== dataLength - 1 || value == null) return null;
+    const labelText = formatter(value);
+    const fontSize = emphasize ? 12 : 10;
+    const labelX = x + 8;
+    const labelOpacity = emphasize ? 1 : (dimmed ? 0.15 : 1);
+    const textLength = String(labelText).length;
+    const labelWidth = emphasize
+      ? Math.max(18, textLength * fontSize * 0.45 + 6)
+      : 0;
+
     return (
-      <text
-        x={x + 7}
-        y={y}
-        fill={color}
-        fontSize={10}
-        fontWeight={700}
-        dominantBaseline="middle"
-        style={{ pointerEvents: 'none', opacity: dimmed ? 0.15 : 1 }}
-      >
-        {formatter(value)}
-      </text>
+      <g>
+        {emphasize && (
+          <rect
+            x={labelX - 4}
+            y={y - fontSize / 2 - 3}
+            width={labelWidth}
+            height={fontSize + 6}
+            rx={4}
+            fill="var(--background)"
+            opacity={0.92}
+          />
+        )}
+        <text
+          x={labelX}
+          y={y}
+          fill={color}
+          fontSize={fontSize}
+          fontWeight={emphasize ? 800 : 700}
+          dominantBaseline="middle"
+          style={{
+            pointerEvents: 'none',
+            opacity: labelOpacity,
+            paintOrder: emphasize ? 'stroke' : undefined,
+            stroke: emphasize ? 'var(--background)' : undefined,
+            strokeWidth: emphasize ? 4 : undefined,
+          }}
+        >
+          {labelText}
+        </text>
+      </g>
     );
   };
   const isMobile = useIsMobile();
@@ -757,7 +785,7 @@ function OverallStatsView({ data, renderMedal }) {
                       strokeOpacity={dimmed ? 0.12 : (isSim ? 1 : 0.85)}
                       dot={isSim ? { r: 5, fill: '#22c55e', stroke: 'var(--background)', strokeWidth: 2 } : { r: 3, fillOpacity: dimmed ? 0.1 : 1 }}
                       activeDot={{ r: isSim ? 8 : 6, onMouseEnter: () => setHoveredClub(club.clube), onMouseLeave: () => setHoveredClub(null) }}
-                      label={makeEndLabel(perRaceChartData.length, color, fmt1, dimmed)}
+                      label={makeEndLabel(perRaceChartData.length, color, fmt1, dimmed, isSim)}
                       name={club.clube}
                       connectNulls
                     />
@@ -817,7 +845,7 @@ function OverallStatsView({ data, renderMedal }) {
                       strokeOpacity={dimmed ? 0.12 : (isSim ? 1 : 0.85)}
                       dot={isSim ? { r: 5, fill: '#22c55e', stroke: 'var(--background)', strokeWidth: 2 } : { r: 3, fillOpacity: dimmed ? 0.1 : 1 }}
                       activeDot={{ r: isSim ? 8 : 6, onMouseEnter: () => setHoveredClub(club.clube), onMouseLeave: () => setHoveredClub(null) }}
-                      label={makeEndLabel(cumulativeChartData.length, color, fmt2, dimmed)}
+                      label={makeEndLabel(cumulativeChartData.length, color, fmt2, dimmed, isSim)}
                       name={club.clube}
                       connectNulls
                     />
@@ -916,7 +944,16 @@ function AthleteStatsView({ data, renderMedal, theme }) {
     a.escalao.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  useEffect(() => {
+    if (filteredAthletes.length === 1) {
+      setSelectedAthlete(filteredAthletes[0].dorsal);
+      return;
+    }
 
+    if (selectedAthlete && !filteredAthletes.some(a => a.dorsal === selectedAthlete)) {
+      setSelectedAthlete('');
+    }
+  }, [filteredAthletes, selectedAthlete]);
 
   const groupedAthletes = filteredAthletes.reduce((acc, a) => {
     if (!acc[a.escalao]) acc[a.escalao] = [];
