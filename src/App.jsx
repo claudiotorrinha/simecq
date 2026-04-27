@@ -233,6 +233,12 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
   const overallClubObj = data.overall_club_rankings.find(c => simMatch.some(sm => c.clube.toLowerCase().includes(sm)));
   const sGlobalRank = overallClubObj ? overallClubObj.posicao : 'N/A';
 
+  const isFemaleEscalao = (esc) => /\bF\b|feminino/i.test(esc);
+  const femalePoints = raceData.simecq_results.filter(a => isFemaleEscalao(a.escalao)).reduce((s, a) => s + a.pontos, 0);
+  const malePoints = totalPoints - femalePoints;
+  const femalePct = totalPoints > 0 ? Math.round((femalePoints / totalPoints) * 100) : 0;
+  const malePct = 100 - femalePct;
+
   const improvers = [];
   const newAthletes = [];
   if (previousRaceData) {
@@ -349,7 +355,12 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
         </div>
 
         <div className="bento-item" style={{ gridColumn: 'span 12' }}>
-          <div className="item-title"><TrendingUp size={16} /> Distribuição de Pontos</div>
+          <div className="item-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}><TrendingUp size={16} /> Distribuição de Pontos</span>
+            <span style={{ fontWeight: 'normal', color: 'var(--muted)', fontSize: '0.9rem' }}>
+              (<span style={{ color: '#fb7185' }}>{femalePct}%</span> <span style={{ color: '#3b82f6' }}>{malePct}%</span>)
+            </span>
+          </div>
           <div style={{ width: '100%', height: `${Math.max(340, barData.length * 32 + 60)}px`, marginTop: '1rem', minWidth: 0 }}>
             <ResponsiveContainer width="100%" height="100%" minWidth={0}>
               <BarChart data={barData} layout="vertical" margin={{ top: 8, right: 18, bottom: 8, left: isMobile ? 4 : 8 }}>
@@ -498,21 +509,147 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
   );
 }
 
+const ClubFilterBar = ({ clubs, getColor, getShort, isSimecqFn, activeClubs, onToggle, hoveredClub, onHover }) => (
+  <div className="club-filter-bar">
+    {clubs.map((club, idx) => {
+      const isSim = isSimecqFn(club.clube);
+      const isActive = activeClubs.has(club.clube);
+      const color = getColor(club.clube, idx);
+      const isHovered = hoveredClub === club.clube;
+      return (
+        <button
+          key={club.clube}
+          className={`club-filter-pill${isActive ? ' active' : ''}${isSim ? ' simecq' : ''}${isHovered ? ' hovered' : ''}`}
+          style={isActive ? { '--pill-color': color, '--pill-color-dim': color + '33' } : undefined}
+          onClick={() => { if (!isSim) onToggle(club.clube); }}
+          onMouseEnter={() => onHover(club.clube)}
+          onMouseLeave={() => onHover(null)}
+          title={club.clube}
+        >
+          <span className="pill-dot" style={{ background: isActive ? color : undefined }} />
+          {getShort(club.clube)}
+        </button>
+      );
+    })}
+  </div>
+);
+
 function OverallStatsView({ data, renderMedal }) {
   const [classificationView, setClassificationView] = useState('general');
   const [generalSortField, setGeneralSortField] = useState('posicao_escalao');
   const [generalSortAsc, setGeneralSortAsc] = useState(true);
+  const [chart1View, setChart1View] = useState('position');
+  const [chart2View, setChart2View] = useState('points');
+  const [activeClubs, setActiveClubs] = useState(() => {
+    const defaultKeywords = ['simecq', 'leião', 'queijas', 'leceia', 'lage'];
+    return new Set(
+      data.overall_club_rankings
+        .filter(c => defaultKeywords.some(kw => c.clube.toLowerCase().includes(kw)))
+        .map(c => c.clube)
+    );
+  });
+  const [hoveredClub, setHoveredClub] = useState(null);
+  const toggleClub = (name) => setActiveClubs(prev => {
+    const next = new Set(prev);
+    if (next.has(name)) next.delete(name); else next.add(name);
+    return next;
+  });
+
+  // Renders a permanent value label at the last (rightmost) data point of a line
+  const makeEndLabel = (dataLength, color, formatter, dimmed, emphasize = false) => ({ x, y, value, index }) => {
+    if (index !== dataLength - 1 || value == null) return null;
+    const labelText = formatter(value);
+    const fontSize = emphasize ? 12 : 10;
+    const labelX = x + 8;
+    const labelOpacity = emphasize ? 1 : (dimmed ? 0.15 : 1);
+    const textLength = String(labelText).length;
+    const labelWidth = emphasize
+      ? Math.max(18, textLength * fontSize * 0.45 + 6)
+      : 0;
+
+    return (
+      <g>
+        {emphasize && (
+          <rect
+            x={labelX - 4}
+            y={y - fontSize / 2 - 3}
+            width={labelWidth}
+            height={fontSize + 6}
+            rx={4}
+            fill="var(--background)"
+            opacity={0.92}
+          />
+        )}
+        <text
+          x={labelX}
+          y={y}
+          fill={color}
+          fontSize={fontSize}
+          fontWeight={emphasize ? 800 : 700}
+          dominantBaseline="middle"
+          style={{
+            pointerEvents: 'none',
+            opacity: labelOpacity,
+            paintOrder: emphasize ? 'stroke' : undefined,
+            stroke: emphasize ? 'var(--background)' : undefined,
+            strokeWidth: emphasize ? 4 : undefined,
+          }}
+        >
+          {labelText}
+        </text>
+      </g>
+    );
+  };
   const isMobile = useIsMobile();
-  const clubYAxisWidth = isMobile ? 125 : 220;
-  const topClubs = [...data.overall_club_rankings].sort((a, b) => a.posicao - b.posicao).slice(0, 10);
   const simMatch = ["sociedade de instrução musical e escolar cruz quebradense (simecq)", "simecq"];
   const simecqClub = data.overall_club_rankings.find((club) => simMatch.some((sm) => club.clube.toLowerCase().includes(sm)));
-  const clubBarData = topClubs.map(c => ({
-    name: simMatch.some(sm => c.clube.toLowerCase().includes(sm)) ? "SIMECQ" : c.clube,
-    fullName: c.clube,
-    value: c.pontos,
-    isSimecq: simMatch.some(sm => c.clube.toLowerCase().includes(sm))
-  }));
+  const top10Clubs = [...data.overall_club_rankings].sort((a, b) => a.posicao - b.posicao).slice(0, 10);
+
+  const CLUB_PALETTE = ['#3b82f6', '#f59e0b', '#8b5cf6', '#06b6d4', '#f97316', '#ec4899', '#84cc16', '#14b8a6', '#ef4444', '#a78bfa'];
+  const isSimecq = (name) => simMatch.some(sm => name.toLowerCase().includes(sm));
+  const getClubColor = (clubName, index) => isSimecq(clubName) ? '#22c55e' : CLUB_PALETTE[index % CLUB_PALETTE.length];
+  const getShortName = (clubName) => {
+    if (isSimecq(clubName)) return 'SIMECQ';
+    const low = clubName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (low.includes('sporting')) return 'Linda-a-Pastora';
+    if (low.includes('tejo')) return 'Run Tejo';
+    if (low.includes('valejas') || low.includes('atletico')) return 'Valejas';
+
+    const dash = clubName.match(/[-–]\s*([A-Z]{2,})$/);
+    if (dash) return dash[1];
+    const paren = clubName.match(/\(([A-Z]{2,})\)/);
+    if (paren) return paren[1];
+    const words = clubName.replace(/[“”"]/g, '').split(/\s+/)
+      .filter(w => w.length > 3 && !/^(de|da|do|dos|das|e|a|o|os|as|em|no|na|1º|2º)$/i.test(w));
+    return words.slice(-2).join(' ');
+  };
+
+  // Per-race chart data: position and points in each individual race
+  const perRaceChartData = data.races.map(race => {
+    const entry = { raceName: formatRaceLabel(race.id) };
+    top10Clubs.forEach(club => {
+      const r = race.club_rankings.find(c => c.clube === club.clube);
+      entry[`pos_${club.clube}`] = r?.posicao ?? null;
+      entry[`pts_${club.clube}`] = r?.pontos ?? null;
+    });
+    return entry;
+  });
+
+  // Cumulative chart data: running points total + global position after each race
+  const runningPts = {};
+  const cumulativeChartData = data.races.map(race => {
+    race.club_rankings.forEach(c => {
+      runningPts[c.clube] = (runningPts[c.clube] || 0) + c.pontos;
+    });
+    const sorted = Object.entries(runningPts).sort((a, b) => b[1] - a[1]);
+    const posMap = Object.fromEntries(sorted.map(([clube], idx) => [clube, idx + 1]));
+    const entry = { raceName: formatRaceLabel(race.id) };
+    top10Clubs.forEach(club => {
+      entry[`cumpts_${club.clube}`] = runningPts[club.clube] || 0;
+      entry[`cumpos_${club.clube}`] = posMap[club.clube] || null;
+    });
+    return entry;
+  });
 
   const byEsc = {};
   data.best_athletes.forEach(a => { if (!byEsc[a.escalao]) byEsc[a.escalao] = []; byEsc[a.escalao].push(a); });
@@ -546,11 +683,15 @@ function OverallStatsView({ data, renderMedal }) {
   return (
     <div className="bento-grid">
       <div className="bento-item" style={{ gridColumn: 'span 12' }}>
-        <div className="item-title"><Trophy size={16} /> Top 10 Clubes Gerais</div>
+        <div className="item-title"><Trophy size={16} /> Top 10 Clubes — Visão Geral</div>
         {simecqClub && (() => {
           const sortedClubs = [...data.overall_club_rankings].sort((a, b) => a.posicao - b.posicao);
           const clubAbove = sortedClubs.find(c => c.posicao === simecqClub.posicao - 1);
-          const pointsToClimb = clubAbove ? Math.ceil(clubAbove.pontos - simecqClub.pontos) + 1 : null;
+          const pointsToClimb = clubAbove ? Math.ceil(clubAbove.pontos - simecqClub.pontos) : null;
+          const totalRaces = data.races.length;
+          const racesWithSimecq = data.races.filter(r => r.simecq_results.length > 0).length;
+          const avgAthletes = (data.races.reduce((s, r) => s + r.simecq_results.length, 0) / racesWithSimecq).toFixed(1);
+          const avgPoints = Math.round(data.races.reduce((s, r) => s + r.simecq_results.reduce((ps, a) => ps + a.pontos, 0), 0) / racesWithSimecq);
           return (
             <div className="simecq-stats-bar">
               <div className="simecq-stat">
@@ -569,35 +710,150 @@ function OverallStatsView({ data, renderMedal }) {
                 </span>
                 <span className="simecq-stat-label">Pts p/ subir posição</span>
               </div>
+              <div className="simecq-stat-divider" />
+              <div className="simecq-stat">
+                <span className="simecq-stat-value">{avgAthletes}</span>
+                <span className="simecq-stat-label">Média atletas / etapa</span>
+              </div>
+              <div className="simecq-stat-divider" />
+              <div className="simecq-stat">
+                <span className="simecq-stat-value">{avgPoints}</span>
+                <span className="simecq-stat-label">Média pontos / etapa</span>
+              </div>
             </div>
           );
         })()}
-        <div style={{ width: '100%', height: '340px', minWidth: 0 }}>
-          <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={340}>
-            <BarChart data={clubBarData} layout="vertical" margin={{ top: 8, right: 18, bottom: 8, left: isMobile ? 4 : 8 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" horizontal={false} />
-              <XAxis type="number" stroke="var(--muted)" tick={{ fontSize: 10 }} />
-              <YAxis dataKey="name" type="category" width={clubYAxisWidth} stroke="var(--muted)" tick={{ fontSize: isMobile ? 10 : 11 }} tickFormatter={isMobile ? (v) => shortenClubLabel(v).slice(0, 18) : shortenClubLabel} />
-              <Tooltip
-                contentStyle={tooltipTheme}
-                itemStyle={tooltipItemStyle}
-                labelStyle={tooltipLabelStyle}
-                formatter={(value) => [value, 'Pontos']}
-                labelFormatter={(_, payload) => payload?.[0]?.payload?.fullName || _}
-              />
-              <Bar dataKey="value" barSize={24} radius={[0, 6, 6, 0]}>
-                {clubBarData.map((e, index) => (
-                  <Cell
-                    key={index}
-                    fill={e.isSimecq ? 'var(--chart-simecq)' : 'var(--primary)'}
-                    fillOpacity={e.isSimecq ? 1 : 0.7}
-                    stroke={e.isSimecq ? 'var(--chart-simecq-stroke)' : 'transparent'}
-                    strokeWidth={e.isSimecq ? 2 : 0}
-                  />
-                ))}
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
+
+        {/* Shared club filter bar */}
+        <ClubFilterBar
+          clubs={top10Clubs}
+          getColor={getClubColor}
+          getShort={getShortName}
+          isSimecqFn={isSimecq}
+          activeClubs={activeClubs}
+          onToggle={toggleClub}
+          hoveredClub={hoveredClub}
+          onHover={setHoveredClub}
+        />
+
+        {/* Chart 1 — Per-race results */}
+        <div style={{ marginTop: '1.5rem' }}>
+          <div className="club-chart-header">
+            <span className="club-chart-title">Resultados por Etapa</span>
+            <div className="view-toggle">
+              <button className={`view-toggle-btn ${chart1View === 'position' ? 'active' : ''}`} onClick={() => setChart1View('position')}>Posição</button>
+              <button className={`view-toggle-btn ${chart1View === 'points' ? 'active' : ''}`} onClick={() => setChart1View('points')}>Pontos</button>
+            </div>
+          </div>
+          <div style={{ width: '100%', height: '280px', marginTop: '0.75rem' }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={perRaceChartData} margin={{ top: 8, right: 56, bottom: 8, left: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" vertical={false} />
+                <XAxis dataKey="raceName" stroke="var(--muted)" tick={{ fontSize: isMobile ? 8 : 10 }} />
+                <YAxis
+                  reversed={chart1View === 'position'}
+                  domain={chart1View === 'position' ? [1, 'dataMax'] : [0, 'auto']}
+                  stroke="var(--muted)"
+                  tick={{ fontSize: 10 }}
+                  allowDecimals={false}
+                  width={32}
+                  tickFormatter={chart1View === 'position' ? (v) => `${v}º` : undefined}
+                />
+                <Tooltip
+                  contentStyle={tooltipTheme}
+                  itemStyle={tooltipItemStyle}
+                  labelStyle={tooltipLabelStyle}
+                  formatter={(value, name) => {
+                    const clubName = name.replace(/^(pos|pts)_/, '');
+                    return [chart1View === 'position' ? `${value}º` : value, getShortName(clubName)];
+                  }}
+                  itemSorter={(item) => chart1View === 'position' ? item.value : -item.value}
+                />
+                {top10Clubs.map((club, idx) => {
+                  if (!activeClubs.has(club.clube)) return null;
+                  const isSim = isSimecq(club.clube);
+                  const dimmed = hoveredClub && hoveredClub !== club.clube;
+                  const color = getClubColor(club.clube, idx);
+                  const fmt1 = chart1View === 'position' ? v => `${v}º` : v => v;
+                  return (
+                    <Line
+                      key={club.clube}
+                      type="monotone"
+                      dataKey={chart1View === 'position' ? `pos_${club.clube}` : `pts_${club.clube}`}
+                      stroke={color}
+                      strokeWidth={isSim ? (hoveredClub === club.clube ? 5 : 3.5) : (hoveredClub === club.clube ? 3 : 1.5)}
+                      strokeOpacity={dimmed ? 0.12 : (isSim ? 1 : 0.85)}
+                      dot={isSim ? { r: 5, fill: '#22c55e', stroke: 'var(--background)', strokeWidth: 2 } : { r: 3, fillOpacity: dimmed ? 0.1 : 1 }}
+                      activeDot={{ r: isSim ? 8 : 6, onMouseEnter: () => setHoveredClub(club.clube), onMouseLeave: () => setHoveredClub(null) }}
+                      label={makeEndLabel(perRaceChartData.length, color, fmt1, dimmed, isSim)}
+                      name={club.clube}
+                      connectNulls
+                    />
+                  );
+                })}
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Chart 2 — Cumulative evolution */}
+        <div style={{ marginTop: '2rem' }}>
+          <div className="club-chart-header">
+            <span className="club-chart-title">Evolução Acumulada</span>
+            <div className="view-toggle">
+              <button className={`view-toggle-btn ${chart2View === 'position' ? 'active' : ''}`} onClick={() => setChart2View('position')}>Posição</button>
+              <button className={`view-toggle-btn ${chart2View === 'points' ? 'active' : ''}`} onClick={() => setChart2View('points')}>Pontos</button>
+            </div>
+          </div>
+          <div style={{ width: '100%', height: '280px', marginTop: '0.75rem' }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={cumulativeChartData} margin={{ top: 8, right: 56, bottom: 8, left: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" vertical={false} />
+                <XAxis dataKey="raceName" stroke="var(--muted)" tick={{ fontSize: isMobile ? 8 : 10 }} />
+                <YAxis
+                  reversed={chart2View === 'position'}
+                  domain={chart2View === 'position' ? [1, 'dataMax'] : [0, 'auto']}
+                  stroke="var(--muted)"
+                  tick={{ fontSize: 10 }}
+                  allowDecimals={false}
+                  width={32}
+                  tickFormatter={chart2View === 'position' ? (v) => `${v}º` : undefined}
+                />
+                <Tooltip
+                  contentStyle={tooltipTheme}
+                  itemStyle={tooltipItemStyle}
+                  labelStyle={tooltipLabelStyle}
+                  formatter={(value, name) => {
+                    const clubName = name.replace(/^(cumpos|cumpts)_/, '');
+                    return [chart2View === 'position' ? `${value}º` : value, getShortName(clubName)];
+                  }}
+                  itemSorter={(item) => chart2View === 'position' ? item.value : -item.value}
+                />
+                {top10Clubs.map((club, idx) => {
+                  if (!activeClubs.has(club.clube)) return null;
+                  const isSim = isSimecq(club.clube);
+                  const dimmed = hoveredClub && hoveredClub !== club.clube;
+                  const color = getClubColor(club.clube, idx);
+                  const fmt2 = chart2View === 'position' ? v => `${v}º` : v => v;
+                  return (
+                    <Line
+                      key={club.clube}
+                      type="monotone"
+                      dataKey={chart2View === 'position' ? `cumpos_${club.clube}` : `cumpts_${club.clube}`}
+                      stroke={color}
+                      strokeWidth={isSim ? (hoveredClub === club.clube ? 5 : 3.5) : (hoveredClub === club.clube ? 3 : 1.5)}
+                      strokeOpacity={dimmed ? 0.12 : (isSim ? 1 : 0.85)}
+                      dot={isSim ? { r: 5, fill: '#22c55e', stroke: 'var(--background)', strokeWidth: 2 } : { r: 3, fillOpacity: dimmed ? 0.1 : 1 }}
+                      activeDot={{ r: isSim ? 8 : 6, onMouseEnter: () => setHoveredClub(club.clube), onMouseLeave: () => setHoveredClub(null) }}
+                      label={makeEndLabel(cumulativeChartData.length, color, fmt2, dimmed, isSim)}
+                      name={club.clube}
+                      connectNulls
+                    />
+                  );
+                })}
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       </div>
 
@@ -675,10 +931,7 @@ function OverallStatsView({ data, renderMedal }) {
 
 
 function AthleteStatsView({ data, renderMedal, theme }) {
-  const [selectedAthlete, setSelectedAthlete] = useState(() => {
-    // Default to the first athlete in the overall ranking
-    return data.best_athletes?.[0]?.dorsal || '';
-  });
+  const [selectedAthlete, setSelectedAthlete] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const isMobile = useIsMobile();
 
@@ -692,13 +945,15 @@ function AthleteStatsView({ data, renderMedal, theme }) {
   );
 
   useEffect(() => {
-    if (filteredAthletes.length > 0) {
-      const current = filteredAthletes.find(a => a.dorsal === selectedAthlete);
-      if (!current) {
-        setSelectedAthlete(filteredAthletes[0].dorsal);
-      }
+    if (filteredAthletes.length === 1) {
+      setSelectedAthlete(filteredAthletes[0].dorsal);
+      return;
     }
-  }, [filteredAthletes]);
+
+    if (selectedAthlete && !filteredAthletes.some(a => a.dorsal === selectedAthlete)) {
+      setSelectedAthlete('');
+    }
+  }, [filteredAthletes, selectedAthlete]);
 
   const groupedAthletes = filteredAthletes.reduce((acc, a) => {
     if (!acc[a.escalao]) acc[a.escalao] = [];
@@ -707,10 +962,6 @@ function AthleteStatsView({ data, renderMedal, theme }) {
   }, {});
 
   const sortedCategories = Object.keys(groupedAthletes).sort(compareEscalao);
-
-  const currentAthlete = data.best_athletes.find(a => a.dorsal === selectedAthlete);
-
-  if (!currentAthlete) return <div className="flex-center" style={{ padding: '2rem' }}>Selecione um atleta.</div>;
 
   // Extract history
   const history = data.races.map(race => {
@@ -761,6 +1012,7 @@ function AthleteStatsView({ data, renderMedal, theme }) {
             onChange={e => setSelectedAthlete(e.target.value)}
             style={{ width: '100%', maxWidth: '400px', marginBottom: 0 }}
           >
+            <option value="" disabled>Selecione um atleta...</option>
             {sortedCategories.map(cat => (
               <optgroup key={cat} label={cat}>
                 {groupedAthletes[cat].map(a => (
@@ -774,129 +1026,178 @@ function AthleteStatsView({ data, renderMedal, theme }) {
         </div>
       </div>
 
-      <div className="bento-item" style={{ gridColumn: 'span 3' }}>
-        <div className="item-title"><Activity size={16} /> Pontos Totais</div>
-        <div className="kpi-value">{Math.round(currentAthlete.pontos)}</div>
-        <div className="kpi-subtext">Acumulado da época</div>
-      </div>
-
-      <div className="bento-item" style={{ gridColumn: 'span 3' }}>
-        <div className="item-title"><Trophy size={16} /> Rank Escalão</div>
-        <div className="kpi-value">
-          {currentAthlete.posicao_escalao === 1 ? (
-            <span className="flex-align" style={{ gap: '8px', color: '#fbbf24' }}><Trophy size={28} fill="currentColor" stroke="none" /> 1º</span>
-          ) : currentAthlete.posicao_escalao === 9999 ? (
-            "N/A"
-          ) : (
-            `#${currentAthlete.posicao_escalao}`
-          )}
+      {!selectedAthlete ? (
+        <div className="bento-item animate-fade-up" style={{ gridColumn: 'span 12', textAlign: 'center', padding: '4rem 2rem' }}>
+          <div className="flex-center" style={{ flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ background: 'var(--surface-strong)', padding: '1.5rem', borderRadius: '50%', border: '1px solid var(--card-border)' }}>
+              <User size={48} strokeWidth={1.5} color="var(--muted)" />
+            </div>
+            <h3 style={{ margin: 0, fontSize: '1.2rem', color: 'var(--foreground)' }}>Nenhum atleta selecionado</h3>
+            <p style={{ margin: 0, color: 'var(--muted)', maxWidth: '400px', lineHeight: 1.5 }}>
+              Pesquise pelo nome ou escalão e selecione um atleta para visualizar as suas estatísticas, evolução e histórico de provas.
+            </p>
+          </div>
         </div>
-        <div className="kpi-subtext">
-          {currentAthlete.posicao_escalao === 1
-            ? `Líder no ${shortenEscalaoLabel(currentAthlete.escalao)}`
-            : currentAthlete.posicao_escalao === 9999
-              ? "Sem classificação geral"
-              : `+${Math.round(currentAthlete.pontos_falta_proximo || 0)} pts p/ subir • Geral no ${shortenEscalaoLabel(currentAthlete.escalao)}`}
-        </div>
-      </div>
+      ) : (() => {
+        const currentAthlete = data.best_athletes.find(a => a.dorsal === selectedAthlete);
+        if (!currentAthlete) return null;
 
-      <div className="bento-item" style={{ gridColumn: 'span 3' }}>
-        <div className="item-title"><Star size={16} /> Melhor Posição</div>
-        <div className="kpi-value">{bestPos}º</div>
-        <div className="kpi-subtext">Recorde pessoal em prova</div>
-      </div>
+        // Extract history
+        const history = data.races.map(race => {
+          const result = race.simecq_results.find(a => a.dorsal === selectedAthlete);
+          return {
+            raceId: race.id,
+            raceName: formatRaceLabel(race.id),
+            posicao: result ? result.posicao : null,
+            pontos: result ? result.pontos : 0,
+            participou: !!result
+          };
+        });
 
-      <div className="bento-item" style={{ gridColumn: 'span 3' }}>
-        <div className="item-title"><Users size={16} /> Participação</div>
-        <div className="kpi-value">{participationRate}%</div>
-        <div className="kpi-subtext">{participatedHistory.length} de {data.races.length} provas</div>
-      </div>
+        // Filter only races where they participated for the charts
+        const participatedHistory = history.filter(h => h.participou);
 
-      <div className="bento-item" style={{ gridColumn: 'span 12' }}>
-        <div className="item-title"><LineIcon size={16} /> Evolução de Posicionamento e Pontos</div>
-        <div style={{ width: '100%', height: '300px', marginTop: '1rem' }}>
-          <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={evolutionData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" vertical={false} />
-              <XAxis dataKey="raceName" stroke="var(--muted)" tick={{ fontSize: 10 }} />
-              <YAxis
-                yAxisId="left"
-                orientation="left"
-                reversed
-                domain={[1, 'auto']}
-                stroke="var(--success)"
-                tick={{ fontSize: 10 }}
-                allowDecimals={false}
-                label={{ value: 'Posição', angle: -90, position: 'insideLeft', style: { textAnchor: 'middle', fill: 'var(--success)' } }}
-              />
-              <YAxis
-                yAxisId="right"
-                orientation="right"
-                stroke={pointsColor}
-                tick={{ fontSize: 10 }}
-                allowDecimals={false}
-                label={{ value: 'Pontos', angle: 90, position: 'insideRight', style: { textAnchor: 'middle', fill: pointsColor } }}
-              />
-              <Tooltip
-                contentStyle={tooltipTheme}
-                itemStyle={tooltipItemStyle}
-                labelStyle={tooltipLabelStyle}
-                formatter={(value, name) => {
-                  if (name === 'posicao') return [`${value}º`, 'Posição'];
-                  if (name === 'pontos') return [value, 'Pontos'];
-                  return [value, name];
-                }}
-              />
-              <Line
-                yAxisId="left"
-                type="monotone"
-                dataKey="posicao"
-                stroke="var(--success)"
-                strokeWidth={3}
-                dot={{ r: 6, fill: 'var(--success)', strokeWidth: 2, stroke: 'var(--background)' }}
-                activeDot={{ r: 8 }}
-                name="Posição"
-              />
-              <Line
-                yAxisId="right"
-                type="monotone"
-                dataKey="pontos"
-                stroke={pointsColor}
-                strokeWidth={3}
-                dot={{ r: 6, fill: pointsColor, strokeWidth: 2, stroke: 'var(--background)' }}
-                activeDot={{ r: 8 }}
-                name="Pontos"
-              />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
+        // Cumulative points
+        let runningTotal = 0;
+        const evolutionData = participatedHistory.map(h => {
+          runningTotal += h.pontos;
+          return {
+            ...h,
+            acumulado: runningTotal
+          };
+        });
 
-      <div className="bento-item" style={{ gridColumn: 'span 12' }}>
-        <div className="item-title"><History size={16} /> Histórico de Provas</div>
-        <TableScroll>
-          <table>
-            <thead>
-              <tr>
-                <th>Prova</th>
-                <th>Posição</th>
-                <th>Pontos</th>
-                <th>Acumulado</th>
-              </tr>
-            </thead>
-            <tbody>
-              {evolutionData.map((h, i) => (
-                <tr key={i}>
-                  <td>{h.raceName}</td>
-                  <td>{renderMedal(h.posicao)}</td>
-                  <td>{h.pontos}</td>
-                  <td>{h.acumulado}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </TableScroll>
-      </div>
+        const bestPos = Math.min(...participatedHistory.map(h => h.posicao));
+        const participationRate = Math.round((participatedHistory.length / data.races.length) * 100);
+
+        return (
+          <>
+            <div className="bento-item animate-fade-up" style={{ gridColumn: 'span 3' }}>
+              <div className="item-title"><Activity size={16} /> Pontos Totais</div>
+              <div className="kpi-value">{Math.round(currentAthlete.pontos)}</div>
+              <div className="kpi-subtext">Acumulado da época</div>
+            </div>
+
+            <div className="bento-item animate-fade-up" style={{ gridColumn: 'span 3' }}>
+              <div className="item-title"><Trophy size={16} /> Rank Escalão</div>
+              <div className="kpi-value">
+                {currentAthlete.posicao_escalao === 1 ? (
+                  <span className="flex-align" style={{ gap: '8px', color: '#fbbf24' }}><Trophy size={28} fill="currentColor" stroke="none" /> 1º</span>
+                ) : currentAthlete.posicao_escalao === 9999 ? (
+                  "N/A"
+                ) : (
+                  `#${currentAthlete.posicao_escalao}`
+                )}
+              </div>
+              <div className="kpi-subtext">
+                {currentAthlete.posicao_escalao === 1
+                  ? `Líder no ${shortenEscalaoLabel(currentAthlete.escalao)}`
+                  : currentAthlete.posicao_escalao === 9999
+                    ? "Sem classificação geral"
+                    : `+${Math.round(currentAthlete.pontos_falta_proximo || 0)} pts p/ subir • Geral no ${shortenEscalaoLabel(currentAthlete.escalao)}`}
+              </div>
+            </div>
+
+            <div className="bento-item animate-fade-up" style={{ gridColumn: 'span 3' }}>
+              <div className="item-title"><Star size={16} /> Melhor Posição</div>
+              <div className="kpi-value">{bestPos}º</div>
+              <div className="kpi-subtext">Recorde pessoal em prova</div>
+            </div>
+
+            <div className="bento-item animate-fade-up" style={{ gridColumn: 'span 3' }}>
+              <div className="item-title"><Users size={16} /> Participação</div>
+              <div className="kpi-value">{participationRate}%</div>
+              <div className="kpi-subtext">{participatedHistory.length} de {data.races.length} provas</div>
+            </div>
+
+            <div className="bento-item animate-fade-up" style={{ gridColumn: 'span 12' }}>
+              <div className="item-title"><LineIcon size={16} /> Evolução de Posicionamento e Pontos</div>
+              <div style={{ width: '100%', height: '300px', marginTop: '1rem' }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={evolutionData}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" vertical={false} />
+                    <XAxis dataKey="raceName" stroke="var(--muted)" tick={{ fontSize: 10 }} />
+                    <YAxis
+                      yAxisId="left"
+                      orientation="left"
+                      reversed
+                      domain={[1, 'auto']}
+                      stroke="var(--success)"
+                      tick={{ fontSize: 10 }}
+                      allowDecimals={false}
+                      label={{ value: 'Posição', angle: -90, position: 'insideLeft', style: { textAnchor: 'middle', fill: 'var(--success)' } }}
+                    />
+                    <YAxis
+                      yAxisId="right"
+                      orientation="right"
+                      stroke={pointsColor}
+                      tick={{ fontSize: 10 }}
+                      allowDecimals={false}
+                      label={{ value: 'Pontos', angle: 90, position: 'insideRight', style: { textAnchor: 'middle', fill: pointsColor } }}
+                    />
+                    <Tooltip
+                      contentStyle={tooltipTheme}
+                      itemStyle={tooltipItemStyle}
+                      labelStyle={tooltipLabelStyle}
+                      formatter={(value, name) => {
+                        if (name === 'posicao') return [`${value}º`, 'Posição'];
+                        if (name === 'pontos') return [value, 'Pontos'];
+                        return [value, name];
+                      }}
+                    />
+                    <Line
+                      yAxisId="left"
+                      type="monotone"
+                      dataKey="posicao"
+                      stroke="var(--success)"
+                      strokeWidth={3}
+                      dot={{ r: 6, fill: 'var(--success)', strokeWidth: 2, stroke: 'var(--background)' }}
+                      activeDot={{ r: 8 }}
+                      name="Posição"
+                    />
+                    <Line
+                      yAxisId="right"
+                      type="monotone"
+                      dataKey="pontos"
+                      stroke={pointsColor}
+                      strokeWidth={3}
+                      dot={{ r: 6, fill: pointsColor, strokeWidth: 2, stroke: 'var(--background)' }}
+                      activeDot={{ r: 8 }}
+                      name="Pontos"
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+
+            <div className="bento-item animate-fade-up" style={{ gridColumn: 'span 12' }}>
+              <div className="item-title"><History size={16} /> Histórico de Provas</div>
+              <TableScroll>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Prova</th>
+                      <th>Posição</th>
+                      <th>Pontos</th>
+                      <th>Acumulado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {evolutionData.map((h, i) => (
+                      <tr key={i}>
+                        <td>{h.raceName}</td>
+                        <td>{renderMedal(h.posicao)}</td>
+                        <td>{h.pontos}</td>
+                        <td>{h.acumulado}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </TableScroll>
+            </div>
+          </>
+        );
+      })()}
     </div>
   );
 }
