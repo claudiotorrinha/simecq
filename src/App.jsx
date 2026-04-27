@@ -338,33 +338,29 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
       </div>
 
       <div className="bento-grid">
-        <div className="bento-item" style={{ gridColumn: 'span 3' }}>
+        <div className="bento-item" style={{ gridColumn: 'span 4' }}>
           <div className="item-title"><Activity size={16} /> Pontuação Etapa</div>
           <div className="kpi-value">{Math.round(totalPoints)}</div>
           <div className="kpi-subtext">Pontos combinados</div>
         </div>
-        <div className="bento-item" style={{ gridColumn: 'span 3' }}>
+        <div className="bento-item" style={{ gridColumn: 'span 4' }}>
           <div className="item-title"><Users size={16} /> Atletas</div>
           <div className="kpi-value">{partCount}</div>
           <div className="kpi-subtext">Total em competição</div>
         </div>
-        <div className="bento-item" style={{ gridColumn: 'span 3' }}>
+        <div className="bento-item" style={{ gridColumn: 'span 4' }}>
           <div className="item-title"><Trophy size={16} /> Rank Clube</div>
           <div className="kpi-value">#{sRankThisRace}</div>
           <div className="kpi-subtext">Geral: #{sGlobalRank}</div>
         </div>
-        <div className="bento-item" style={{ gridColumn: 'span 3' }}>
-          <div className="item-title"><TrendingUp size={16} /> Género</div>
-          <div className="kpi-value" style={{ fontSize: '1.6rem', display: 'flex', gap: '0.5rem', alignItems: 'baseline' }}>
-            <span style={{ color: '#fb7185' }}>{femalePct}%</span>
-            <span style={{ color: 'var(--muted)', fontSize: '1rem' }}>/</span>
-            <span style={{ color: '#3b82f6' }}>{malePct}%</span>
-          </div>
-          <div className="kpi-subtext">{Math.round(femalePoints)} pts F · {Math.round(malePoints)} pts M</div>
-        </div>
 
         <div className="bento-item" style={{ gridColumn: 'span 12' }}>
-          <div className="item-title"><TrendingUp size={16} /> Distribuição de Pontos</div>
+          <div className="item-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}><TrendingUp size={16} /> Distribuição de Pontos</span>
+            <span style={{ fontWeight: 'normal', color: 'var(--muted)', fontSize: '0.9rem' }}>
+              (<span style={{ color: '#fb7185' }}>{femalePct}%</span> <span style={{ color: '#3b82f6' }}>{malePct}%</span>)
+            </span>
+          </div>
           <div style={{ width: '100%', height: `${Math.max(340, barData.length * 32 + 60)}px`, marginTop: '1rem', minWidth: 0 }}>
             <ResponsiveContainer width="100%" height="100%" minWidth={0}>
               <BarChart data={barData} layout="vertical" margin={{ top: 8, right: 18, bottom: 8, left: isMobile ? 4 : 8 }}>
@@ -586,6 +582,11 @@ function OverallStatsView({ data, renderMedal }) {
   const getClubColor = (clubName, index) => isSimecq(clubName) ? '#22c55e' : CLUB_PALETTE[index % CLUB_PALETTE.length];
   const getShortName = (clubName) => {
     if (isSimecq(clubName)) return 'SIMECQ';
+    const low = clubName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (low.includes('sporting')) return 'Linda-a-Pastora';
+    if (low.includes('tejo')) return 'Run Tejo';
+    if (low.includes('valejas') || low.includes('atletico')) return 'Valejas';
+
     const dash = clubName.match(/[-–]\s*([A-Z]{2,})$/);
     if (dash) return dash[1];
     const paren = clubName.match(/\(([A-Z]{2,})\)/);
