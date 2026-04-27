@@ -48,6 +48,12 @@ const shortenClubLabel = (value) => {
   return value.length > 28 ? `${value.slice(0, 27)}…` : value;
 };
 
+const formatAthleteWithDorsal = (athlete) => {
+  if (!athlete) return '';
+  const name = athlete.nome || '';
+  return athlete.dorsal ? `${name} (${athlete.dorsal})` : name;
+};
+
 const tooltipTheme = {
   background: 'var(--tooltip-bg)',
   border: '1px solid var(--tooltip-border)',
@@ -444,7 +450,7 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
                 <tbody>
                   {sortedImprovers.map((imp, i) => (
                     <tr key={i}>
-                      <td>{imp.athlete.nome}</td>
+                      <td>{formatAthleteWithDorsal(imp.athlete)}</td>
                       <td>{shortenEscalaoLabel(imp.athlete.escalao)}</td>
                       <td className="text-success">↑ {imp.improvedBy}</td>
                     </tr>
@@ -454,7 +460,7 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
             ) : activeSubTab === 'new' ? (
               <table>
                 <thead><tr><th style={colName}>Atleta</th><th style={colEsc}>Escalão</th><th style={colPts}>Status</th></tr></thead>
-                <tbody>{newAthletes.map((na, i) => <tr key={i}><td>{na.nome}</td><td>{shortenEscalaoLabel(na.escalao)}</td><td className="text-secondary">Estreia</td></tr>)}</tbody>
+                <tbody>{newAthletes.map((na, i) => <tr key={i}><td>{formatAthleteWithDorsal(na)}</td><td>{shortenEscalaoLabel(na.escalao)}</td><td className="text-secondary">Estreia</td></tr>)}</tbody> 
               </table>
             ) : activeSubTab !== 'global' && classificationView === 'byEscalao' ? (
               <div className="classification-stack">
@@ -477,7 +483,7 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
                             .map((athlete, index) => (
                               <tr key={`${athlete.dorsal}-${index}`}>
                                 <td>{renderMedal(athlete.posicao)}</td>
-                                <td>{athlete.nome}</td>
+                                <td>{formatAthleteWithDorsal(athlete)}</td>
                                 <td>{athlete.tempo || '-'}</td>
                                 <td>{athlete.pontos}</td>
                               </tr>
@@ -498,7 +504,7 @@ function RaceStatsView({ data, raceData, previousRaceData, selectedRaceId, setSe
                       <th className="sortable-header" style={colPts} onClick={() => handleSort('pontos')}>Pts{sortArrow('pontos')}</th>
                     </tr>
                   </thead>
-                  <tbody>{sortedAthletes.map((a, i) => <tr key={i}><td>{renderMedal(a.posicao)}</td><td>{a.nome}</td><td>{shortenEscalaoLabel(a.escalao)}</td>{activeSubTab !== 'global' && <td>{a.tempo || '-'}</td>}<td>{a.pontos}</td></tr>)}</tbody>
+                  <tbody>{sortedAthletes.map((a, i) => <tr key={i}><td>{renderMedal(a.posicao)}</td><td>{formatAthleteWithDorsal(a)}</td><td>{shortenEscalaoLabel(a.escalao)}</td>{activeSubTab !== 'global' && <td>{a.tempo || '-'}</td>}<td>{a.pontos}</td></tr>)}</tbody>
                 </table>
               </>
             )}
@@ -892,7 +898,7 @@ function OverallStatsView({ data, renderMedal }) {
                 {sortedGeneralRanking.map((athlete) => (
                   <tr key={`${athlete.dorsal}-${athlete.escalao}`} className={athlete.posicao_escalao <= 15 ? 'highlight-row' : ''}>
                     <td>{renderMedal(athlete.posicao_escalao)}</td>
-                    <td>{athlete.nome}</td>
+                    <td>{formatAthleteWithDorsal(athlete)}</td>
                     <td>{shortenEscalaoLabel(athlete.escalao)}</td>
                     <td>{athlete.pontos}</td>
                     <td>{athlete.participacoes}</td>
@@ -914,7 +920,7 @@ function OverallStatsView({ data, renderMedal }) {
                       {ats.map((a, i) => (
                         <tr key={i} className={a.posicao_escalao <= 15 ? 'highlight-row' : ''}>
                           <td>{a.posicao_escalao <= 15 && <Star size={10} fill="var(--success)" stroke="none" style={{ marginRight: 4 }} />}{renderMedal(a.posicao_escalao)}</td>
-                          <td>{a.nome}</td><td>{a.pontos}</td><td>{a.participacoes}</td>
+                          <td>{formatAthleteWithDorsal(a)}</td><td>{a.pontos}</td><td>{a.participacoes}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -941,7 +947,8 @@ function AthleteStatsView({ data, renderMedal, theme }) {
 
   const filteredAthletes = athletes.filter(a =>
     a.nome.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    a.escalao.toLowerCase().includes(searchQuery.toLowerCase())
+    a.escalao.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    a.dorsal?.toString().includes(searchQuery.trim())
   );
 
   useEffect(() => {
@@ -1017,7 +1024,7 @@ function AthleteStatsView({ data, renderMedal, theme }) {
               <optgroup key={cat} label={cat}>
                 {groupedAthletes[cat].map(a => (
                   <option key={a.dorsal} value={a.dorsal}>
-                    {a.nome}
+                    {formatAthleteWithDorsal(a)}
                   </option>
                 ))}
               </optgroup>
