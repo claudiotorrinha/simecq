@@ -15,7 +15,8 @@ RACES = [
     {"id": "gp-valejas", "event_id": 1139},
     {"id": "gp-leceia", "event_id": 1144},
     {"id": "gp-queluz-de-baixo", "event_id": 1140},
-    {"id": "gp-caxias", "event_id": 1143}
+    {"id": "gp-caxias", "event_id": 1143},
+    {"id": "gp-linda-a-pastora", "event_id": 1146}
 ]
 
 # Note: The easiest way to get the event_id for the download is to look at the /classificacoes/gp-XXX page.
