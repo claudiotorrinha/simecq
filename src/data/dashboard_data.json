@@ -5988,11 +5988,21 @@
         },
         {
           "escalao": "M 40",
-          "posicao": 20,
+          "posicao": 6,
+          "dorsal": "898",
+          "nome": "António  Mata",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:29:24:860s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 21,
           "dorsal": "1232",
           "nome": "Claudio Torrinha",
           "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
-          "pontos": 3.0,
+          "pontos": 2.0,
           "tempo": "00:33:55:340s",
           "prova": "Prova 1"
         },
@@ -6351,22 +6361,22 @@
         {
           "posicao": 1,
           "clube": "Associação Desportiva NucleOeiras - ADNO",
-          "pontos": 625.0
+          "pontos": 624.0
         },
         {
           "posicao": 2,
           "clube": "Associação Run Tejo",
-          "pontos": 420.0
+          "pontos": 419.0
         },
         {
           "posicao": 3,
           "clube": "Linda-a-Pastora Sporting Clube",
-          "pontos": 408.0
+          "pontos": 409.0
         },
         {
           "posicao": 4,
           "clube": "Grupo Musical 1º Dezembro Queijas",
-          "pontos": 255.0
+          "pontos": 254.0
         },
         {
           "posicao": 5,
@@ -6376,12 +6386,12 @@
         {
           "posicao": 6,
           "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
-          "pontos": 238.0
+          "pontos": 245.0
         },
         {
           "posicao": 7,
           "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
-          "pontos": 237.0
+          "pontos": 234.0
         },
         {
           "posicao": 8,
@@ -6416,12 +6426,12 @@
         {
           "posicao": 14,
           "clube": "Associação de Moradores 18 de Maio",
-          "pontos": 60.0
+          "pontos": 59.0
         },
         {
           "posicao": 15,
           "clube": "Sport Ponto Come",
-          "pontos": 51.0
+          "pontos": 54.0
         },
         {
           "posicao": 16,
@@ -6489,158 +6499,926 @@
           "pontos": 1.0
         }
       ]
+    },
+    {
+      "id": "gp-estadio-nacional",
+      "event_date": "10/06/2026",
+      "simecq_results": [
+        {
+          "escalao": "Sub 10 - Femininos",
+          "posicao": 20,
+          "dorsal": "3230",
+          "nome": "Valentina Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:04:39:900s",
+          "prova": "Prova 6"
+        },
+        {
+          "escalao": "Sub 12 - Masculinos",
+          "posicao": 14,
+          "dorsal": "3112",
+          "nome": "Duarte Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:02:27:770s",
+          "prova": "Prova 5"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 7,
+          "dorsal": "904",
+          "nome": "Marta Neves",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:17:39:980s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 18 - Femininos",
+          "posicao": 9,
+          "dorsal": "869",
+          "nome": "Lara Correia",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:19:40:600s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 20 - Masculinos",
+          "posicao": 9,
+          "dorsal": "910",
+          "nome": "Gonçalo Sá",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:16:13:270s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 20 - Masculinos",
+          "posicao": 10,
+          "dorsal": "1927",
+          "nome": "Afonso Matos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:16:54:340s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 6,
+          "dorsal": "918",
+          "nome": "Kenzo Takei",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:26:45:00s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 14,
+          "dorsal": "852",
+          "nome": "Bruno  Pinto",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:32:42:960s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Sub 23 - Masculinos",
+          "posicao": 15,
+          "dorsal": "935",
+          "nome": "Tiago Valongo",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:33:14:950s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Sub 23 - Femininos",
+          "posicao": 6,
+          "dorsal": "877",
+          "nome": "Laura Reis",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:16:42:970s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 8,
+          "dorsal": "849",
+          "nome": "Bernardo  Batista",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 6.0,
+          "tempo": "00:26:57:50s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 25,
+          "dorsal": "934",
+          "nome": "BRUNO  SOUZA",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:31:05:800s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Masculinos",
+          "posicao": 42,
+          "dorsal": "848",
+          "nome": "André  Viseu",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:36:21:290s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 4,
+          "dorsal": "931",
+          "nome": "Susana Jorge",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:14:58:20s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 9,
+          "dorsal": "897",
+          "nome": "Marcela da Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 5.0,
+          "tempo": "00:17:21:930s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "Seniores - Femininos",
+          "posicao": 14,
+          "dorsal": "879",
+          "nome": "Joana  Loureiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:21:11:890s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 6,
+          "dorsal": "1519",
+          "nome": "Pedro Simões",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:24:53:980s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 20,
+          "dorsal": "929",
+          "nome": "Tomás  Nogueira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:28:54:500s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 35",
+          "posicao": 33,
+          "dorsal": "875",
+          "nome": "Miládio Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:31:55:10s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 4,
+          "dorsal": "912",
+          "nome": "Nuno Graça",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:24:06:160s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 29,
+          "dorsal": "1232",
+          "nome": "Claudio Torrinha",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:29:27:940s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 40",
+          "posicao": 43,
+          "dorsal": "933",
+          "nome": "Tiago Andrade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:34:02:610s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 40,
+          "dorsal": "924",
+          "nome": "Ricardo Nobre",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:31:26:830s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 49,
+          "dorsal": "938",
+          "nome": "Yuri Natividade",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:32:34:950s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 45",
+          "posicao": 61,
+          "dorsal": "914",
+          "nome": "Nuno Sobral",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:34:17:970s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 10,
+          "dorsal": "930",
+          "nome": "Sandra Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:17:32:20s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 45",
+          "posicao": 36,
+          "dorsal": "859",
+          "nome": "Cristina Oliveira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:23:00:820s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 24,
+          "dorsal": "509",
+          "nome": "Luis Costa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:29:57:860s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 32,
+          "dorsal": "920",
+          "nome": "Paulo Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:31:09:170s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 42,
+          "dorsal": "1429",
+          "nome": "António  Manuel Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:32:08:110s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 50",
+          "posicao": 59,
+          "dorsal": "487",
+          "nome": "Bernardo Salavessa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:34:23:300s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 6,
+          "dorsal": "844",
+          "nome": "Ana Coelho",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:15:57:450s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 19,
+          "dorsal": "917",
+          "nome": "Paula Leitão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:19:41:720s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 20,
+          "dorsal": "891",
+          "nome": "Lia Moreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:19:44:160s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 50",
+          "posicao": 29,
+          "dorsal": "847",
+          "nome": "Ana  Serra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:23:42:10s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 4,
+          "dorsal": "884",
+          "nome": "João Narra",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 10.0,
+          "tempo": "00:25:43:70s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 7,
+          "dorsal": "874",
+          "nome": "Henrique Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 7.0,
+          "tempo": "00:27:02:310s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 21,
+          "dorsal": "908",
+          "nome": "Miguel Lourenço",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:32:05:830s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 29,
+          "dorsal": "927",
+          "nome": "Rodrigo Ferreira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:34:55:840s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 32,
+          "dorsal": "851",
+          "nome": "João  Ganho",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:35:15:500s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 33,
+          "dorsal": "909",
+          "nome": "Miguel Moradias",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:35:31:400s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "M 55",
+          "posicao": 40,
+          "dorsal": "916",
+          "nome": "Orlando  Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:38:36:940s",
+          "prova": "Prova 1"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 1,
+          "dorsal": "865",
+          "nome": "Eugénia Ribeiro",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 15.0,
+          "tempo": "00:17:28:760s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 17,
+          "dorsal": "895",
+          "nome": "Madalena Magalhães",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:21:20:60s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 20,
+          "dorsal": "845",
+          "nome": "Ana Nunes",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 3.0,
+          "tempo": "00:21:50:990s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 22,
+          "dorsal": "855",
+          "nome": "Celeste Almeida",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:23:04:350s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 23,
+          "dorsal": "846",
+          "nome": "Ana Cristina Viegas",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:23:12:780s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 55",
+          "posicao": 29,
+          "dorsal": "863",
+          "nome": "Elsa Almeida",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:24:23:820s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 21,
+          "dorsal": "936",
+          "nome": "Vitor Vital",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:17:04:790s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 24,
+          "dorsal": "911",
+          "nome": "Nuno Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:17:23:480s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 60",
+          "posicao": 43,
+          "dorsal": "887",
+          "nome": "Jorge Valadares",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:23:49:440s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 60",
+          "posicao": 10,
+          "dorsal": "915",
+          "nome": "Olga Galvão",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 4.0,
+          "tempo": "00:22:44:110s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 3,
+          "dorsal": "867",
+          "nome": "Fernando Rosa",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:15:19:790s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 24,
+          "dorsal": "854",
+          "nome": "Carlos Santos",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:19:24:10s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 29,
+          "dorsal": "921",
+          "nome": "Paulo Jorge Duarte Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 2.0,
+          "tempo": "00:20:41:00s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "M 65",
+          "posicao": 34,
+          "dorsal": "885",
+          "nome": "João Teixeira",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 1.0,
+          "tempo": "00:23:46:900s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 2,
+          "dorsal": "902",
+          "nome": "Maria João  Ferreira Franco Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 13.0,
+          "tempo": "00:22:25:80s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 3,
+          "dorsal": "900",
+          "nome": "Maria João Silva",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 11.0,
+          "tempo": "00:25:04:710s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 65",
+          "posicao": 6,
+          "dorsal": "842",
+          "nome": "Alda  Sebastião",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:27:34:490s",
+          "prova": "Prova 2"
+        },
+        {
+          "escalao": "F 70",
+          "posicao": 6,
+          "dorsal": "862",
+          "nome": "Elisa  Rodrigues",
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 8.0,
+          "tempo": "00:31:31:920s",
+          "prova": "Prova 2"
+        }
+      ],
+      "club_rankings": [
+        {
+          "posicao": 1,
+          "clube": "Associação Desportiva NucleOeiras - ADNO",
+          "pontos": 854.0
+        },
+        {
+          "posicao": 2,
+          "clube": "Associação Run Tejo",
+          "pontos": 503.0
+        },
+        {
+          "posicao": 3,
+          "clube": "Linda-a-Pastora Sporting Clube",
+          "pontos": 446.0
+        },
+        {
+          "posicao": 4,
+          "clube": "Grupo Musical 1º Dezembro Queijas",
+          "pontos": 329.0
+        },
+        {
+          "posicao": 5,
+          "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
+          "pontos": 246.0
+        },
+        {
+          "posicao": 6,
+          "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
+          "pontos": 213.0
+        },
+        {
+          "posicao": 7,
+          "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
+          "pontos": 211.0
+        },
+        {
+          "posicao": 8,
+          "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
+          "pontos": 203.0
+        },
+        {
+          "posicao": 9,
+          "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
+          "pontos": 185.0
+        },
+        {
+          "posicao": 10,
+          "clube": "GMCJamor",
+          "pontos": 104.0
+        },
+        {
+          "posicao": 11,
+          "clube": "Grupo Desportivo de Barcarena",
+          "pontos": 96.0
+        },
+        {
+          "posicao": 12,
+          "clube": "Valejas Atlético Clube",
+          "pontos": 75.0
+        },
+        {
+          "posicao": 13,
+          "clube": "Maratona Clube de Portugal",
+          "pontos": 70.0
+        },
+        {
+          "posicao": 14,
+          "clube": "Sport Ponto Come",
+          "pontos": 69.0
+        },
+        {
+          "posicao": 15,
+          "clube": "Associação de Moradores 18 de Maio",
+          "pontos": 62.0
+        },
+        {
+          "posicao": 16,
+          "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
+          "pontos": 55.0
+        },
+        {
+          "posicao": 17,
+          "clube": "Miles & Vibes",
+          "pontos": 36.0
+        },
+        {
+          "posicao": 18,
+          "clube": "New Me",
+          "pontos": 34.0
+        },
+        {
+          "posicao": 19,
+          "clube": "Academia Recreativa de Linda-a-Velha",
+          "pontos": 33.0
+        },
+        {
+          "posicao": 20,
+          "clube": "Núcleo do Sporting Clube de Portugal de Minde",
+          "pontos": 28.0
+        },
+        {
+          "posicao": 21,
+          "clube": "CF OS BELENENSES",
+          "pontos": 27.0
+        },
+        {
+          "posicao": 22,
+          "clube": "Atlético Clube de Porto Salvo",
+          "pontos": 27.0
+        },
+        {
+          "posicao": 23,
+          "clube": "Taebak Triângulo Taekwondo",
+          "pontos": 19.0
+        },
+        {
+          "posicao": 24,
+          "clube": "CLUBE DE ATLETISMO DE VALE DE FIGUEIRA",
+          "pontos": 16.0
+        },
+        {
+          "posicao": 25,
+          "clube": "Federação da Família para a Paz Mundial e Unificação",
+          "pontos": 14.0
+        },
+        {
+          "posicao": 25,
+          "clube": "Team el Comandante",
+          "pontos": 14.0
+        },
+        {
+          "posicao": 26,
+          "clube": "ADR O RELÂMPAGO",
+          "pontos": 11.0
+        },
+        {
+          "posicao": 27,
+          "clube": "TAEBAEK TRIANGULO TAEKWONDO",
+          "pontos": 9.0
+        },
+        {
+          "posicao": 28,
+          "clube": "Associação de Pára-quedistas Tejo-Norte",
+          "pontos": 9.0
+        },
+        {
+          "posicao": 29,
+          "clube": "CASA DO BENFICA EM ALGUEIRÃO MEM MARTINS - SINTRA",
+          "pontos": 6.0
+        },
+        {
+          "posicao": 30,
+          "clube": "Agualva Runners",
+          "pontos": 4.0
+        },
+        {
+          "posicao": 31,
+          "clube": "FreeRunners",
+          "pontos": 2.0
+        }
+      ]
     }
   ],
   "overall_club_rankings": [
     {
       "posicao": 1,
       "clube": "Associação Desportiva NucleOeiras - ADNO",
-      "pontos": 6492.0
+      "pontos": 7345.0
     },
     {
       "posicao": 2,
       "clube": "Linda-a-Pastora Sporting Clube",
-      "pontos": 4795.0
+      "pontos": 5242.0
     },
     {
       "posicao": 3,
       "clube": "Associação Run Tejo",
-      "pontos": 4579.0
+      "pontos": 5081.0
     },
     {
       "posicao": 4,
       "clube": "Grupo Musical 1º Dezembro Queijas",
-      "pontos": 2591.0
+      "pontos": 2919.0
     },
     {
       "posicao": 5,
       "clube": "Grupo Recreativo Cultural e Desportivo de Leião",
-      "pontos": 2372.0
+      "pontos": 2582.0
     },
     {
       "posicao": 6,
       "clube": "Sociedade de Instrução Musical e Escolar Cruz Quebradense (SIMECQ)",
-      "pontos": 2162.0
+      "pontos": 2415.0
     },
     {
       "posicao": 7,
       "clube": "Sociedade de Educação e Recreio \"Os Unidos de Leceia\"",
-      "pontos": 1937.0
+      "pontos": 2148.0
     },
     {
       "posicao": 8,
       "clube": "Grupo Recreativo e Desportivo “Os Fixes”",
-      "pontos": 1812.0
+      "pontos": 1997.0
     },
     {
       "posicao": 9,
       "clube": "Grupo Recreativo e Desportivo da Ribeira da Lage",
-      "pontos": 1768.0
+      "pontos": 1971.0
     },
     {
       "posicao": 10,
       "clube": "GMCJamor",
-      "pontos": 942.0
+      "pontos": 1046.0
     },
     {
       "posicao": 11,
       "clube": "Valejas Atlético Clube",
-      "pontos": 905.0
+      "pontos": 980.0
     },
     {
       "posicao": 12,
       "clube": "Grupo Desportivo de Barcarena",
-      "pontos": 852.0
+      "pontos": 948.0
     },
     {
       "posicao": 13,
       "clube": "Maratona Clube de Portugal",
-      "pontos": 816.0
+      "pontos": 886.0
     },
     {
       "posicao": 14,
       "clube": "Sport Ponto Come",
-      "pontos": 727.0
+      "pontos": 799.0
     },
     {
       "posicao": 15,
       "clube": "Miles & Vibes",
-      "pontos": 588.0
+      "pontos": 624.0
     },
     {
       "posicao": 16,
       "clube": "Associação de Moradores 18 de Maio",
-      "pontos": 506.0
+      "pontos": 567.0
     },
     {
       "posicao": 17,
       "clube": "Associação Cultural e Recreativa da Ribeira da Lage",
-      "pontos": 500.0
+      "pontos": 555.0
     },
     {
       "posicao": 18,
       "clube": "CF OS BELENENSES",
-      "pontos": 385.0
+      "pontos": 412.0
     },
     {
       "posicao": 19,
       "clube": "Núcleo do Sporting Clube de Portugal de Minde",
-      "pontos": 273.0
+      "pontos": 301.0
     },
     {
       "posicao": 20,
       "clube": "New Me",
-      "pontos": 256.0
+      "pontos": 290.0
     },
     {
       "posicao": 21,
       "clube": "Academia Recreativa de Linda-a-Velha",
-      "pontos": 243.0
+      "pontos": 276.0
     },
     {
       "posicao": 22,
       "clube": "CLUBE DE ATLETISMO DE VALE DE FIGUEIRA",
-      "pontos": 241.0
+      "pontos": 257.0
     },
     {
       "posicao": 23,
       "clube": "Associação de Pára-quedistas Tejo-Norte",
-      "pontos": 229.0
+      "pontos": 238.0
     },
     {
       "posicao": 24,
       "clube": "Atlético Clube de Porto Salvo",
-      "pontos": 197.0
+      "pontos": 224.0
     },
     {
       "posicao": 25,
       "clube": "Taebak Triângulo Taekwondo",
-      "pontos": 120.0
+      "pontos": 139.0
     },
     {
       "posicao": 26,
       "clube": "Agualva Runners",
-      "pontos": 106.0
+      "pontos": 110.0
     },
     {
       "posicao": 27,
-      "clube": "CASA DO BENFICA EM ALGUEIRÃO MEM MARTINS - SINTRA",
-      "pontos": 83.0
+      "clube": "ADR O RELÂMPAGO",
+      "pontos": 93.0
     },
     {
       "posicao": 28,
-      "clube": "ADR O RELÂMPAGO",
-      "pontos": 82.0
+      "clube": "CASA DO BENFICA EM ALGUEIRÃO MEM MARTINS - SINTRA",
+      "pontos": 89.0
     },
     {
       "posicao": 29,
       "clube": "Federação da Família para a Paz Mundial e Unificação",
-      "pontos": 50.0
+      "pontos": 64.0
     },
     {
       "posicao": 30,
       "clube": "TAEBAEK TRIANGULO TAEKWONDO",
-      "pontos": 43.0
+      "pontos": 52.0
     },
     {
       "posicao": 31,
@@ -6649,18 +7427,18 @@
     },
     {
       "posicao": 32,
-      "clube": "ACR Mealhada",
-      "pontos": 25.0
+      "clube": "Team el Comandante",
+      "pontos": 37.0
     },
     {
       "posicao": 33,
       "clube": "FreeRunners",
-      "pontos": 23.0
+      "pontos": 25.0
     },
     {
       "posicao": 34,
-      "clube": "Team el Comandante",
-      "pontos": 23.0
+      "clube": "ACR Mealhada",
+      "pontos": 25.0
     },
     {
       "posicao": 35,
@@ -6711,52 +7489,52 @@
       "participacoes": 8,
       "escalao": "Seniores - Femininos",
       "posicao_escalao": 2,
-      "pontos_falta_proximo": 18.0
+      "pontos_falta_proximo": 31.0
     },
     {
       "dorsal": "865",
       "nome": "Eugénia Ribeiro",
-      "pontos": 97.0,
-      "participacoes": 8,
+      "pontos": 112.0,
+      "participacoes": 9,
       "escalao": "F 55",
-      "posicao_escalao": 2,
-      "pontos_falta_proximo": 11.0
-    },
-    {
-      "dorsal": "900",
-      "nome": "Maria João Silva",
-      "pontos": 114.0,
-      "participacoes": 10,
-      "escalao": "F 65",
       "posicao_escalao": 2,
       "pontos_falta_proximo": 6.0
     },
     {
+      "dorsal": "900",
+      "nome": "Maria João Silva",
+      "pontos": 125.0,
+      "participacoes": 11,
+      "escalao": "F 65",
+      "posicao_escalao": 2,
+      "pontos_falta_proximo": 10.0
+    },
+    {
       "dorsal": "904",
       "nome": "Marta Neves",
-      "pontos": 84.0,
-      "participacoes": 9,
+      "pontos": 91.0,
+      "participacoes": 10,
       "escalao": "Sub 18 - Femininos",
       "posicao_escalao": 3,
-      "pontos_falta_proximo": 25.0
+      "pontos_falta_proximo": 29.0
     },
     {
       "dorsal": "902",
       "nome": "Maria João  Ferreira Franco Silva",
-      "pontos": 106.0,
-      "participacoes": 8,
+      "pontos": 119.0,
+      "participacoes": 9,
       "escalao": "F 65",
       "posicao_escalao": 3,
-      "pontos_falta_proximo": 8.0
+      "pontos_falta_proximo": 6.0
     },
     {
       "dorsal": "869",
       "nome": "Lara Correia",
-      "pontos": 63.0,
-      "participacoes": 7,
+      "pontos": 68.0,
+      "participacoes": 8,
       "escalao": "Sub 18 - Femininos",
       "posicao_escalao": 4,
-      "pontos_falta_proximo": 21.0
+      "pontos_falta_proximo": 23.0
     },
     {
       "dorsal": "857",
@@ -6765,7 +7543,7 @@
       "participacoes": 3,
       "escalao": "Sub 20 - Femininos",
       "posicao_escalao": 4,
-      "pontos_falta_proximo": 15.0
+      "pontos_falta_proximo": 26.0
     },
     {
       "dorsal": "858",
@@ -6777,49 +7555,40 @@
       "pontos_falta_proximo": 12.0
     },
     {
-      "dorsal": "842",
-      "nome": "Alda  Sebastião",
-      "pontos": 76.0,
-      "participacoes": 10,
-      "escalao": "F 65",
-      "posicao_escalao": 4,
-      "pontos_falta_proximo": 30.0
+      "dorsal": "912",
+      "nome": "Nuno Graça",
+      "pontos": 74.0,
+      "participacoes": 7,
+      "escalao": "M 40",
+      "posicao_escalao": 5,
+      "pontos_falta_proximo": 10.0
     },
     {
       "dorsal": "884",
       "nome": "João Narra",
-      "pontos": 69.0,
-      "participacoes": 7,
+      "pontos": 79.0,
+      "participacoes": 8,
       "escalao": "M 55",
+      "posicao_escalao": 5,
+      "pontos_falta_proximo": 3.0
+    },
+    {
+      "dorsal": "842",
+      "nome": "Alda  Sebastião",
+      "pontos": 84.0,
+      "participacoes": 11,
+      "escalao": "F 65",
       "posicao_escalao": 5,
       "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "862",
       "nome": "Elisa  Rodrigues",
-      "pontos": 52.0,
-      "participacoes": 6,
+      "pontos": 60.0,
+      "participacoes": 7,
       "escalao": "F 70",
       "posicao_escalao": 5,
-      "pontos_falta_proximo": 2.0
-    },
-    {
-      "dorsal": "912",
-      "nome": "Nuno Graça",
-      "pontos": 64.0,
-      "participacoes": 6,
-      "escalao": "M 40",
-      "posicao_escalao": 6,
-      "pontos_falta_proximo": 5.0
-    },
-    {
-      "dorsal": "844",
-      "nome": "Ana Coelho",
-      "pontos": 63.0,
-      "participacoes": 8,
-      "escalao": "F 50",
-      "posicao_escalao": 6,
-      "pontos_falta_proximo": 4.0
+      "pontos_falta_proximo": 3.0
     },
     {
       "dorsal": "856",
@@ -6828,34 +7597,52 @@
       "participacoes": 6,
       "escalao": "F 40",
       "posicao_escalao": 7,
-      "pontos_falta_proximo": 16.0
+      "pontos_falta_proximo": 17.0
     },
     {
-      "dorsal": "930",
-      "nome": "Sandra Silva",
-      "pontos": 45.0,
+      "dorsal": "844",
+      "nome": "Ana Coelho",
+      "pontos": 71.0,
       "participacoes": 9,
-      "escalao": "F 45",
-      "posicao_escalao": 8,
-      "pontos_falta_proximo": 3.0
-    },
-    {
-      "dorsal": "915",
-      "nome": "Olga Galvão",
-      "pontos": 48.0,
-      "participacoes": 10,
-      "escalao": "F 60",
-      "posicao_escalao": 8,
-      "pontos_falta_proximo": 9.0
+      "escalao": "F 50",
+      "posicao_escalao": 7,
+      "pontos_falta_proximo": 4.0
     },
     {
       "dorsal": "867",
       "nome": "Fernando Rosa",
-      "pontos": 50.0,
-      "participacoes": 7,
+      "pontos": 61.0,
+      "participacoes": 8,
       "escalao": "M 65",
-      "posicao_escalao": 8,
+      "posicao_escalao": 7,
       "pontos_falta_proximo": 4.0
+    },
+    {
+      "dorsal": "930",
+      "nome": "Sandra Silva",
+      "pontos": 49.0,
+      "participacoes": 10,
+      "escalao": "F 45",
+      "posicao_escalao": 8,
+      "pontos_falta_proximo": 2.0
+    },
+    {
+      "dorsal": "874",
+      "nome": "Henrique Ferreira",
+      "pontos": 47.0,
+      "participacoes": 9,
+      "escalao": "M 55",
+      "posicao_escalao": 8,
+      "pontos_falta_proximo": 10.0
+    },
+    {
+      "dorsal": "915",
+      "nome": "Olga Galvão",
+      "pontos": 52.0,
+      "participacoes": 11,
+      "escalao": "F 60",
+      "posicao_escalao": 9,
+      "pontos_falta_proximo": 9.0
     },
     {
       "dorsal": "3115",
@@ -6863,44 +7650,53 @@
       "pontos": 39.0,
       "participacoes": 6,
       "escalao": "Sub 14 - Femininos",
-      "posicao_escalao": 9,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "874",
-      "nome": "Henrique Ferreira",
-      "pontos": 40.0,
-      "participacoes": 8,
-      "escalao": "M 55",
-      "posicao_escalao": 9,
+      "posicao_escalao": 10,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "1927",
       "nome": "Afonso Matos",
-      "pontos": 24.0,
-      "participacoes": 4,
+      "pontos": 28.0,
+      "participacoes": 5,
       "escalao": "Sub 20 - Masculinos",
-      "posicao_escalao": 12,
-      "pontos_falta_proximo": 6.0
+      "posicao_escalao": 11,
+      "pontos_falta_proximo": 2.0
     },
     {
-      "dorsal": "888",
-      "nome": "José Carmo da Silva",
-      "pontos": 29.0,
-      "participacoes": 6,
-      "escalao": "M 40",
+      "dorsal": "931",
+      "nome": "Susana Jorge",
+      "pontos": 31.0,
+      "participacoes": 4,
+      "escalao": "Seniores - Femininos",
       "posicao_escalao": 12,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "3230",
       "nome": "Valentina Natividade",
-      "pontos": 22.0,
-      "participacoes": 7,
+      "pontos": 25.0,
+      "participacoes": 8,
       "escalao": "Sub 10 - Femininos",
       "posicao_escalao": 13,
-      "pontos_falta_proximo": 1.0
+      "pontos_falta_proximo": 3.0
+    },
+    {
+      "dorsal": "852",
+      "nome": "Bruno  Pinto",
+      "pontos": 32.0,
+      "participacoes": 8,
+      "escalao": "Sub 23 - Masculinos",
+      "posicao_escalao": 13,
+      "pontos_falta_proximo": 5.0
+    },
+    {
+      "dorsal": "1519",
+      "nome": "Pedro Simões",
+      "pontos": 37.0,
+      "participacoes": 6,
+      "escalao": "M 35",
+      "posicao_escalao": 13,
+      "pontos_falta_proximo": 3.0
     },
     {
       "dorsal": "3113",
@@ -6908,17 +7704,8 @@
       "pontos": 20.0,
       "participacoes": 6,
       "escalao": "Sub 14 - Femininos",
-      "posicao_escalao": 13,
-      "pontos_falta_proximo": 10.0
-    },
-    {
-      "dorsal": "1519",
-      "nome": "Pedro Simões",
-      "pontos": 29.0,
-      "participacoes": 5,
-      "escalao": "M 35",
-      "posicao_escalao": 13,
-      "pontos_falta_proximo": 8.0
+      "posicao_escalao": 15,
+      "pontos_falta_proximo": 3.0
     },
     {
       "dorsal": "868",
@@ -6926,17 +7713,17 @@
       "pontos": 17.0,
       "participacoes": 2,
       "escalao": "Sub 20 - Masculinos",
-      "posicao_escalao": 14,
-      "pontos_falta_proximo": 7.0
+      "posicao_escalao": 15,
+      "pontos_falta_proximo": 1.0
     },
     {
-      "dorsal": "852",
-      "nome": "Bruno  Pinto",
+      "dorsal": "888",
+      "nome": "José Carmo da Silva",
       "pontos": 29.0,
-      "participacoes": 7,
-      "escalao": "Sub 23 - Masculinos",
-      "posicao_escalao": 14,
-      "pontos_falta_proximo": 3.0
+      "participacoes": 6,
+      "escalao": "M 40",
+      "posicao_escalao": 15,
+      "pontos_falta_proximo": 2.0
     },
     {
       "dorsal": "853",
@@ -6944,43 +7731,34 @@
       "pontos": 31.0,
       "participacoes": 7,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 14,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "931",
-      "nome": "Susana Jorge",
-      "pontos": 21.0,
-      "participacoes": 3,
-      "escalao": "Seniores - Femininos",
-      "posicao_escalao": 17,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "1232",
-      "nome": "Claudio Torrinha",
-      "pontos": 24.0,
-      "participacoes": 10,
-      "escalao": "M 40",
-      "posicao_escalao": 17,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "864",
-      "nome": "Emanuel Oliveira",
-      "pontos": 22.0,
-      "participacoes": 10,
-      "escalao": "M 50",
-      "posicao_escalao": 17,
+      "posicao_escalao": 16,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "895",
       "nome": "Madalena Magalhães",
-      "pontos": 27.0,
-      "participacoes": 10,
+      "pontos": 30.0,
+      "participacoes": 11,
       "escalao": "F 55",
+      "posicao_escalao": 16,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "1232",
+      "nome": "Claudio Torrinha",
+      "pontos": 25.0,
+      "participacoes": 11,
+      "escalao": "M 40",
       "posicao_escalao": 17,
+      "pontos_falta_proximo": 2.0
+    },
+    {
+      "dorsal": "892",
+      "nome": "Lourenço Marta",
+      "pontos": 6.0,
+      "participacoes": 1,
+      "escalao": "Sub 20 - Masculinos",
+      "posicao_escalao": 18,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -6989,7 +7767,70 @@
       "pontos": 27.0,
       "participacoes": 10,
       "escalao": "F 55",
-      "posicao_escalao": 17,
+      "posicao_escalao": 18,
+      "pontos_falta_proximo": 3.0
+    },
+    {
+      "dorsal": "855",
+      "nome": "Celeste Almeida",
+      "pontos": 27.0,
+      "participacoes": 10,
+      "escalao": "F 55",
+      "posicao_escalao": 18,
+      "pontos_falta_proximo": 3.0
+    },
+    {
+      "dorsal": "910",
+      "nome": "Gonçalo Sá",
+      "pontos": 5.0,
+      "participacoes": 1,
+      "escalao": "Sub 20 - Masculinos",
+      "posicao_escalao": 19,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "846",
+      "nome": "Ana Cristina Viegas",
+      "pontos": 26.0,
+      "participacoes": 11,
+      "escalao": "F 55",
+      "posicao_escalao": 19,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "3112",
+      "nome": "Duarte Oliveira",
+      "pontos": 17.0,
+      "participacoes": 3,
+      "escalao": "Sub 12 - Masculinos",
+      "posicao_escalao": 20,
+      "pontos_falta_proximo": 5.0
+    },
+    {
+      "dorsal": "864",
+      "nome": "Emanuel Oliveira",
+      "pontos": 22.0,
+      "participacoes": 10,
+      "escalao": "M 50",
+      "posicao_escalao": 20,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "891",
+      "nome": "Lia Moreira",
+      "pontos": 21.0,
+      "participacoes": 8,
+      "escalao": "F 50",
+      "posicao_escalao": 20,
+      "pontos_falta_proximo": 4.0
+    },
+    {
+      "dorsal": "927",
+      "nome": "Rodrigo Ferreira",
+      "pontos": 20.0,
+      "participacoes": 11,
+      "escalao": "M 55",
+      "posicao_escalao": 20,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -6998,43 +7839,25 @@
       "pontos": 26.0,
       "participacoes": 3,
       "escalao": "F 55",
-      "posicao_escalao": 18,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "3112",
-      "nome": "Duarte Oliveira",
-      "pontos": 14.0,
-      "participacoes": 2,
-      "escalao": "Sub 12 - Masculinos",
-      "posicao_escalao": 19,
-      "pontos_falta_proximo": 3.0
-    },
-    {
-      "dorsal": "892",
-      "nome": "Lourenço Marta",
-      "pontos": 6.0,
-      "participacoes": 1,
-      "escalao": "Sub 20 - Masculinos",
-      "posicao_escalao": 19,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "855",
-      "nome": "Celeste Almeida",
-      "pontos": 25.0,
-      "participacoes": 9,
-      "escalao": "F 55",
-      "posicao_escalao": 19,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "846",
-      "nome": "Ana Cristina Viegas",
-      "pontos": 24.0,
-      "participacoes": 10,
-      "escalao": "F 55",
       "posicao_escalao": 20,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "936",
+      "nome": "Vitor Vital",
+      "pontos": 22.0,
+      "participacoes": 11,
+      "escalao": "M 60",
+      "posicao_escalao": 22,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "877",
+      "nome": "Laura Reis",
+      "pontos": 8.0,
+      "participacoes": 1,
+      "escalao": "Sub 23 - Femininos",
+      "posicao_escalao": 23,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7043,62 +7866,8 @@
       "pontos": 24.0,
       "participacoes": 3,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 21,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "891",
-      "nome": "Lia Moreira",
-      "pontos": 18.0,
-      "participacoes": 7,
-      "escalao": "F 50",
-      "posicao_escalao": 21,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "927",
-      "nome": "Rodrigo Ferreira",
-      "pontos": 18.0,
-      "participacoes": 10,
-      "escalao": "M 55",
-      "posicao_escalao": 21,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "879",
-      "nome": "Joana  Loureiro",
-      "pontos": 15.0,
-      "participacoes": 6,
-      "escalao": "Seniores - Femininos",
-      "posicao_escalao": 22,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "909",
-      "nome": "Miguel Moradias",
-      "pontos": 16.0,
-      "participacoes": 9,
-      "escalao": "M 55",
-      "posicao_escalao": 22,
-      "pontos_falta_proximo": 2.0
-    },
-    {
-      "dorsal": "3361",
-      "nome": "Vicente  Prete",
-      "pontos": 10.0,
-      "participacoes": 1,
-      "escalao": "Sub 12 - Masculinos",
       "posicao_escalao": 23,
-      "pontos_falta_proximo": 2.0
-    },
-    {
-      "dorsal": "3362",
-      "nome": "EDSON CABRAL",
-      "pontos": 8.0,
-      "participacoes": 2,
-      "escalao": "Sub 14 - Masculinos",
-      "posicao_escalao": 23,
-      "pontos_falta_proximo": 1.0
+      "pontos_falta_proximo": 4.0
     },
     {
       "dorsal": "3114",
@@ -7106,7 +7875,52 @@
       "pontos": 6.0,
       "participacoes": 2,
       "escalao": "Sub 14 - Femininos",
-      "posicao_escalao": 23,
+      "posicao_escalao": 24,
+      "pontos_falta_proximo": 2.0
+    },
+    {
+      "dorsal": "897",
+      "nome": "Marcela da Silva",
+      "pontos": 19.0,
+      "participacoes": 6,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 24,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "847",
+      "nome": "Ana  Serra",
+      "pontos": 17.0,
+      "participacoes": 9,
+      "escalao": "F 50",
+      "posicao_escalao": 24,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "909",
+      "nome": "Miguel Moradias",
+      "pontos": 17.0,
+      "participacoes": 10,
+      "escalao": "M 55",
+      "posicao_escalao": 24,
+      "pontos_falta_proximo": 2.0
+    },
+    {
+      "dorsal": "3116",
+      "nome": "Vicente Silva",
+      "pontos": 11.0,
+      "participacoes": 1,
+      "escalao": "Sub 10 - Masculinos",
+      "posicao_escalao": 25,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "3361",
+      "nome": "Vicente  Prete",
+      "pontos": 10.0,
+      "participacoes": 1,
+      "escalao": "Sub 12 - Masculinos",
+      "posicao_escalao": 25,
       "pontos_falta_proximo": 2.0
     },
     {
@@ -7115,61 +7929,43 @@
       "pontos": 22.0,
       "participacoes": 8,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 23,
+      "posicao_escalao": 25,
       "pontos_falta_proximo": 1.0
     },
     {
-      "dorsal": "936",
-      "nome": "Vitor Vital",
-      "pontos": 20.0,
-      "participacoes": 10,
-      "escalao": "M 60",
-      "posicao_escalao": 23,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "3116",
-      "nome": "Vicente Silva",
-      "pontos": 11.0,
-      "participacoes": 1,
-      "escalao": "Sub 10 - Masculinos",
-      "posicao_escalao": 24,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "3108",
-      "nome": "BRUNO  PIROLA",
-      "pontos": 6.0,
-      "participacoes": 2,
-      "escalao": "Sub 14 - Masculinos",
-      "posicao_escalao": 24,
-      "pontos_falta_proximo": 2.0
-    },
-    {
-      "dorsal": "847",
-      "nome": "Ana  Serra",
-      "pontos": 15.0,
-      "participacoes": 8,
-      "escalao": "F 50",
-      "posicao_escalao": 24,
+      "dorsal": "879",
+      "nome": "Joana  Loureiro",
+      "pontos": 18.0,
+      "participacoes": 7,
+      "escalao": "Seniores - Femininos",
+      "posicao_escalao": 25,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "911",
       "nome": "Nuno Galvão",
-      "pontos": 19.0,
-      "participacoes": 9,
+      "pontos": 21.0,
+      "participacoes": 10,
       "escalao": "M 60",
-      "posicao_escalao": 24,
+      "posicao_escalao": 25,
       "pontos_falta_proximo": 1.0
     },
     {
-      "dorsal": "897",
-      "nome": "Marcela da Silva",
-      "pontos": 14.0,
-      "participacoes": 5,
-      "escalao": "Seniores - Femininos",
-      "posicao_escalao": 26,
+      "dorsal": "3362",
+      "nome": "EDSON CABRAL",
+      "pontos": 8.0,
+      "participacoes": 2,
+      "escalao": "Sub 14 - Masculinos",
+      "posicao_escalao": 27,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "920",
+      "nome": "Paulo Serra",
+      "pontos": 16.0,
+      "participacoes": 11,
+      "escalao": "M 50",
+      "posicao_escalao": 27,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7178,16 +7974,34 @@
       "pontos": 3.0,
       "participacoes": 1,
       "escalao": "M 75",
-      "posicao_escalao": 26,
+      "posicao_escalao": 27,
       "pontos_falta_proximo": 3.0
     },
     {
-      "dorsal": "920",
-      "nome": "Paulo Serra",
+      "dorsal": "3108",
+      "nome": "BRUNO  PIROLA",
+      "pontos": 6.0,
+      "participacoes": 2,
+      "escalao": "Sub 14 - Masculinos",
+      "posicao_escalao": 28,
+      "pontos_falta_proximo": 2.0
+    },
+    {
+      "dorsal": "918",
+      "nome": "Kenzo Takei",
+      "pontos": 8.0,
+      "participacoes": 1,
+      "escalao": "Sub 23 - Masculinos",
+      "posicao_escalao": 28,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "921",
+      "nome": "Paulo Jorge Duarte Silva",
       "pontos": 15.0,
-      "participacoes": 10,
-      "escalao": "M 50",
-      "posicao_escalao": 27,
+      "participacoes": 8,
+      "escalao": "M 65",
+      "posicao_escalao": 28,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7196,16 +8010,43 @@
       "pontos": 6.0,
       "participacoes": 2,
       "escalao": "Sub 23 - Masculinos",
-      "posicao_escalao": 28,
+      "posicao_escalao": 29,
       "pontos_falta_proximo": 2.0
     },
     {
-      "dorsal": "921",
-      "nome": "Paulo Jorge Duarte Silva",
-      "pontos": 13.0,
+      "dorsal": "849",
+      "nome": "Bernardo  Batista",
+      "pontos": 18.0,
+      "participacoes": 5,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 29,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "509",
+      "nome": "Luis Costa",
+      "pontos": 15.0,
       "participacoes": 7,
+      "escalao": "M 50",
+      "posicao_escalao": 29,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "854",
+      "nome": "Carlos Santos",
+      "pontos": 14.0,
+      "participacoes": 6,
       "escalao": "M 65",
       "posicao_escalao": 30,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "908",
+      "nome": "Miguel Lourenço",
+      "pontos": 15.0,
+      "participacoes": 6,
+      "escalao": "M 55",
+      "posicao_escalao": 31,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7214,60 +8055,42 @@
       "pontos": 3.0,
       "participacoes": 1,
       "escalao": "Sub 23 - Masculinos",
-      "posicao_escalao": 31,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "859",
-      "nome": "Cristina Oliveira",
-      "pontos": 11.0,
-      "participacoes": 8,
-      "escalao": "F 45",
-      "posicao_escalao": 31,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "509",
-      "nome": "Luis Costa",
-      "pontos": 13.0,
-      "participacoes": 6,
-      "escalao": "M 50",
       "posicao_escalao": 32,
       "pontos_falta_proximo": 1.0
     },
     {
-      "dorsal": "908",
-      "nome": "Miguel Lourenço",
-      "pontos": 13.0,
-      "participacoes": 5,
-      "escalao": "M 55",
-      "posicao_escalao": 32,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "854",
-      "nome": "Carlos Santos",
-      "pontos": 12.0,
-      "participacoes": 5,
-      "escalao": "M 65",
+      "dorsal": "935",
+      "nome": "Tiago Valongo",
+      "pontos": 3.0,
+      "participacoes": 1,
+      "escalao": "Sub 23 - Masculinos",
       "posicao_escalao": 32,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "845",
       "nome": "Ana Nunes",
-      "pontos": 12.0,
-      "participacoes": 4,
+      "pontos": 15.0,
+      "participacoes": 5,
       "escalao": "F 55",
-      "posicao_escalao": 34,
+      "posicao_escalao": 33,
       "pontos_falta_proximo": 1.0
     },
     {
-      "dorsal": "849",
-      "nome": "Bernardo  Batista",
+      "dorsal": "859",
+      "nome": "Cristina Oliveira",
       "pontos": 12.0,
+      "participacoes": 9,
+      "escalao": "F 45",
+      "posicao_escalao": 36,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "917",
+      "nome": "Paula Leitão",
+      "pontos": 11.0,
       "participacoes": 4,
-      "escalao": "Seniores - Masculinos",
+      "escalao": "F 50",
       "posicao_escalao": 36,
       "pontos_falta_proximo": 1.0
     },
@@ -7277,34 +8100,7 @@
       "pontos": 9.0,
       "participacoes": 3,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 36,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "843",
-      "nome": "Alexandre  Galvão",
-      "pontos": 9.0,
-      "participacoes": 3,
-      "escalao": "M 35",
-      "posicao_escalao": 37,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "917",
-      "nome": "Paula Leitão",
-      "pontos": 8.0,
-      "participacoes": 3,
-      "escalao": "F 50",
-      "posicao_escalao": 37,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "919",
-      "nome": "Paulo Moradias",
-      "pontos": 11.0,
-      "participacoes": 4,
-      "escalao": "M 60",
-      "posicao_escalao": 39,
+      "posicao_escalao": 38,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7317,31 +8113,58 @@
       "pontos_falta_proximo": 1.0
     },
     {
-      "dorsal": "889",
-      "nome": "José  Véstias",
-      "pontos": 11.0,
-      "participacoes": 5,
-      "escalao": "M 55",
-      "posicao_escalao": 40,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "938",
-      "nome": "Yuri Natividade",
+      "dorsal": "843",
+      "nome": "Alexandre  Galvão",
       "pontos": 9.0,
-      "participacoes": 8,
-      "escalao": "M 45",
-      "posicao_escalao": 42,
+      "participacoes": 3,
+      "escalao": "M 35",
+      "posicao_escalao": 41,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "863",
       "nome": "Elsa Almeida",
-      "pontos": 6.0,
-      "participacoes": 3,
+      "pontos": 8.0,
+      "participacoes": 4,
       "escalao": "F 55",
-      "posicao_escalao": 43,
+      "posicao_escalao": 41,
       "pontos_falta_proximo": 2.0
+    },
+    {
+      "dorsal": "938",
+      "nome": "Yuri Natividade",
+      "pontos": 10.0,
+      "participacoes": 9,
+      "escalao": "M 45",
+      "posicao_escalao": 43,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "919",
+      "nome": "Paulo Moradias",
+      "pontos": 11.0,
+      "participacoes": 4,
+      "escalao": "M 60",
+      "posicao_escalao": 43,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "889",
+      "nome": "José  Véstias",
+      "pontos": 11.0,
+      "participacoes": 5,
+      "escalao": "M 55",
+      "posicao_escalao": 44,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "885",
+      "nome": "João Teixeira",
+      "pontos": 4.0,
+      "participacoes": 4,
+      "escalao": "M 65",
+      "posicao_escalao": 45,
+      "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "1234",
@@ -7349,7 +8172,16 @@
       "pontos": 4.0,
       "participacoes": 2,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 44,
+      "posicao_escalao": 47,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "887",
+      "nome": "Jorge Valadares",
+      "pontos": 7.0,
+      "participacoes": 7,
+      "escalao": "M 60",
+      "posicao_escalao": 47,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7358,25 +8190,7 @@
       "pontos": 3.0,
       "participacoes": 1,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 47,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "887",
-      "nome": "Jorge Valadares",
-      "pontos": 6.0,
-      "participacoes": 6,
-      "escalao": "M 60",
-      "posicao_escalao": 47,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "885",
-      "nome": "João Teixeira",
-      "pontos": 3.0,
-      "participacoes": 3,
-      "escalao": "M 65",
-      "posicao_escalao": 47,
+      "posicao_escalao": 50,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7385,7 +8199,7 @@
       "pontos": 2.0,
       "participacoes": 1,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 48,
+      "posicao_escalao": 51,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7394,25 +8208,52 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "Seniores - Femininos",
-      "posicao_escalao": 49,
+      "posicao_escalao": 52,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "898",
+      "nome": "António  Mata",
+      "pontos": 8.0,
+      "participacoes": 1,
+      "escalao": "M 40",
+      "posicao_escalao": 52,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "929",
+      "nome": "Tomás  Nogueira",
+      "pontos": 5.0,
+      "participacoes": 2,
+      "escalao": "M 35",
+      "posicao_escalao": 55,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "487",
+      "nome": "Bernardo Salavessa",
+      "pontos": 6.0,
+      "participacoes": 6,
+      "escalao": "M 50",
+      "posicao_escalao": 55,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "848",
+      "nome": "André  Viseu",
+      "pontos": 6.0,
+      "participacoes": 6,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 56,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "916",
       "nome": "Orlando  Silva",
-      "pontos": 5.0,
-      "participacoes": 5,
+      "pontos": 6.0,
+      "participacoes": 6,
       "escalao": "M 55",
-      "posicao_escalao": 53,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "880",
-      "nome": "Paulo Cruz",
-      "pontos": 4.0,
-      "participacoes": 3,
-      "escalao": "M 35",
-      "posicao_escalao": 54,
+      "posicao_escalao": 56,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7421,34 +8262,43 @@
       "pontos": 2.0,
       "participacoes": 1,
       "escalao": "M 60",
-      "posicao_escalao": 54,
+      "posicao_escalao": 56,
       "pontos_falta_proximo": 1.0
     },
     {
-      "dorsal": "848",
-      "nome": "André  Viseu",
-      "pontos": 5.0,
-      "participacoes": 5,
-      "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 56,
+      "dorsal": "880",
+      "nome": "Paulo Cruz",
+      "pontos": 4.0,
+      "participacoes": 3,
+      "escalao": "M 35",
+      "posicao_escalao": 57,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "924",
       "nome": "Ricardo Nobre",
-      "pontos": 5.0,
-      "participacoes": 5,
+      "pontos": 6.0,
+      "participacoes": 6,
       "escalao": "M 45",
-      "posicao_escalao": 56,
+      "posicao_escalao": 57,
       "pontos_falta_proximo": 1.0
     },
     {
       "dorsal": "914",
       "nome": "Nuno Sobral",
+      "pontos": 6.0,
+      "participacoes": 6,
+      "escalao": "M 45",
+      "posicao_escalao": 57,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "1429",
+      "nome": "António  Manuel Silva",
       "pontos": 5.0,
       "participacoes": 5,
-      "escalao": "M 45",
-      "posicao_escalao": 56,
+      "escalao": "M 50",
+      "posicao_escalao": 58,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7457,51 +8307,6 @@
       "pontos": 2.0,
       "participacoes": 2,
       "escalao": "F 45",
-      "posicao_escalao": 56,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "487",
-      "nome": "Bernardo Salavessa",
-      "pontos": 5.0,
-      "participacoes": 5,
-      "escalao": "M 50",
-      "posicao_escalao": 56,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "933",
-      "nome": "Tiago Andrade",
-      "pontos": 4.0,
-      "participacoes": 3,
-      "escalao": "M 40",
-      "posicao_escalao": 58,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "929",
-      "nome": "Tomás  Nogueira",
-      "pontos": 2.0,
-      "participacoes": 1,
-      "escalao": "M 35",
-      "posicao_escalao": 59,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "1429",
-      "nome": "António  Manuel Silva",
-      "pontos": 4.0,
-      "participacoes": 4,
-      "escalao": "M 50",
-      "posicao_escalao": 59,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "1520",
-      "nome": "João Calafate",
-      "pontos": 1.0,
-      "participacoes": 1,
-      "escalao": "M 35",
       "posicao_escalao": 60,
       "pontos_falta_proximo": 1.0
     },
@@ -7511,7 +8316,34 @@
       "pontos": 3.0,
       "participacoes": 3,
       "escalao": "M 50",
-      "posicao_escalao": 61,
+      "posicao_escalao": 62,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "1520",
+      "nome": "João Calafate",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 35",
+      "posicao_escalao": 63,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "875",
+      "nome": "Miládio Silva",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 35",
+      "posicao_escalao": 63,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "933",
+      "nome": "Tiago Andrade",
+      "pontos": 5.0,
+      "participacoes": 4,
+      "escalao": "M 40",
+      "posicao_escalao": 63,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7520,16 +8352,7 @@
       "pontos": 3.0,
       "participacoes": 3,
       "escalao": "M 45",
-      "posicao_escalao": 62,
-      "pontos_falta_proximo": 1.0
-    },
-    {
-      "dorsal": "886",
-      "nome": "Jorge Ramos",
-      "pontos": 2.0,
-      "participacoes": 2,
-      "escalao": "M 45",
-      "posicao_escalao": 64,
+      "posicao_escalao": 68,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7538,16 +8361,34 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "M 55",
-      "posicao_escalao": 65,
+      "posicao_escalao": 69,
       "pontos_falta_proximo": 1.0
     },
     {
-      "dorsal": "881",
-      "nome": "João Gonçalves",
+      "dorsal": "851",
+      "nome": "João  Ganho",
       "pontos": 1.0,
       "participacoes": 1,
-      "escalao": "M 40",
-      "posicao_escalao": 66,
+      "escalao": "M 55",
+      "posicao_escalao": 69,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "886",
+      "nome": "Jorge Ramos",
+      "pontos": 2.0,
+      "participacoes": 2,
+      "escalao": "M 45",
+      "posicao_escalao": 70,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "934",
+      "nome": "BRUNO  SOUZA",
+      "pontos": 2.0,
+      "participacoes": 1,
+      "escalao": "Seniores - Masculinos",
+      "posicao_escalao": 72,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7556,7 +8397,7 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 67,
+      "posicao_escalao": 73,
       "pontos_falta_proximo": 1.0
     },
     {
@@ -7565,7 +8406,16 @@
       "pontos": 1.0,
       "participacoes": 1,
       "escalao": "Seniores - Masculinos",
-      "posicao_escalao": 67,
+      "posicao_escalao": 73,
+      "pontos_falta_proximo": 1.0
+    },
+    {
+      "dorsal": "881",
+      "nome": "João Gonçalves",
+      "pontos": 1.0,
+      "participacoes": 1,
+      "escalao": "M 40",
+      "posicao_escalao": 73,
       "pontos_falta_proximo": 1.0
     }
   ]
